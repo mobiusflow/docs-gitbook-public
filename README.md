@@ -1,6 +1,2 @@
----
-layout: editorial
----
-
 # Engine API
 
