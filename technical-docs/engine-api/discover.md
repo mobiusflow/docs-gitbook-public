@@ -4,10 +4,6 @@ description: API discover calls
 
 # Discover
 
-{% swagger src="../../.gitbook/assets/json.json" path="/api/v1/mobius/subscribe/connect" method="get" %}
-[json.json](../../.gitbook/assets/json.json)
-{% endswagger %}
-
 {% swagger src="../../.gitbook/assets/json.json" path="/api/v1/mobius/discover/{hid}" method="get" %}
 [json.json](../../.gitbook/assets/json.json)
 {% endswagger %}
