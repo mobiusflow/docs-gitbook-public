@@ -3,6 +3,8 @@
 ## ⚙ Technical Docs
 
 * [Engine API](README.md)
+  * [Authorisation](technical-docs/engine-api/authorisation.md)
+  * [Discover](technical-docs/engine-api/discover.md)
 
 ## 🗃 Partner Guidelines
 
