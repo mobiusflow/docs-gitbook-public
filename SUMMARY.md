@@ -4,6 +4,6 @@
 
 * [Engine API](README.md)
 
-## 🗃 Partner Docs
+## 🗃 Partner Guidelines
 
-* [Page 1](partner-docs/page-1.md)
+* [Page 1](partner-guidelines/page-1.md)
