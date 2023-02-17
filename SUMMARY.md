@@ -3,6 +3,7 @@
 ## 🖱 User Guides
 
 * [MobiusFlow® Lite - EnOcean](README.md)
+  * [Login](user-guides/mobiusflow-r-lite-enocean/login.md)
 
 ## ⚙ Technical Docs
 
