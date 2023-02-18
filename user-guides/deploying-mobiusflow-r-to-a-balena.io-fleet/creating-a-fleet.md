@@ -1,3 +1,7 @@
+---
+description: Create a new balenaCloud fleet
+---
+
 # Creating a Fleet
 
 After signing up to [balena.io](https://www.balena.io) follow their instructions to create a fleet and add your first device. We have simplified the process so you will only need to perform some of the actions they list. The steps below outline the process but for more information see the balena.io [documentation](https://docs.balena.io/learn/getting-started/raspberrypi3/nodejs/#create-a-fleet).

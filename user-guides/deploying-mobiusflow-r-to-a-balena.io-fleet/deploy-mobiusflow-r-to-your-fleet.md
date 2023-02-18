@@ -1,6 +1,8 @@
-# Deploy MobiusFlow® to Your Fleet
+---
+description: Deploy MobiusFlow® to a balenaCloud fleet
+---
 
-After signing up to [balena.io](https://www.balena.io) follow their instructions to create a fleet and add your first device. We have simplified the process so you will only need to perform some of the actions they list. The steps below outline the process but for more information see the balena.io [documentation](https://docs.balena.io/learn/getting-started/raspberrypi3/nodejs/#create-a-fleet).
+# Deploy MobiusFlow® to Your Fleet
 
 ## What You Will Need?
 
@@ -32,3 +34,13 @@ Select the correct **device type**
 Click on the **Deploy** button
 
 <figure><img src="../../.gitbook/assets/BalenaHub Deploy.png" alt=""><figcaption><p>Deploy MobiusFlow® to fleet</p></figcaption></figure>
+
+Balena will switch to your **balenaCloud dashboard**
+
+You can **create a new fleet** here or deploy to an **existing fleet**. If creating a new fleet refer to the Creating a Fleet section for details on what settings are required
+
+<figure><img src="../../.gitbook/assets/Balena Deploy to Fleet.png" alt=""><figcaption><p>Create new fleet or deplot to existing fleet</p></figcaption></figure>
+
+If you already have a new fleet or want to upgrade the **Mobius**Flow® version on existing devices, select **Use an existing fleet instead**
+
+<figure><img src="../../.gitbook/assets/Balena Deploy to Existing Fleet.png" alt=""><figcaption></figcaption></figure>
