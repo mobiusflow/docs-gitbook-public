@@ -8,6 +8,8 @@
   * [Creating a Fleet](user-guides/deploying-mobiusflow-r-to-a-balena.io-fleet/creating-a-fleet.md)
   * [Adding Your First Device](user-guides/deploying-mobiusflow-r-to-a-balena.io-fleet/adding-your-first-device.md)
   * [Deploy MobiusFlow® to Your Fleet](user-guides/deploying-mobiusflow-r-to-a-balena.io-fleet/deploy-mobiusflow-r-to-your-fleet.md)
+* [MobiusFlow®](user-guides/mobiusflow-r/README.md)
+  * [Backup and Restore](user-guides/mobiusflow-r/backup-and-restore.md)
 * [MobiusFlow® Lite - EnOcean](<README (2).md>)
   * [Login](user-guides/mobiusflow-r-lite-enocean/login.md)
 

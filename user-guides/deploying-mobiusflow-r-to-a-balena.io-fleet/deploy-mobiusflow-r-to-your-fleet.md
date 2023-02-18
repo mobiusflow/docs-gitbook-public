@@ -8,7 +8,9 @@ After signing up to [balena.io](https://www.balena.io) follow their instructions
 2. A compatible balenaCloud fleet (Up Board, Intel NUC or Raspberry Pi 4)
 
 {% hint style="danger" %}
-You should always backup your MobiusFlow® device before deploying a new version
+You should always backup your MobiusFlow® device before deploying a new version.
+
+See [Backup and Restore](../mobiusflow-r/backup-and-restore.md) for more details
 {% endhint %}
 
 ## Deploying from balenaHub
