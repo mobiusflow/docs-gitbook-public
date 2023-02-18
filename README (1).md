@@ -10,7 +10,7 @@ You must be signed up to balena.io and have a paid plan as these MobiusFlow® im
 
 Balena.io is a small device fleet management platform which simplifies the process of managing and maintaining 1000s of edge devices. It allows secure remote access and monitoring of each device and installing and updating product firmware of an entire fleet with a few simple clicks. See [balena.io](https://www.balena.io) for more information.
 
-## What Device Types does MobiusFlow® Support
+## What Device Types are Supported?
 
 We currently have software images for thee different device types for balena.io. These are:
 
