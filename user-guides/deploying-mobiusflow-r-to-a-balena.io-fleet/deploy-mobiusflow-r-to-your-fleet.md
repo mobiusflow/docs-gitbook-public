@@ -7,6 +7,10 @@ After signing up to [balena.io](https://www.balena.io) follow their instructions
 1. A **balena.io account** with Microservices access (this requires a paid account)
 2. A compatible balenaCloud fleet (Up Board, Intel NUC or Raspberry Pi 4)
 
+{% hint style="danger" %}
+You should always backup your MobiusFlow® device before deploying a new version
+{% endhint %}
+
 ## Deploying from balenaHub
 
 {% hint style="info" %}
@@ -25,4 +29,4 @@ Select the correct **device type**
 
 Click on the **Deploy** button
 
-<figure><img src="../../.gitbook/assets/BalenaHub Deploy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BalenaHub Deploy.png" alt=""><figcaption><p>Deploy MobiusFlow® to fleet</p></figcaption></figure>
