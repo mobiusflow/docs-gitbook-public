@@ -24,7 +24,7 @@ Click on the **Create Fleet** button
 
 <figure><img src="../../.gitbook/assets/Balena Create Fleet.png" alt=""><figcaption><p>Create your first Fleet</p></figcaption></figure>
 
-Enter a fleet name
+Enter a fleet **name**
 
 Choose device type **Raspberry Pi 4 (using 64bit OS)**
 
