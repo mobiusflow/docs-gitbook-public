@@ -20,3 +20,6 @@ We currently have software images for thee different device types for balena.io.
 We reccomend at least 1Gb of RAM and 8Gb of storage for all devices
 {% endhint %}
 
+{% hint style="info" %}
+If you have a requirement for a different device type on balena.io contact us at [www.mobiusflow.com](https://www.mobiusflow.com) or submit a support ticket by clicking on the support link above
+{% endhint %}
