@@ -4,6 +4,7 @@
 
 * [Deploying MobiusFlow® to a Balena.io Fleet](README.md)
   * [Creating a Fleet](user-guides/deploying-mobiusflow-r-to-a-balena.io-fleet/creating-a-fleet.md)
+  * [Adding Your First Device](user-guides/deploying-mobiusflow-r-to-a-balena.io-fleet/adding-your-first-device.md)
 * [MobiusFlow® Lite - EnOcean](<README (2).md>)
   * [Login](user-guides/mobiusflow-r-lite-enocean/login.md)
 

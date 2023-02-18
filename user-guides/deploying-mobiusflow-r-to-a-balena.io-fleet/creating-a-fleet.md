@@ -9,11 +9,6 @@ This guide assumes you will be using a Raspberry Pi 4. The instructions are the 
 {% endhint %}
 
 1. A **balena.io account** with Microservices access (this requires a paid account)
-2. A **Raspberry Pi 4** with minimum 1Gb RAM and 8Gb storage (eMMC or SD card. The following instructions are for an SD card)
-3. A **power supply** for your Raspberry Pi 4
-4. An **Ethernet network cable**
-5. An internet router with a free Ethernet port (or an Ethernet port on your LAN with **internet access**)
-6. An **SD card adaptor** for your laptop or PC
 
 ## Creating a New Fleet
 
