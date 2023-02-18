@@ -6,7 +6,7 @@ description: Deploy MobiusFlow® to a balenaCloud fleet
 
 ## What You Will Need?
 
-1. A **balena.io account** with Microservices access (this requires a paid account)
+1. A **balenaCloud account** with Microservices access (this requires a paid account)
 2. A compatible balenaCloud fleet (Up Board, Intel NUC or Raspberry Pi 4)
 
 {% hint style="danger" %}
@@ -23,9 +23,11 @@ See [Backup and Restore](../mobiusflow-r/backup-and-restore.md) for more details
 
 Navigate to your [balenaCloud dashboard](https://dashboard.balena-cloud.com/?) and login in
 
+Navigate to [balenaHub](https://hub.balena.io/apps) to select which version of **Mobius**Flow® to deploy
+
 Navigate to the **Apps** page
 
-Search for **MobiusFlow®**
+Search for **MobiusFlow**
 
 <figure><img src="../../.gitbook/assets/BalenaHub Search.png" alt=""><figcaption><p>balenaHub search</p></figcaption></figure>
 
@@ -37,7 +39,7 @@ Click on the **Deploy** button
 
 Balena will switch to your **balenaCloud dashboard**
 
-You can **create a new fleet** here or deploy to an **existing fleet**. If creating a new fleet refer to the Creating a Fleet section for details on what settings are required
+You can **create a new fleet** here or deploy to an **existing fleet**. If creating a new fleet refer to the [Creating a Fleet](creating-a-fleet.md) section for details on what settings are required
 
 <figure><img src="../../.gitbook/assets/Balena Deploy to Fleet.png" alt=""><figcaption><p>Create new fleet or deplot to existing fleet</p></figcaption></figure>
 

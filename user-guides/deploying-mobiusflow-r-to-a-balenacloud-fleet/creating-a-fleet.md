@@ -4,7 +4,7 @@ description: Create a new balenaCloud fleet
 
 # Creating a Fleet
 
-After signing up to [balena.io](https://www.balena.io) follow their instructions to create a fleet and add your first device. We have simplified the process so you will only need to perform some of the actions they list. The steps below outline the process but for more information see the balena.io [documentation](https://docs.balena.io/learn/getting-started/raspberrypi3/nodejs/#create-a-fleet).
+After signing up to [balenaCloud](https://www.balena.io/cloud) follow their instructions to create a fleet and add your first device. We have simplified the process so you will only need to perform some of the actions they list. The steps below outline the process but for more information see the balena.io [documentation](https://docs.balena.io/learn/getting-started/raspberrypi3/nodejs/#create-a-fleet).
 
 ## What You Will Need?
 
@@ -12,7 +12,7 @@ After signing up to [balena.io](https://www.balena.io) follow their instructions
 This guide assumes you will be using a Raspberry Pi 4. The instructions are the same for the UP and Intel NUC devices with the exception of loading the initial balenaOS onto your device.
 {% endhint %}
 
-1. A **balena.io account** with Microservices access (this requires a paid account)
+1. A **balenaCloud account** with Microservices access (this requires a paid account)
 
 ## Creating a New Fleet
 

@@ -14,7 +14,7 @@ This guide assumes you will be using a Raspberry Pi 4. The instructions are the 
 Works with Windows® or macOS®
 {% endhint %}
 
-1. A **balena.io account** with Microservices access (this requires a paid account)
+1. A **balenaCloud account** with Microservices access (this requires a paid account)
 2. A **balenaCloud Raspberry Pi 4 Fleet** (see [Creating a Fleet](creating-a-fleet.md))
 3. A **Raspberry Pi 4** with minimum 1Gb RAM and 8Gb storage (eMMC or microSD card. The following instructions are for an SD card)
 4. A **power supply** for your Raspberry Pi 4
@@ -65,7 +65,7 @@ Plug the **Ethernet cable** into your Raspberry Pi 4's Ethernet port and your ne
 
 Power up your Raspberry Pi 4
 
-## Confirming Your Device is Connected to balena
+## Confirming Your Device is Connected to balenaCloud
 
 After a few minutes your new device will appear in the balenaCloud dashboard. Navigate to your balenaCloud dashboard, select your fleet and view the **fleet's Summary page**.
 
