@@ -10,10 +10,6 @@ description: Add your device to a balenaCloud fleet
 This guide assumes you will be using a Raspberry Pi 4. The instructions are the same for the UP and Intel NUC devices with the exception of loading the initial balenaOS onto your device.
 {% endhint %}
 
-{% hint style="success" %}
-Works with Windows® or macOS®
-{% endhint %}
-
 1. A **balenaCloud account** with Microservices access (this requires a paid account)
 2. A **balenaCloud Raspberry Pi 4 Fleet** (see [Creating a Fleet](creating-a-fleet.md))
 3. A **Raspberry Pi 4** with minimum 1Gb RAM and 8Gb storage (eMMC or microSD card. The following instructions are for an SD card)

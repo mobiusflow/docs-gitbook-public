@@ -1,6 +1,8 @@
-# Deploying MobiusFlow® to a BalenaCloud Fleet
+---
+description: Deploy MobiusFlow® to a new balenaCloud device or update existing devices
+---
 
-This section describes the process of deploying **Mobius**Flow® to a [balenaCloud](https://www.balena.io/cloud) fleet. This process applies to a new fleet and updating a fleet to a new version of **Mobius**Flow®.
+# Deploying MobiusFlow® to a BalenaCloud Fleet
 
 {% hint style="danger" %}
 You must be signed up to balena.io and have a paid plan as these **Mobius**Flow® images use the Microservices fleet type which is only available on a paid plan
