@@ -15,7 +15,7 @@ This guide assumes you will be using a Raspberry Pi 4. The instructions are the 
 5. An internet router with a free Ethernet port (or an Ethernet port on your LAN with **internet access**)
 6. An **SD card adaptor** for your laptop or PC
 
-## Creating a Fleet
+## Creating a New Fleet
 
 {% hint style="info" %}
 A fleet is a collection of devices with the same device type (or architecture). Fleets allow simple management of a group of devices
@@ -38,8 +38,3 @@ Select fleet type **Microservices**
 Click on the **Create new fleet** button
 
 <figure><img src="../../.gitbook/assets/Balena Create Fleet Details.png" alt=""><figcaption><p>Create new fleet details</p></figcaption></figure>
-
-
-
-
-
