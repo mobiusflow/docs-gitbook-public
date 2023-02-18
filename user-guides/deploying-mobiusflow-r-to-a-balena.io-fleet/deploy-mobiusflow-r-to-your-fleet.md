@@ -43,4 +43,20 @@ You can **create a new fleet** here or deploy to an **existing fleet**. If creat
 
 If you already have a new fleet or want to upgrade the **Mobius**Flow® version on existing devices, select **Use an existing fleet instead**
 
-<figure><img src="../../.gitbook/assets/Balena Deploy to Existing Fleet.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Balena Deploy to Existing Fleet.png" alt=""><figcaption><p>Choose an existing fleet</p></figcaption></figure>
+
+Select the fleet from the drop down and click on the **Deploy to fleet** button
+
+After a few seconds you will see the **new release** being built for your fleet
+
+<figure><img src="../../.gitbook/assets/Balena Build Release.png" alt=""><figcaption><p>New release building</p></figcaption></figure>
+
+This will take a minute or two. Once the build is complete you will see the release on the dashboard. All devices, which have not been pinned to a specific release, in your fleet will automatically start to update to the new release.
+
+You can also view the release history in the Releases page of your fleet.
+
+<figure><img src="../../.gitbook/assets/Balena Release Built.png" alt=""><figcaption><p>New release deployed</p></figcaption></figure>
+
+Click on a device Summary to see which release it is running. You can also pin device to specific releases on this screen
+
+<figure><img src="../../.gitbook/assets/Balena Device Details - Release.png" alt=""><figcaption><p>Device details</p></figcaption></figure>
