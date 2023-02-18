@@ -60,3 +60,9 @@ You can also view the release history in the Releases page of your fleet.
 Click on a device Summary to see which release it is running. You can also pin device to specific releases on this screen
 
 <figure><img src="../../.gitbook/assets/Balena Device Details - Release.png" alt=""><figcaption><p>Device details</p></figcaption></figure>
+
+{% hint style="success" %}
+Congratulations, you have deployed your first **Mobius**Flow® device on balenaCloud.
+
+Go and grab a coffee before jumping into the **Mobius**Flow® user guide to see how easy it is to get sensors and more connected to your favourite applications...
+{% endhint %}

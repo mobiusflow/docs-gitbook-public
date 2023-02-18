@@ -37,3 +37,5 @@ Select fleet type **Microservices**
 Click on the **Create new fleet** button
 
 <figure><img src="../../.gitbook/assets/Balena Create Fleet Details.png" alt=""><figcaption><p>Create new fleet details</p></figcaption></figure>
+
+You have created your first balenaCloud fleet! Now go to [Adding Your First Device](adding-your-first-device.md) to add a device to this fleet

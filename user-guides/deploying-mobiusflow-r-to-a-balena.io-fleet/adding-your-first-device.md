@@ -67,9 +67,14 @@ Power up your Raspberry Pi 4
 
 ## Confirming Your Device is Connected to balena
 
+After a few minutes your new device will appear in the balenaCloud dashboard. Navigate to your balenaCloud dashboard, select your fleet and view the **fleet's Summary page**.
 
+You device will be **added to the list** at the bottom of the page. It will be given a random name which you can change on the device's summary page
 
+{% hint style="warning" %}
+If your device does not appear in the list, check that it is powered up and that the network port you have it plugged into has an internet connection.
+{% endhint %}
 
+<figure><img src="../../.gitbook/assets/Balena Confirm Device Connected.png" alt=""><figcaption><p>Viewing the fleet's device list</p></figcaption></figure>
 
-
-
+You have successfully added a new device to your balenaCloud fleet. To deploy **Mobius**Flow® to this device go to [Deploy **Mobius**Flow® to Your Fleet](deploy-mobiusflow-r-to-your-fleet.md)
