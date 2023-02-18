@@ -41,33 +41,5 @@ Select the **Download balenaOS** option in the drop down button. The balenaOS wi
 
 ## Burning the balenaOS onto the SD Card
 
-Place your **microSD card** into your **SD card adaptor** and connect it to your laptop or PC
-
-{% hint style="danger" %}
-All data on your SD card will be overwritten!
-{% endhint %}
-
-Open **balenaEtcher**
-
-Select **Flash from file** and choose the balenaOS image you downloaded above
-
-Select your **SD card** as the **target**
-
-Click on the **Flash** button
-
-balenaEtcher will burn the balenaOS to your SD card and make it a bootable image. Wait for this to complete and for the image to be verified
-
-Remove the **SD card** from the SD card adaptor and insert it into your **Raspberry Pi 4's SD card slot**
-
-Plug the **Ethernet cable** into your Raspberry Pi 4's Ethernet port and your network
-
-Power up your Raspberry Pi 4
-
-## Confirming Your Device is Connected to balena
-
-
-
-
-
-
+Place your microSD card into your SD card reader and connect it to your laptop or PC
 
