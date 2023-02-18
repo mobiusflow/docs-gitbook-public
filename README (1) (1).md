@@ -1,2 +1,0 @@
-# MobiusFlow® Lite - EnOcean
-

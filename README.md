@@ -14,3 +14,9 @@ Balena.io is a small device fleet management platform which simplifies the proce
 
 We currently have software images for thee different device types for balena.io. These are:
 
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>UP Board from Aaeon</strong></td><td>Image supports:</td><td><ul><li>UP2 Edge</li><li>UP2 Edge Pro</li><li>Up Extreme Edge</li><li>and more..</li></ul></td><td><a href=".gitbook/assets/UP-Squared-Edge.png">UP-Squared-Edge.png</a></td></tr><tr><td><strong>Raspberry Pi 4</strong></td><td>Perfect for:</td><td><ul><li>Low cost deployments</li><li>Proof of Concept applications</li><li>Testing and demonstrations</li></ul></td><td><a href=".gitbook/assets/Raspberry Pi4.webp">Raspberry Pi4.webp</a></td></tr><tr><td><strong>Intel NUC</strong></td><td><ul><li>Many different manufacturers</li><li>Wide range of prices depending on specification</li><li>Always available</li></ul></td><td></td><td><a href=".gitbook/assets/Intel Nuc.jpeg">Intel Nuc.jpeg</a></td></tr></tbody></table>
+
+{% hint style="success" %}
+We reccomend at least 1Gb of RAM and 8Gb of storage for all devices
+{% endhint %}
+
