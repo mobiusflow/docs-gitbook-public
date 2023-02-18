@@ -8,13 +8,18 @@ After signing up to [balena.io](https://www.balena.io) follow their instructions
 This guide assumes you will be using a Raspberry Pi 4. The instructions are the same for the UP and Intel NUC devices with the exception of loading the initial balenaOS onto your device.
 {% endhint %}
 
+{% hint style="success" %}
+Works with Windows® or macOS®
+{% endhint %}
+
 1. A **balena.io account** with Microservices access (this requires a paid account)
 2. A **balenaCloud Raspberry Pi 4 Fleet** (see [Creating a Fleet](creating-a-fleet.md))
-3. A **Raspberry Pi 4** with minimum 1Gb RAM and 8Gb storage (eMMC or SD card. The following instructions are for an SD card)
+3. A **Raspberry Pi 4** with minimum 1Gb RAM and 8Gb storage (eMMC or microSD card. The following instructions are for an SD card)
 4. A **power supply** for your Raspberry Pi 4
 5. An **Ethernet network cable**
 6. An internet router with a free Ethernet port (or an Ethernet port on your LAN with **internet access**)
 7. An **SD card adaptor** for your laptop or PC
+8. **balenaEtcher** installed on your laptop or PC. You can download balenaEtcher [here](https://www.balena.io/etcher)
 
 ## Adding a Device
 
@@ -33,4 +38,36 @@ Leave all of the **default settings**. You can add a WiFi network (client or AP)
 Select the **Download balenaOS** option in the drop down button. The balenaOS will start to download
 
 <figure><img src="../../.gitbook/assets/Balena Add Device Details.png" alt=""><figcaption><p>Add new device details</p></figcaption></figure>
+
+## Burning the balenaOS onto the SD Card
+
+Place your **microSD card** into your **SD card adaptor** and connect it to your laptop or PC
+
+{% hint style="danger" %}
+All data on your SD card will be overwritten!
+{% endhint %}
+
+Open **balenaEtcher**
+
+Select **Flash from file** and choose the balenaOS image you downloaded above
+
+Select your **SD card** as the **target**
+
+Click on the **Flash** button
+
+balenaEtcher will burn the balenaOS to your SD card and make it a bootable image. Wait for this to complete and for the image to be verified
+
+Remove the **SD card** from the SD card adaptor and insert it into your **Raspberry Pi 4's SD card slot**
+
+Plug the **Ethernet cable** into your Raspberry Pi 4's Ethernet port and your network
+
+Power up your Raspberry Pi 4
+
+## Confirming Your Device is Connected to balena
+
+
+
+
+
+
 
