@@ -1,5 +1,5 @@
 ---
-description: MobiusFlow® balenaCloud Device Variable
+description: Understanding the MobiusFlow® balenaCloud Device Variables
 ---
 
 # Device Variables
