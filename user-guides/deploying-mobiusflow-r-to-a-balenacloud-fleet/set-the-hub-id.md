@@ -36,3 +36,64 @@ Select which authentication provider to use for the Engine Rest API.
 * **local** - Use the local user database
 
 </details>
+
+<details>
+
+<summary>MOBIUS_ENGINE_API_PORT</summary>
+
+The Engine Rest API port
+
+**Possible Values:** (default shown in bold)
+
+* **8443**
+
+</details>
+
+<details>
+
+<summary>MOBIUS_HUB_ID</summary>
+
+The HUB ID used by this **Mobius**Flow® instance
+
+**Possible Values:** (default shown in bold)
+
+* **000001** - Can be any six digit hex number
+
+</details>
+
+<details>
+
+<summary>MOBIUS_HUB_RESET_PSKS</summary>
+
+Reset all **Mobius**Flow® Service pre-shared keys on startup
+
+**Possible Values:** (default shown in bold)
+
+* **true** - reset the pre-shared keys on startup
+* false - do not reset the pre-shared keys on startup
+
+</details>
+
+<details>
+
+<summary>MOBIUS_LICENCE</summary>
+
+The **Mobius**Flow® licence code for this device
+
+**Possible Values:** a valid licence code
+
+</details>
+
+<details>
+
+<summary>MOBIUS_LICENCE_RENEW</summary>
+
+Change the **Mobius**Flow® licence code. Set this to **true** when replacing an licence code
+
+**Possible Values:** (default shown in bold)
+
+* true - Change the licence code
+* **false** - Use existing licence code
+
+</details>
+
