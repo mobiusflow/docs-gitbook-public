@@ -12,6 +12,8 @@ The image below shows the Device Variables created when **Mobius**Flow® is depl
 
 <figure><img src="../../.gitbook/assets/Balena Variables.png" alt=""><figcaption></figcaption></figure>
 
+Expand the items below for detailed information on each Device Variable
+
 <details>
 
 <summary>MOBIUS_ENABLE_CONFIG_UI</summary>
@@ -33,7 +35,7 @@ Select which authentication provider to use for the Engine Rest API.
 
 **Possible Values:** (default shown in bold)
 
-* **local** - Use the local user database
+* **local** _- Use the local user database_
 
 </details>
 
@@ -57,7 +59,7 @@ The HUB ID used by this **Mobius**Flow® instance
 
 **Possible Values:** (default shown in bold)
 
-* **000001** - Can be any six digit hex number
+* **000001** _- Can be any six digit hex number_
 
 </details>
 
@@ -69,8 +71,8 @@ Reset all **Mobius**Flow® Service pre-shared keys on startup
 
 **Possible Values:** (default shown in bold)
 
-* **true** - reset the pre-shared keys on startup
-* false - do not reset the pre-shared keys on startup
+* **true** _- reset the pre-shared keys on startup_
+* false _- do not reset the pre-shared keys on startup_
 
 </details>
 
@@ -80,7 +82,7 @@ Reset all **Mobius**Flow® Service pre-shared keys on startup
 
 The **Mobius**Flow® licence code for this device
 
-**Possible Values:** a valid licence code
+**Possible Values:** _a valid licence code_
 
 </details>
 
@@ -92,8 +94,8 @@ Change the **Mobius**Flow® licence code. Set this to **true** when replacing an
 
 **Possible Values:** (default shown in bold)
 
-* true - Change the licence code
-* **false** - Use existing licence code
+* true _- Change the licence code_
+* **false** _- Use existing licence code_
 
 </details>
 
