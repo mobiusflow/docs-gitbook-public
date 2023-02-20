@@ -7,7 +7,7 @@ description: MobiusFlow® balenaCloud Device Variable
 balenaCloud devices are configured using Device Variables. When deploying **Mobius**Flow® to a balenaCloud fleet a number of Device Variables are created with default values. These are defined at the fleet level but can be overridden at the device level. More information about working with balenaCloud Device Variables can be found [here](https://docs.balena.io/learn/manage/variables/#device-variables).
 
 {% hint style="info" %}
-For most devices the only Device Variables that require changing are listed below. The rest can be left as their default values.
+For most devices the only Device Variables that require changing are listed below. The rest can be left at their default values.
 
 * **MOBIUS\_LICENCE**
 * **MOBIUS\_HUB\_ID**
