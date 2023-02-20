@@ -8,6 +8,8 @@ description: Add your device to a balenaCloud fleet
 
 {% hint style="info" %}
 This guide assumes you will be using a Raspberry Pi 4. The instructions are the same for the UP and Intel NUC devices with the exception of loading the initial balenaOS onto your device.
+
+More information and instructions for adding other device types can be found [here](https://docs.balena.io/learn/getting-started/raspberrypi4-64/nodejs/).
 {% endhint %}
 
 1. A **balenaCloud account** with Microservices access (this requires a paid account)
