@@ -34,7 +34,7 @@ Leave all other settings as their default values and click the **Add** button
 
 <figure><img src="../../.gitbook/assets/Balena Set Licence.png" alt=""><figcaption><p>Add a licence code</p></figcaption></figure>
 
-Your licence code will be shown in the Device Variables list
+Your licence code will be shown in the Device Variables list (see [Device Variables](set-the-hub-id.md) for more information on all of the device variables shown in this list)
 
 **Mobius**Flow® will **restart** to install the licence&#x20;
 
@@ -63,3 +63,7 @@ Click the **override** button next to the **MOBIUS\_LICENCE\_RENEW** variable
 In the popup change the value from **true** to **false**&#x20;
 
 Leave all other settings as their default values and click the **Add** button
+
+{% hint style="success" %}
+Congratulations, you have deployed your first **Mobius**Flow® device on balenaCloud.
+{% endhint %}
