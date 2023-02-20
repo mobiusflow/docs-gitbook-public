@@ -99,3 +99,27 @@ Change the **Mobius**Flow® licence code. Set this to **true** when replacing an
 
 </details>
 
+<details>
+
+<summary>MOBIUS_LOCAL_TIMEOUT</summary>
+
+The maximum time in milliseconds that any **Mobius**Flow® Service will wait for a response to a **Mobius**Flow® message
+
+**Possible Values:** (default shown in bold)
+
+* **10000** _- any number greater than 1000_
+
+</details>
+
+<details>
+
+<summary>MOBIUS_LOG_SERVICE_STATUS</summary>
+
+Log changes of MobiusFlow® Services status to the standard logs
+
+**Possible Values:** (default shown in bold)
+
+* true _- log the service status changes to the standard logs_
+* **false** _- do not log the service statis changes to the standard logs_
+
+</details>
