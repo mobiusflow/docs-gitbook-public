@@ -20,8 +20,8 @@ Enable or disable the MobiusFlow® configuration user interface
 
 **Possible Values:** (default shown in bold)
 
-* **true** - Enable the configuration user interface
-* false - Disable the configuration user interface
+* **true** _- Enable the configuration user interface_
+* false _- Disable the configuration user interface_
 
 </details>
 
