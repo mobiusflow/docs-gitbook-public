@@ -13,8 +13,8 @@
   * [Creating a Fleet](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/creating-a-fleet.md)
   * [Adding Your First Device](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/adding-your-first-device.md)
   * [Deploy MobiusFlow® to Your Fleet](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/deploy-mobiusflow-r-to-your-fleet.md)
-  * [Installed Services](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/installed-services.md)
   * [Adding Your Licence](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/adding-your-licence.md)
+  * [Installed Services](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/installed-services.md)
   * [Device Variables](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/set-the-hub-id.md)
   * [Configure Networks](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/configure-networks.md)
 
