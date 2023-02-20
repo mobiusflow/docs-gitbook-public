@@ -14,7 +14,7 @@ This microservice runs the **Mobius**Flow® application.&#x20;
 
 ## manage
 
-Manages network interfaces&#x20;
+Manages network interfaces. See [Configure Networks](configure-networks.md) for more information
 
 ## mongodb
 
