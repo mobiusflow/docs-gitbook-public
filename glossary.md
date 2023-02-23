@@ -40,9 +40,7 @@ Software as a Service - a method of software delivery and licensing in which sof
 
 ### TLA
 
-Three Letter Acronym - see [TLA](glossary.md#tla)
-
-IT teams love acronyms. Sometimes we have to laugh at ourselves!
+Three Letter Acronym - IT teams love acronyms. Sometimes we have to laugh at ourselves!
 
 ### TLS
 
