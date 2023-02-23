@@ -26,6 +26,10 @@ The term **IoT** has grown to include systems and devices connected via the inte
 
 A software architecture where small independent software modules, responsible for a single, specific task, communicate through well-defined APIs to create a more complex system.
 
+### Recursion
+
+See [recursion](glossary.md#recursion)
+
 ### RESTful API
 
 A RESTful API is an architectural style for an application program interface ([API](glossary.md#api)) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.
