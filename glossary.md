@@ -1,5 +1,7 @@
 ---
-description: Sick of the jargon? This glossary will help you smash your way through it.
+description: >-
+  Sick of the jargon? Lost in a sea of terms and acronyms? This glossary will
+  help you smash your way through it.
 ---
 
 # Glossary
