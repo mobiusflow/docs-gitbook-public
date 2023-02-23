@@ -14,6 +14,10 @@ Application Programming Interface (API) - A well-defined _language_ to allow dif
 
 Edge computing is a computing architecture focused on bringing computing as close to the source of data as possible in order to reduce latency and bandwidth use. In simpler terms, edge computing means running fewer processes in the cloud and moving those processes to local places, such as on a user’s computer, an IoT device, or an edge server.
 
+### Gateway
+
+An [IoT](glossary.md#iot) gateway is a small computing device, normally installed at the [edge](glossary.md#the-edge), for collecting and processing sensor data. It is mostly used where direct communication with a cloud server is undesirable, for instance, when performing local control, a reliable internet connection is unavailable, or when security concerns dictate data should not be published on the internet.
+
 ### HTTP(s)
 
 Hypertext Transfer Protocol (HTTP) - This is the most widely used communication protocol used transfer data between computers over the internet.&#x20;
