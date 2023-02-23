@@ -34,6 +34,12 @@ A RESTful API is an architectural style for an application program interface ([A
 
 Software as a Service - a method of software delivery and licensing in which software is accessed online via a subscription, rather than bought and installed on individual computers.
 
+### TLA
+
+Three Letter Acronym - see [TLA](glossary.md#tla)
+
+IT teams love acronyms. Sometimes we have to laugh at ourselves!
+
 ### TLS
 
 Transport Layer Security is a cryptographic protocol typically used with [HTTP](glossary.md#http-s) to secure data transferred between computers or the internet or your private network.
