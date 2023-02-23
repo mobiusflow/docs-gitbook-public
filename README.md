@@ -1,5 +1,5 @@
 ---
-description: Welcome to the MobiusFlow® documentation
+description: Welcome to the MobiusFlow® documentation site
 ---
 
 # Welcome
