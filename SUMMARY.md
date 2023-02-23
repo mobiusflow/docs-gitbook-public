@@ -2,7 +2,7 @@
 
 * [Welcome](README.md)
 
-## 🖱 User Guides
+## 📖 User Guides
 
 * [Licensing](user-guides/licensing.md)
 * [MobiusFlow®](user-guides/mobiusflow-r/README.md)
