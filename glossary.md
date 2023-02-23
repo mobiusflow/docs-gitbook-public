@@ -42,6 +42,10 @@ The term **IoT** has grown to include systems and devices connected via the inte
 
 A software architecture where small independent software modules, responsible for a single, specific task, communicate through well-defined APIs to create a more complex system.
 
+### Middleware
+
+A piece of software that acts as a bridge between devices, an operating system, or database and applications, especially on a network. It can be described as "_software glue_"
+
 ### MQTT
 
 MQTT is an OASIS standard messaging protocol for the Internet of Things ([IoT](glossary.md#iot)). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. MQTT today is used in a wide variety of industries, such as automotive, manufacturing, telecommunications, oil and gas, etc.
