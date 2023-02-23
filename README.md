@@ -10,11 +10,13 @@ Whether you are looking for a full walkthrough or just dipping in to get more in
 
 #### 📖 User Guides
 
-The user guides are instructional walkthroughs. Follow these guides from start to finish or jtump to a section to learn how to perform specific tasks.
+The user guides are instructional walkthroughs. Follow these guides from start to finish or jump to a section to learn how to perform specific tasks.
 
 #### ⚙️ Technical Docs
 
-Looking for more detailed technical information? These articles dive deeper into the more technical aspects of **Mobius**Flow®, from Architecture to API details, ports, protocols, and more.
+Looking for more detailed technical information? These articles dive deeper into the more technical aspects of **Mobius**Flow®, from Architecture to API details, ports, protocols, configuring services creating flows, and more.
+
+
 
 {% hint style="info" %}
 Our documentation is always improving and we are adding new articles each week, so come back often to see whats new.
