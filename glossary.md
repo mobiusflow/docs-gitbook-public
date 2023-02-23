@@ -10,6 +10,10 @@ description: >-
 
 Application Programming Interface (API) - A well-defined _language_ to allow different software modules to communicate with each other to share data or commands. (see [RESTful API](glossary.md#restful-api))
 
+### The Edge
+
+Edge computing is a computing architecture focused on bringing computing as close to the source of data as possible in order to reduce latency and bandwidth use. In simpler terms, edge computing means running fewer processes in the cloud and moving those processes to local places, such as on a user’s computer, an IoT device, or an edge server.
+
 ### HTTP(s)
 
 Hypertext Transfer Protocol (HTTP) - This is the most widely used communication protocol used transfer data between computers over the internet.&#x20;
