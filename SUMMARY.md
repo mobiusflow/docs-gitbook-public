@@ -5,7 +5,6 @@
 
 ## 📖 User Guides
 
-* [Licensing](user-guides/licensing.md)
 * [MobiusFlow®](user-guides/mobiusflow-r/README.md)
   * [Backup and Restore](user-guides/mobiusflow-r/backup-and-restore.md)
 * [MobiusFlow® Lite - EnOcean](<README (2).md>)
@@ -38,6 +37,7 @@
   * [Node](technical-docs/engine-api/node.md)
   * [Service](technical-docs/engine-api/service.md)
   * [Object](technical-docs/engine-api/object.md)
+* [Licensing](technical-docs/licensing.md)
 
 ***
 
