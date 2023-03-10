@@ -41,7 +41,7 @@ The image and table below describe the connections and LED indicators on the fro
 Product Label
 -------------
 
-The product label is on the bottom of the connector. It shows the part number, software version and serial number of the product.&#x20;
+The product label is on the bottom of the connector. It shows the [part number](./#part-numbers), software version and serial number of the product.&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 12.38.17.png" alt=""><figcaption></figcaption></figure>
 
