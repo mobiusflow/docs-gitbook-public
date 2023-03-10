@@ -38,3 +38,13 @@ The image and table below describe the connections and LED indicators on the fro
 | **14** | <p>Module 2 activity<br></p>        | <p>Flashes when module 2 sends or receives data<br></p>        |
 
 \
+Product Label
+-------------
+
+The product label is on the bottom of the connector. It shows the part number, software version and serial number of the product.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 12.38.17.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The serial number is required when configuring both the connector and your **Mobius**Flow® instance. Make sure you take a note of the serial number before starting
+{% endhint %}
