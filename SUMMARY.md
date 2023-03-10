@@ -18,6 +18,8 @@
   * [Installed Services](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/installed-services.md)
   * [Device Variables](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/set-the-hub-id.md)
   * [Configure Networks](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/configure-networks.md)
+* [Configuring MobiusFlow® Connectors](user-guides/configuring-mobiusflow-r-connectors/README.md)
+  * [Connection and LED Indicators](user-guides/configuring-mobiusflow-r-connectors/connection-and-led-indicators.md)
 
 ## ⚙ Technical Docs
 
