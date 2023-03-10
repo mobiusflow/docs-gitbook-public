@@ -86,6 +86,6 @@ The service will start and show that it has connected to the MQTT broker
 
 </div>
 
-{% hint style="info" %}
+{% hint style="danger" %}
 If you make any changes to the mobius connectors service, any configured connectors, or add a new connector you should restart the mobius connectors to make the new configuration take effect
 {% endhint %}
