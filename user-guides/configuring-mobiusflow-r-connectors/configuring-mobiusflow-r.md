@@ -10,11 +10,11 @@ description: Configure a MobiusFlow® instance for connectors
 2. A running instance of **Mobius**Flow®
 3. A configured MQTT broker (this is usually an MQTT broker running in your **Mobius**Flow® instance
 
+## Configuring MobiusFlow®
+
 The configuration screenshots in the guide assume you are using an MQTT broker running in the same instance of **Mobius**Flow®. You should adjust the configuration to suit your setup. An example of the broker configuration is shown below
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 13.22.20.png" alt=""><figcaption><p>Example configuration of an MQTT broker</p></figcaption></figure>
-
-## Configuring MobiusFlow®
 
 Login in to your MobiusFlow® instance and navigate to the **Configuration** tab
 
