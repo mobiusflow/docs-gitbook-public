@@ -42,7 +42,7 @@ The **'Backup/Restore' menu** is also used for restoring. You can restore by fir
 
 Once uploaded, the menu **** will **show the backup information** as well as allowing you to click '**Restore**'.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Uploaded backup file information and restore button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Uploaded backup file information and restore button</p></figcaption></figure>
 
 Accept the a confirmation dialog to proceed.
 
