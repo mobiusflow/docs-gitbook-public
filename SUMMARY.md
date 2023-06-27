@@ -5,8 +5,18 @@
 
 ## 📖 User Guides
 
+* [Getting Started](user-guides/getting-started/README.md)
+  * [Administration](user-guides/getting-started/administration.md)
+  * [Service and Object Configuration](user-guides/getting-started/service-and-object-configuration.md)
+  * [Diagnostics and Service Control](user-guides/getting-started/diagnostics-and-service-control.md)
+  * [Node-RED Flows](user-guides/getting-started/node-red-flows.md)
 * [MobiusFlow®](user-guides/mobiusflow-r/README.md)
+  * [MobiusFlow Overview](user-guides/mobiusflow-r/mobiusflow-overview.md)
+  * [MobiusFlow Architecture](user-guides/mobiusflow-r/mobiusflow-architecture.md)
+  * [MobiusFlow Uniform Resource Identifiers](user-guides/mobiusflow-r/mobiusflow-uniform-resource-identifiers.md)
+  * [MobiusFlow Security](user-guides/mobiusflow-r/mobiusflow-security.md)
   * [Backup and Restore](user-guides/mobiusflow-r/backup-and-restore.md)
+  * [Ports and Endpoints](user-guides/mobiusflow-r/ports-and-endpoints.md)
 * [MobiusFlow® Lite - EnOcean](<README (2).md>)
   * [Login](user-guides/mobiusflow-r-lite-enocean/login.md)
 * [Deploying MobiusFlow® to a BalenaCloud Fleet](user-guides/deploying-mobiusflow-r-to-a-balenacloud-fleet/README.md)
