@@ -1,0 +1,1574 @@
+{
+	"info": {
+		"_postman_id": "817dc46d-49db-4081-8a8f-9e7f908dd55c",
+		"name": "Mobius Engine API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14184358"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/admin/settings",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"admin",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/login",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"john@home.com\",\n    \"password\": \"examplePassword123\",\n    \"roles\": {\n        \"admin\": true,\n        \"flows\": true,\n        \"configure\": false,\n        \"subscribe\": true,\n        \"write\": true,\n        \"read\": true\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\": \"{{refreshToken}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/refresh",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user/{{userName}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user",
+								"{{userName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user/roles/{{userId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user",
+								"roles",
+								"{{userId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/users",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set User Roles",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roles\": {\n        \"admin\": true,\n        \"flows\": true,\n        \"configure\": true,\n        \"subscribe\": true,\n        \"write\": true,\n        \"read\": true\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user/roles/{{userId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user",
+								"roles",
+								"{{userId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set User Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user/password/{{userId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user",
+								"password",
+								"{{userId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/auth/user/{{userId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user",
+								"{{userId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discover",
+			"item": [
+				{
+					"name": "Discover (Services)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/discover/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"discover",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Discover (PIDs)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/discover/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"discover",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Discover (Instances)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/discover/{{hid}}/{{sid}}/{{pid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"discover",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Discover (Resources)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/discover/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"discover",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Discover (Resource)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/discover/{{hid}}/{{sid}}/{{pid}}/{{ins}}/{{rid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"discover",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}",
+								"{{rid}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Node",
+			"item": [
+				{
+					"name": "Get Node Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/node/config/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"node",
+								"config",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Node Config Tree",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/node/configtree/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"node",
+								"configtree",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Node PSKs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/node/resetpsks/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"node",
+								"resetpsks",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "Get Service Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/config/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"config",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/start/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"start",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/stop/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"stop",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hot Reload Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/reload/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"reload",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clone Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"copies\": 1,\n    \"start\": \"030\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/clone/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"clone",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"spid\": \"000E\",\n    \"name\": \"New example nr-connector service\",\n    \"enabled\": false,\n    \"runAtStart\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Service SID",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"newSID\": \"02A\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/config/sid/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"config",
+								"sid",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Service Config",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"objectStoreNewName\",\n    \"runAtStart\": true,\n    \"enabled\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/config/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"config",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace all Objects",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"pid\": \"000D\",\n        \"objects\": [\n            {\n                \"pid\": \"000D\",\n                \"ins\": \"0002\",\n                \"rids\": [\n                    {\n                        \"rid\": \"01\",\n                        \"settings\": {\n                            \"pv\": \"EnOcean EEP A5-08-01 Light, Temperature and Occupancy Sensor\"\n                        }\n                    },\n                    {\n                        \"rid\": \"0B\",\n                        \"settings\": {\n                            \"pv\": \"11223344\"\n                        }\n                    }\n                ]\n            },\n            {\n                \"pid\": \"000D\",\n                \"ins\": \"0006\",\n                \"rids\": [\n                    {\n                        \"rid\": \"40\",\n                        \"settings\": {\n                            \"min\": 30\n                        }\n                    }\n                ]\n            },\n            {\n                \"pid\": \"000D\",\n                \"ins\": \"0001\",\n                \"rids\": [\n                    {\n                        \"rid\": \"40\",\n                        \"settings\": {\n                            \"min\": 30\n                        }\n                    }\n                ]\n            }\n        ]\n    },\n    {\n        \"pid\": \"0010\",\n        \"objects\": [\n            {\n                \"pid\": \"0010\",\n                \"ins\": \"0001\",\n                \"rids\": [\n                    {\n                        \"rid\": \"01\",\n                        \"settings\": {\n                            \"pv\": \"EnOcean EEP A5-02-02 Temperature Sensor (-30C to 10C)\"\n                        }\n                    },\n                    {\n                        \"rid\": \"0B\",\n                        \"settings\": {\n                            \"pv\": \"12121212\"\n                        }\n                    }\n                ]\n            }\n        ]\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/config/replaceAllObjects/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"config",
+								"replaceAllObjects",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Service",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/service/{{hid}}/{{sid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"service",
+								"{{hid}}",
+								"{{sid}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Objects",
+			"item": [
+				{
+					"name": "Get Object Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/config/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"config",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Object",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Resource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/resource/{{hid}}/{{sid}}/{{pid}}/{{ins}}/{{rid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"resource",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}",
+								"{{rid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Object",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"rid\": \"40\",\n        \"settings\": {\"min\": 30}\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/{{hid}}/{{sid}}/{{pid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Object with Specified ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"rid\": \"40\",\n        \"settings\": {\"min\": 30}\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clone Object",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"copies\": 1,\n    \"start\": \"000A\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/clone/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"clone",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Object",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ins\": \"0001\",\n    \"rids\": [\n        {\n            \"rid\": \"40\",\n            \"settings\": { \"min\": 22 }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/config/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"config",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write Multi Resource",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\"r\": \"00\", \"p\": 15, \"v\": \"Hello\"},\n    {\"r\": \"40\", \"p\": 15, \"v\": 43.9}\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/resource/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"resource",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clear Resource",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"priority\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/resource/clear/{{hid}}/{{sid}}/{{pid}}/{{ins}}/{{rid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"resource",
+								"clear",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}",
+								"{{rid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Write Resource",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"priority\": 15,\n    \"value\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/resource/{{hid}}/{{sid}}/{{pid}}/{{ins}}/{{rid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"resource",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}",
+								"{{rid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Object",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/object/{{hid}}/{{sid}}/{{pid}}/{{ins}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"object",
+								"{{hid}}",
+								"{{sid}}",
+								"{{pid}}",
+								"{{ins}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Command",
+			"item": [
+				{
+					"name": "Send BCMD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rorg\": \"F6\",\n    \"db_0\": 100,\n    \"db_1\": 80,\n    \"db_2\": 60,\n    \"db_3\": 40,\n    \"uid\": \"12345678\",\n    \"status\": 23,\n    \"subTelNum\": 1,\n    \"dBm\": -5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/command/{{commandId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"command",
+								"{{commandId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profiles",
+			"item": [
+				{
+					"name": "Get service profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/service/{{hid}}/{{spid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"service",
+								"{{hid}}",
+								"{{spid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all service profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/service/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"service",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Object Profile Famalies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/object/families/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"object",
+								"families",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Object Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/object/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"object",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Object Profile by PID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/object/{{hid}}/{{pid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"object",
+								"{{hid}}",
+								"{{pid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Object Profile by Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/object/by-name/{{hid}}/{{profileName}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"object",
+								"by-name",
+								"{{hid}}",
+								"{{profileName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Command Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/command/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"command",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Command Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/profile/command/{{hid}}/{{commandId}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"profile",
+								"command",
+								"{{hid}}",
+								"{{commandId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flows",
+			"item": [
+				{
+					"name": "Get Flows",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/flow/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"flow",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Flows",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n        {\n            \"id\": \"325768e8cfb5e940\",\n            \"type\": \"tab\",\n            \"label\": \"Flow 1\",\n            \"disabled\": false,\n            \"info\": \"\",\n            \"env\": []\n        },\n        {\n            \"id\": \"3b0288133ae62a0c\",\n            \"type\": \"mobius connection\",\n            \"host\": \"localhost\",\n            \"port\": \"8443\",\n            \"username\": \"admin\",\n            \"password\": \"adm123\",\n            \"secure\": false\n        },\n        {\n            \"id\": \"617557bce6f1dc50\",\n            \"type\": \"mobius get object\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"\",\n            \"detailedOutput\": false,\n            \"format\": \"name\",\n            \"mobject\": \"000001/020/0010/0001\",\n            \"connection\": \"3b0288133ae62a0c\",\n            \"outputs\": 1,\n            \"x\": 440,\n            \"y\": 280,\n            \"wires\": [\n                [\n                    \"be38f3e9dc26b200\"\n                ]\n            ]\n        },\n        {\n            \"id\": \"f6d38b25e3df8bdb\",\n            \"type\": \"inject\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"\",\n            \"props\": [\n                {\n                    \"p\": \"payload\"\n                },\n                {\n                    \"p\": \"topic\",\n                    \"vt\": \"str\"\n                }\n            ],\n            \"repeat\": \"\",\n            \"crontab\": \"\",\n            \"once\": false,\n            \"onceDelay\": 0.1,\n            \"topic\": \"\",\n            \"payload\": \"\",\n            \"payloadType\": \"date\",\n            \"x\": 160,\n            \"y\": 280,\n            \"wires\": [\n                [\n                    \"617557bce6f1dc50\"\n                ]\n            ]\n        },\n        {\n            \"id\": \"be38f3e9dc26b200\",\n            \"type\": \"debug\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"debug 1\",\n            \"active\": true,\n            \"tosidebar\": true,\n            \"console\": false,\n            \"tostatus\": false,\n            \"complete\": \"false\",\n            \"statusVal\": \"\",\n            \"statusType\": \"auto\",\n            \"x\": 740,\n            \"y\": 260,\n            \"wires\": []\n        },\n        {\n            \"id\": \"3245bf3b06dc492b\",\n            \"type\": \"mobius simulated connector\",\n            \"z\": \"325768e8cfb5e940\",\n            \"sid\": \"S01\",\n            \"psk\": \"password\",\n            \"url\": \"localhost\",\n            \"port\": 30815,\n            \"useTLS\": false,\n            \"name\": \"\",\n            \"x\": 920,\n            \"y\": 480,\n            \"wires\": []\n        },\n        {\n            \"id\": \"9e346b10e00bc47d\",\n            \"type\": \"mobius simulated enocean a5-07-03\",\n            \"z\": \"325768e8cfb5e940\",\n            \"uid\": \"A5070310\",\n            \"mode\": \"user\",\n            \"name\": \"\",\n            \"minSupplyVoltage\": \"1\",\n            \"maxSupplyVoltage\": \"4\",\n            \"minIll\": \"50\",\n            \"maxIll\": \"500\",\n            \"x\": 530,\n            \"y\": 580,\n            \"wires\": [\n                [\n                    \"3245bf3b06dc492b\",\n                    \"91ea03ebbffd01f2\"\n                ]\n            ]\n        },\n        {\n            \"id\": \"75134719b1700e20\",\n            \"type\": \"inject\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"\",\n            \"props\": [\n                {\n                    \"p\": \"payload\"\n                },\n                {\n                    \"p\": \"topic\",\n                    \"vt\": \"str\"\n                }\n            ],\n            \"repeat\": \"\",\n            \"crontab\": \"\",\n            \"once\": false,\n            \"onceDelay\": 0.1,\n            \"topic\": \"\",\n            \"payload\": \"\",\n            \"payloadType\": \"date\",\n            \"x\": 140,\n            \"y\": 580,\n            \"wires\": [\n                [\n                    \"13fa72e0118fc2fb\"\n                ]\n            ]\n        },\n        {\n            \"id\": \"13fa72e0118fc2fb\",\n            \"type\": \"function\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"function 1\",\n            \"func\": \"msg.topic = \\\"000001/022/0030/0001/40\\\";\\nmsg.payload = {\\n    supplyVoltage: 2.4,\\n    illumination: 502\\n}\\nreturn msg;\",\n            \"outputs\": 1,\n            \"noerr\": 0,\n            \"initialize\": \"\",\n            \"finalize\": \"\",\n            \"libs\": [],\n            \"x\": 220,\n            \"y\": 660,\n            \"wires\": [\n                [\n                    \"9e346b10e00bc47d\"\n                ]\n            ]\n        },\n        {\n            \"id\": \"91ea03ebbffd01f2\",\n            \"type\": \"debug\",\n            \"z\": \"325768e8cfb5e940\",\n            \"name\": \"debug 2\",\n            \"active\": true,\n            \"tosidebar\": true,\n            \"console\": false,\n            \"tostatus\": false,\n            \"complete\": \"false\",\n            \"statusVal\": \"\",\n            \"statusType\": \"auto\",\n            \"x\": 780,\n            \"y\": 580,\n            \"wires\": []\n        }\n    ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{hostname}}:{{port}}/api/v1/mobius/flow/{{hid}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{hostname}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"mobius",
+								"flow",
+								"{{hid}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "protocol",
+			"value": "http",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "8443",
+			"type": "string"
+		},
+		{
+			"key": "hostname",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "hid",
+			"value": "000001",
+			"type": "string"
+		},
+		{
+			"key": "sid",
+			"value": "020",
+			"type": "string"
+		},
+		{
+			"key": "pid",
+			"value": "0010",
+			"type": "string"
+		},
+		{
+			"key": "ins",
+			"value": "0001",
+			"type": "string"
+		},
+		{
+			"key": "rid",
+			"value": "40",
+			"type": "string"
+		},
+		{
+			"key": "userId",
+			"value": "2a6e3434-df28-4544-963a-fe5b2d5584eb",
+			"type": "string"
+		},
+		{
+			"key": "userName",
+			"value": "admin",
+			"type": "string"
+		},
+		{
+			"key": "commandId",
+			"value": "ENOCEAN_RADIO_ERP1",
+			"type": "string"
+		},
+		{
+			"key": "profileName",
+			"value": "numericValue",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIyYTZlMzQzNC1kZjI4LTQ1NDQtOTYzYS1mZTViMmQ1NTg0ZWIiLCJyb2xlcyI6MTU5LCJpYXQiOjE2ODc5NzI1MTQsImV4cCI6MTY4Nzk3NjExNH0.xRWtHyEgg4LUcx3dPRTeLspXVtVl92GRUclvbIHj4NE",
+			"type": "string"
+		},
+		{
+			"key": "refreshToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIyYTZlMzQzNC1kZjI4LTQ1NDQtOTYzYS1mZTViMmQ1NTg0ZWIiLCJyZWZyZXNoVG9rZW4iOnRydWUsImlhdCI6MTY4Nzk2NjA3OSwiZXhwIjoxNjg4MDA5Mjc5fQ.6kg2UQKRPghh-b_9j6CTflhEyWD7wP3B-B2_Ms3Bw34",
+			"type": "string"
+		},
+		{
+			"key": "spid",
+			"value": "000F",
+			"type": "string"
+		}
+	]
+}

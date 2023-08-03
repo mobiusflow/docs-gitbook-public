@@ -41,13 +41,19 @@
 
 ## ⚙ Technical Docs
 
+* [Flows](technical-docs/flows/README.md)
+  * [Connecting to Flows to MobiusFlow Engine](technical-docs/flows/connecting-to-flows-to-mobiusflow-engine.md)
 * [Receiving and Sending Raw EnOcean Telegrams](technical-docs/receiving-and-sending-raw-enocean-telegrams.md)
-* [MobiusFlow® Engine API](<README (1) (1).md>)
-  * [Authorisation](technical-docs/engine-api/authorisation.md)
-  * [Discover](technical-docs/engine-api/discover.md)
-  * [Node](technical-docs/engine-api/node.md)
-  * [Service](technical-docs/engine-api/service.md)
-  * [Object](technical-docs/engine-api/object.md)
+* [MobiusFlow Engine API](technical-docs/mobiusflow-engine-api/README.md)
+  * [Authorization](technical-docs/mobiusflow-engine-api/authorization.md)
+  * [Discover](technical-docs/mobiusflow-engine-api/discover.md)
+  * [Node](technical-docs/mobiusflow-engine-api/node.md)
+  * [Service](technical-docs/mobiusflow-engine-api/service.md)
+  * [Object](technical-docs/mobiusflow-engine-api/object.md)
+  * [Profiles](technical-docs/mobiusflow-engine-api/profiles.md)
+  * [Command](technical-docs/mobiusflow-engine-api/command.md)
+  * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
+  * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
 * [Licensing](technical-docs/licensing.md)
 
 ***
