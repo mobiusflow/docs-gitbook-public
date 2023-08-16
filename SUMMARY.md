@@ -43,6 +43,7 @@
 
 * [Flows](technical-docs/flows/README.md)
   * [Connecting to Flows to MobiusFlow Engine](technical-docs/flows/connecting-to-flows-to-mobiusflow-engine.md)
+  * [Data Transfer between Flows and MobiusFlow Engine](technical-docs/flows/data-transfer-between-flows-and-mobiusflow-engine.md)
 * [Receiving and Sending Raw EnOcean Telegrams](technical-docs/receiving-and-sending-raw-enocean-telegrams.md)
 * [MobiusFlow Engine API](technical-docs/mobiusflow-engine-api/README.md)
   * [Authorization](technical-docs/mobiusflow-engine-api/authorization.md)
