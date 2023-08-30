@@ -1,0 +1,37 @@
+# Licensing (v1.19.1 and later)
+
+Licence information is included within the the environment variables of the Mobius service in the docker-compose.yml file
+
+## Online Licence
+
+* For online licences only the licence code itself needs to be included
+* The environment variable used for this MOBIUS\_LICENCE
+* For example:
+
+```
+- MOBIUS_LICENCE=38782095-410e7ab5-c3c36a84-dd39683f-c5a8062b-78f846c2-52588c49-fc8eecf4
+```
+
+## Offline Licence
+
+* As well as the licence code, offline licences must include a licence key and licence token
+* These are included in the environment environment variables MOBIUS\_LICENCE\_KEY and MOBIUS\_LICENCE\_TOKEN respectively For example:
+
+```
+- MOBIUS_LICENCE=38782095-410e7ab5-c3c36a84-dd39683f-c5a8062b-78f846c2-52588c49-fc8eecf4
+- MOBIUS_LICENCE_KEY=LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JSUJDZ0tDQVFFQW10MFhkNWpsU2pLY2RNQU5XeW1jbE0wN21vM0dZRmIyR2E0bjFpZ0NPcGpUYi9yeWp5OTAKZlptcFhNVm5XTFM2U2N1ZUpvclk1cEI3c0NYdlp0djB5VkFweUQrNFB2U3QxN3FzWUZ6NmtpWU5UVUN1TjJjZgoxYWXqMkVJOVlSU3N4aUcxTDFsbmlBeFFlUGROMFl0NkpNRkhQbkwxNU52OUZYXWJISVNEcDVOeEhFTUc0UmhqCksvZmdSRlRLcTR3NVpVWUFTMlVXOGdZMGhyeWZmejdRUm1HUGFZMDEwblZwQllZbEdrYXBmOEtIQ1huczN4WksKMDVVMzB1cGtLUjZZV09KY0xXTHVUc1F2WVVJYzhsRFJaK1JXclRjbWJMSWdyTEdoclZjZFBBditrSnBHTGorTgpibjVrSlJCVDV5MU04dGwxVXVOaDYzTW5qMDh5UTBKSUZRSURBUUFCCi0tLS0tRU5EIFJTQSBQVUJMSUMgS0VZLS0tLS0K
+- MOBIUS_LICENCE_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RlIjoiZmU5ZTFkMDAtOWMzOTYwMDMtN2E1ZmRmOWItOGMwZjA4ZmQtZTQzNGFkMDktZDc4MDQxZWYtZGEyNWM3NWEtZGRjNjAxNzgiLCJ2YWxpZEZyb20iOiIyMDIzLTA4LTMwVDAwOjAwOjAwLjAwMFoiLCJ2YWxpZFRvIjoiMjAyMy0wOS0yOVQwMDowMDowMC4wMDBaIiwic2l6ZSI6MTAsImFjdGl2ZSI6dHJ1ZSwidHlwZSI6InByb2R1Y3Rpb24iLCJjaGVja1R5cGUiOiJvZmZsaW5lIiwiY2hlY2tJbnRlcnZhbCI6NjAsImZhc3RDaGVja0ludGVydmFsIjo1LCJyS2V5IjoiMjI0Y2IyZWE4Zjc0MDU5NWFhMzE0OTBmNjkxM4c1YmM4OWVjYTA0MWE2YTkzZWZmMWRjZmUyMGVjMWNmZGQ0YSIsDmlhdCI6MTY5MzM5MTg2NywiZXhwIjoxNjk2NDYzOTk5fQ.bmMb-s-AScXW5oqB9eNnhhJ_lhqOdSAkOkpK8NCpZwno7UGXOCElBDGBCiI7DOB1rYrDQvxgt9qqWR5iAXuuSb5PEt-MUeaEduygHqAO89RmXFjBG6UycJCW3ERVGL5O_csGjZBZh1wen74oYkiVjYP_6TXe9tuRjI20F0GuaMCq07AKo05IgYJxkPHbuTeJud6XA8WeEPJnlxae51GwKFyfq5uLYYQYjdlMs8V7N92yiLlcDijoUtJPq7pSm93Hg3wolx4uGx23DyS81XTb0uzm_0zX93kIdImEBvrGCDOF_T2y8hWvzgVD2ihMygLsKNolN3Ir3p3t-udE8-1yYA
+
+```
+
+## Updating a Licence
+
+* If the licence information is replaced, the environment variable MOBIUS\_LICENCE\_RESET must be set to true as shown below
+
+```
+- MOBIUS_LICENCE_RESET=true
+```
+
+* This forces MobiusFlow to reload and update it's licence information
+* Once MobiusFlow has started, ensure that this environment variable is set back to false for any subsquent restarts where the licence information has not been changed
+* For offline licences, if you are updating the licence code, you must also update the licence token

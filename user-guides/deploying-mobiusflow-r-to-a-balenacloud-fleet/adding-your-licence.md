@@ -4,7 +4,7 @@ description: License your MobiusFlow® instance
 
 # Adding Your Licence
 
-All **Mobius**Flow® instances require a valid licence to run. Licences define the maximum number of **Mobius**Flow® objects that you can add to an instance. For more information about **Mobius**Flow® licences refer to the [Licensing](../../technical-docs/licensing.md) page.
+All **Mobius**Flow® instances require a valid licence to run. Licences define the maximum number of **Mobius**Flow® objects that you can add to an instance. For more information about **Mobius**Flow® licences refer to the [Licensing](../../technical-docs/licensing-v1.19.1-and-later.md) page.
 
 ## What You Will Need?
 

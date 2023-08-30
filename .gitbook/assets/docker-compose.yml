@@ -1,0 +1,78 @@
+version: "3.8"
+
+volumes:
+  mobius-data:
+  mobius-licence:
+  mongodb:
+
+networks:
+  frontend:
+  backend:
+
+services:
+  mobius:
+    platform: linux/amd64
+    build: ./dist
+    image: local/mobiusflow-docker:1.19.1_1.19.1
+    container_name: mobiusflow
+    privileged: false
+    restart: always
+    environment:
+      - MOBIUS_HUB_RESET_PSKS=true
+      - MOBIUS_ENABLE_CONFIG_UI=true
+      - MOBIUS_HUB_ID=000001
+      - MOBIUS_LOCAL_TIMEOUT=10000
+      - MOBIUS_LOG_SERVICE_STATUS=
+      - MOBIUS_LICENCE=38782095-410e7ab5-c3c36a84-dd39683f-c5a8062b-78f846c2-52588c49-fc8eecf4
+      # - MOBIUS_LICENCE_KEY=
+      # - MOBIUS_LICENCE_TOKEN=
+      # - MOBIUS_LICENCE_RESET=
+      - MOBIUS_ENGINE_API_PORT=8443
+      - MOBIUS_ENGINE_API_AUTH_PROVIDER=local
+    volumes:
+      - mobius-data:/data
+      - mobius-licence:/.licence
+    networks:
+      - backend
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+  nginx:
+    image: ghcr.io/mobiusflow/nginx-cloud:1.1.0
+    container_name: nginx
+    privileged: false
+    restart: always
+    environment:
+      - NGINX_UI_CONTAINER=mobius
+    ports:
+      # these ports are for use with the nginx TLS terminator use in mobius-cloud-install
+      - 8080:8080
+      - 8443:8443
+      - 1883:1883
+      - 30814:30815
+      - 30817:30817
+    networks:
+      - frontend
+      - backend
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+  mongodb:
+    image: bitnami/mongodb:latest
+    container_name: mongodb
+    restart: always
+    environment:
+      - MONGODB_ROOT_PASSWORD=r5DybE57qug3WaHebeUy2bAvvVhKXUWHD
+      - MONGODB_USERNAME=mobius
+      - MONGODB_PASSWORD=RmzsXQYReLHaCS5wWGjAPjtJ7VnTw4qL
+      - MONGODB_DATABASE=mobius
+    volumes:
+      - mongodb:/bitnami/mongodb
+    networks:
+      - backend
+    logging:
+      driver: none

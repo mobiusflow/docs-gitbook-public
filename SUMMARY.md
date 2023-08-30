@@ -10,6 +10,7 @@
   * [Service and Object Configuration](user-guides/getting-started/service-and-object-configuration.md)
   * [Diagnostics and Service Control](user-guides/getting-started/diagnostics-and-service-control.md)
   * [Node-RED Flows](user-guides/getting-started/node-red-flows.md)
+  * [Running MobiusFlow via Docker](user-guides/getting-started/running-mobiusflow-via-docker.md)
 * [MobiusFlow®](user-guides/mobiusflow-r/README.md)
   * [MobiusFlow Overview](user-guides/mobiusflow-r/mobiusflow-overview.md)
   * [MobiusFlow Architecture](user-guides/mobiusflow-r/mobiusflow-architecture.md)
@@ -55,7 +56,7 @@
   * [Command](technical-docs/mobiusflow-engine-api/command.md)
   * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
   * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
-* [Licensing](technical-docs/licensing.md)
+* [Licensing (v1.19.1 and later)](technical-docs/licensing-v1.19.1-and-later.md)
 
 ***
 
