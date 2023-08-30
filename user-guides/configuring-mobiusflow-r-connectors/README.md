@@ -20,3 +20,6 @@ The current options are _EnOcean_ and _Workplace Occupancy_ using either 868MHz 
 
 <table><thead><tr><th width="157">Part Number</th><th width="208">Region</th><th width="161" data-type="checkbox">EnOcean</th><th data-type="checkbox">Workplace Occupancy</th></tr></thead><tbody><tr><td><strong>EXT00102</strong></td><td>EMEA (868MHz)</td><td>true</td><td>false</td></tr><tr><td><strong>EXT00110</strong></td><td>EMEA (868MHz)</td><td>false</td><td>true</td></tr><tr><td><strong>EXT00112</strong></td><td>EMEA (868MHz)</td><td>true</td><td>true</td></tr><tr><td><strong>EXT10102</strong></td><td>US (915MHz)</td><td>true</td><td>false</td></tr><tr><td><strong>EXT10110</strong></td><td>US (915MHz)</td><td>false</td><td>true</td></tr><tr><td><strong>EXT10112</strong></td><td>US (915MHz)</td><td>true</td><td>true</td></tr></tbody></table>
 
+## Download Connector Firmware
+
+{% file src="../../.gitbook/assets/EXTxxxxx_v3.1.1.zip" %}
