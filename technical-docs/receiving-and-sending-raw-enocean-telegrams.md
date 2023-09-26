@@ -8,7 +8,7 @@ This article aims to explain how EnOcean telegrams can be sent and received with
 
 EnOcean telegrams can be received and injected into a given flow using the Subscribe to Broadcast Command node, labeled 'sub bcmd'. This node is shown below.
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 Upon opening the node configuration, the Command ID config parameter is presented. The EnOcean telegram type to be injected into the flow is specified here. This is shown in the screenshot below.
 
