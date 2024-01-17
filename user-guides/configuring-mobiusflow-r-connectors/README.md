@@ -22,4 +22,10 @@ The current options are _EnOcean_ and _Workplace Occupancy_ using either 868MHz 
 
 ## Download Connector Firmware
 
+### v3.1.1
+
 {% file src="../../.gitbook/assets/EXTxxxxx_v3.1.1.zip" %}
+
+### v3.2.0
+
+{% file src="../../.gitbook/assets/EXTxxxxx_v3.2.0.zip" %}
