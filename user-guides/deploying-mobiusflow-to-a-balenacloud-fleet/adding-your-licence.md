@@ -12,7 +12,7 @@ All **Mobius**Flow® instances require a valid licence to run. Licences define t
 
 ## Adding Your Licence to a BalenaCloud Device
 
-Licences are added to balenaCloud devices by setting a device variable. All required device variables are created automatically when you deploy **Mobius**Flow® to a fleet. For more information see [Device Variables](set-the-hub-id.md).
+Licences are added to balenaCloud devices by setting a device variable. All required device variables are created automatically when you deploy **Mobius**Flow® to a fleet. For more information see [Device Variables](device-variables.md).
 
 {% hint style="danger" %}
 Licences must be added by **overriding a device's licence variable** and **NOT** changing the fleet's variables.
@@ -34,7 +34,7 @@ Leave all other settings as their default values and click the **Add** button
 
 <figure><img src="../../.gitbook/assets/Balena Set Licence.png" alt=""><figcaption><p>Add a licence code</p></figcaption></figure>
 
-Your licence code will be shown in the Device Variables list (see [Device Variables](set-the-hub-id.md) for more information on all of the device variables shown in this list)
+Your licence code will be shown in the Device Variables list (see [Device Variables](device-variables.md) for more information on all of the device variables shown in this list)
 
 **Mobius**Flow® will **restart** to install the licence&#x20;
 

@@ -24,8 +24,8 @@ To perform a backup, set a name (the default is mobius-backup with the date and 
 
 To perform a restore, click the **Upload Zip** button and select a Mobius backup file. Once the file has uploaded click the **Restore** button. If the node does not restart after a minute, manually reboot the node by removing power.
 
-A full article covering backup and restore can be found [here](../mobiusflow-r/backup-and-restore.md).
+A full article covering backup and restore can be found [here](../mobiusflow/backup-and-restore.md).
 
 ## Setting the Hub ID <a href="#nodeadministration-settingthehubid" id="nodeadministration-settingthehubid"></a>
 
-All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../mobiusflow-r/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../mobiusflow-r/mobiusflow-uniform-resource-identifiers.md) for more information about Hub IDs.
+All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../mobiusflow/mobiusflow-uniform-resource-identifiers.md) for more information about Hub IDs.

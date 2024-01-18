@@ -2,7 +2,7 @@
 description: Deploy MobiusFlow® to a balenaCloud fleet
 ---
 
-# Deploy MobiusFlow® to Your Fleet
+# Deploy MobiusFlow to Your Fleet
 
 ## What You Will Need?
 
@@ -12,7 +12,7 @@ description: Deploy MobiusFlow® to a balenaCloud fleet
 {% hint style="danger" %}
 You should always backup your MobiusFlow® device before deploying a new version.
 
-See [Backup and Restore](../mobiusflow-r/backup-and-restore.md) for more details
+See [Backup and Restore](../mobiusflow/backup-and-restore.md) for more details
 {% endhint %}
 
 ## Deploying from balenaHub

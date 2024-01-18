@@ -37,7 +37,7 @@ The configuration of the sub bcmd node is shown below.
 This sections covers how to send EnOcean telegrams using the MobiusFlow Connector hardware.
 
 {% hint style="warning" %}
-Note that, sending is only support for MobiusFlow Connectors running firmware version v3.2.0 or later. Downloads links to the firmware version can be found [here](../user-guides/configuring-mobiusflow-r-connectors/#download-connector-firmware).
+Note that, sending is only support for MobiusFlow Connectors running firmware version v3.2.0 or later. Downloads links to the firmware version can be found [here](../user-guides/configuring-mobiusflow-connectors/#download-connector-firmware).
 {% endhint %}
 
 ### MobiusFlow Versions v1.x.x (v1.19.9 and newer) <a href="#sending" id="sending"></a>

@@ -37,7 +37,7 @@ You only need to create the Mobius connection in Node-RED once. When adding addi
 
 ![](https://support.iaconnects.co.uk/hc/article\_attachments/360024022331/configure\_object\_cov\_uri.png)
 
-* Enter a [Mobius URI](../mobiusflow-r/mobiusflow-uniform-resource-identifiers.md) to subscribe to for change of value notifications (to subscribe to all objects just enter a # wildcard) and click **Done**
+* Enter a [Mobius URI](../mobiusflow/mobiusflow-uniform-resource-identifiers.md) to subscribe to for change of value notifications (to subscribe to all objects just enter a # wildcard) and click **Done**
 * Click on the **Deploy** button to deploy the flow
 
 ![](https://support.iaconnects.co.uk/hc/article\_attachments/360024022351/node\_connected.png)

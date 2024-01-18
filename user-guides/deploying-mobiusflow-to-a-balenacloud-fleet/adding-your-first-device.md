@@ -75,4 +75,4 @@ If your device does not appear in the list, check that it is powered up and that
 
 <figure><img src="../../.gitbook/assets/Balena Confirm Device Connected.png" alt=""><figcaption><p>Viewing the fleet's device list</p></figcaption></figure>
 
-You have successfully added a new device to your balenaCloud fleet. To deploy **Mobius**Flow® to this device go to [Deploy **Mobius**Flow® to Your Fleet](deploy-mobiusflow-r-to-your-fleet.md)
+You have successfully added a new device to your balenaCloud fleet. To deploy **Mobius**Flow® to this device go to [Deploy **Mobius**Flow® to Your Fleet](deploy-mobiusflow-to-your-fleet.md)
