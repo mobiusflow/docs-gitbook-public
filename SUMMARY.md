@@ -37,6 +37,7 @@
     * [Set Config Mode Password Page](user-guides/configuring-mobiusflow-connectors/configuring-a-connector/set-config-mode-password-page.md)
     * [About Page](user-guides/configuring-mobiusflow-connectors/configuring-a-connector/about-page.md)
   * [Factory Resetting a Connector](user-guides/configuring-mobiusflow-connectors/factory-resetting-a-connector.md)
+* [Technical Training 1](user-guides/technical-training-1.md)
 
 ## ⚙ Technical Docs
 
