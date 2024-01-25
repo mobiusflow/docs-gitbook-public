@@ -117,11 +117,11 @@ The two object types are tabulated below.
 
 A single instance of both of these objects is shown live on an _adfweb dali mqtt_ service in the screenshot below. The screenshot also shows the configuration page for the luminaire object. A DALI short address should be entered to match that of a real-world DALI luminaire.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
 
 The configuration window of a group object is shown in the screenshot below. Similarly to a luminaire, a group address should be added to represent the group number of the DALI group this object will represent.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
 
 ### Control
 

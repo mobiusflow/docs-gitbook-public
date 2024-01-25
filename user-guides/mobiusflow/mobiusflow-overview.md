@@ -1,8 +1,8 @@
 # MobiusFlow Overview
 
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360017703292/mobiusimage.png)
+<figure><img src="../../.gitbook/assets/3500-01-06-01_0001_mobiusflow-logo-colour-black-on-transparent-1-0-0.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
-The MobiusFlow software has been developed as an [MQTT](http://iaconnects.atlassian.net/wiki/spaces/OD/pages/17990573) object bus which normalises all device data into standardised MobiusFlow objects which allow interoperability between all devices either real or virtual in the field or Cloud.
+The MobiusFlow software has been developed as an MQTT object bus which normalises all device data into standardised MobiusFlow objects which allow interoperability between all devices either real or virtual in the field or Cloud.
 
 MobiusFlow enables actuators, sensors & controllers to connect, control and communicate with each other and to the Cloud so that IoT solutions using scalable monitoring, visualisation and predictive analytics can provide valuable insights into your business and act upon them automatically.
 

@@ -40,7 +40,7 @@ During this training, EnOcean will be used as an exemplar IoT technology to demo
 
 A MobiusFlow instance runs a central MobiusFlow Hub. Services, each of which have a function within the overall solution, reside on the hub, and use it as a relay to communicate information.
 
-<figure><img src="../.gitbook/assets/draw-URI Breakdown.drawio.png" alt=""><figcaption><p>MobiusFlow Hub / Service / Object hierarchy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/draw-URI Breakdown.drawio (1).png" alt=""><figcaption><p>MobiusFlow Hub / Service / Object hierarchy</p></figcaption></figure>
 
 A MobiusFlow object often represents a virtual equivalent of a real-world device, however can represent non-physical entities such as calculated data.
 

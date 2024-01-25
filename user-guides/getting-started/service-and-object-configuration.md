@@ -1,3 +1,7 @@
+---
+description: For MobiusFlow 1.x.x only
+---
+
 # Service and Object Configuration
 
 The configuration page is used to create and configure the MobiusFlow configuration for a Mobius node (see [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md)). The page is split into five main sections:
@@ -7,8 +11,6 @@ The configuration page is used to create and configure the MobiusFlow configurat
 3. **The objects palette**
 4. **The configuration tree**
 5. **The service and object configuration section**
-
-<figure><img src="https://support.iaconnects.co.uk/hc/article_attachments/360024020271/configuration_overview_page.png" alt=""><figcaption><p>MobiusFlow User Interface</p></figcaption></figure>
 
 ### The main menu <a href="#nodeserviceandobjectconfiguration-themainmenu" id="nodeserviceandobjectconfiguration-themainmenu"></a>
 

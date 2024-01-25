@@ -1,3 +1,7 @@
+---
+description: For MobiusFlow 1.x.x only
+---
+
 # Diagnostics and Service Control
 
 ## Service diagnostics and control <a href="#nodediagnosticsandservicecontrol-servicediagnosticsandcontrol" id="nodediagnosticsandservicecontrol-servicediagnosticsandcontrol"></a>
@@ -33,20 +37,14 @@ The values shown in the Service Status column are tied to the service status obj
 
 The View Objects column (5) are hot-links to the Objects Diagnostics page, but filtered to only show objects belonging the the relevant service.
 
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360024020591/service\_diagnostics\_page.png)
-
 ## Object and resource diagnostics <a href="#nodediagnosticsandservicecontrol-objectandresourcediagnostics" id="nodediagnosticsandservicecontrol-objectandresourcediagnostics"></a>
 
 The Objects diagnostics page can be shown by clicking on the Objects button on the left of the screen (section 1 in image below) or by clicking on the View Objects hot-link described above. To view all objects belonging to all services use the Objects button (section 1 in image below).
 
 Clicking on the plus sign (3) next to an object expands it to show all of its resources and their current values (2).
 
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360023996872/objects\_diagnostics\_page.png)
-
 ### Modifying a resource value <a href="#nodediagnosticsandservicecontrol-modifyingaresourcevalue" id="nodediagnosticsandservicecontrol-modifyingaresourcevalue"></a>
 
 It is possible to manually modify a resource's value by writing to, or clearing a value in its priority array (see [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md)). Click on a resource to display its full priority array. Click on a priority to modify its value or clear it.
 
 Resource value modifications are temporary and could be overwritten by a service or Node-RED flow, and do not persist between service restarts or node reboots.
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360023996892/modify\_a\_resource.png)

@@ -1,8 +1,8 @@
-# MobiusFlow Security
+# MobiusFlow Internal Security
 
 ## Introduction <a href="#introduction" id="introduction"></a>
 
-MobiusFlow is a software platform designed for control and monitoring of sensors and actuators in simple (single instance) or complex (multiple instances working together) systems (see [Mobius Overview](mobiusflow-overview.md) for more info). It has a microservice based architecture where each microservice can contain both application logic and object state. Object types are predefined and contain any number of resources which represent the values associated to an object’s attributes (e.g. a temperature sensor may contain resources for Name, Location, Temperature etc.).\
+MobiusFlow is a software platform designed for control and monitoring of sensors and actuators in simple (single instance) or complex (multiple instances working together) systems (see [Mobius Overview](../mobiusflow-overview.md) for more info). It has a microservice based architecture where each microservice can contain both application logic and object state. Object types are predefined and contain any number of resources which represent the values associated to an object’s attributes (e.g. a temperature sensor may contain resources for Name, Location, Temperature etc.).\
 \
 A MobiusFlow node (a single instance of the software) contains a central hub and one or more microservices. All microservices contain an MQTT client and communicate with each other via the hub which is an MQTT broker. The broker is responsible for authenticating the services when they connect. The TCP/IP port used for internal MQTT comms is normally firewalled off to prevent any external traffic and all messages passed between microservices are encoded using [_JSON Web Token (JWT)_](https://support.iaconnects.co.uk/hc/en-gb/articles/360020873392) to ensure message integrity.\
 \
@@ -12,25 +12,15 @@ One of the most important part of MobiusFlow is the “ Mobius protocol” over 
 \
 _The MobiusFlow protocol is similar to the LWM2M protocol but over MQTT._
 
-The [Mobius architecture](mobiusflow-architecture.md) is designed to allow efficient communication for IoT Devices whilst providing structure and definable trust boundaries.
-
-<figure><img src="https://support.iaconnects.co.uk/hc/article_attachments/360047956252/Mobius-security-overview-01a.png" alt=""><figcaption></figcaption></figure>
+The [Mobius architecture](../mobiusflow-architecture.md) is designed to allow efficient communication for IoT Devices whilst providing structure and definable trust boundaries.
 
 There are 2 ways to move messages to and from a [mobius node ](https://support.iaconnects.co.uk/hc/en-gb/articles/360021111731)one is via the [mobius router ](https://support.iaconnects.co.uk/hc/en-gb/articles/360021111731)designed for this task, and preserving the integrity of the the message within the node. the other is with a dedicated [service](https://support.iaconnects.co.uk/hc/en-gb/articles/360021111731), this breaches that integrity to a degree but may be desirable and even necessary in some situations.&#x20;
 
-&#x20;
-
 ### Node Internal Communication <a href="#node_internal_communication" id="node_internal_communication"></a>
 
-&#x20;With Each node consisting of the base of a hub and one or more services, and optionally routers. if for the purpose of this initial discussion assume that the services are only communicating with local hardware, or handling logic. therefore having no mechanism for communicating off of the local hardware. we will discuss how this can be achieved later on.
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360048071231/Mobius-security-overview-02a.png)
+With Each node consisting of the base of a hub and one or more services, and optionally routers. If for the purpose of this initial discussion assume that the services are only communicating with local hardware, or handling logic, therefore having no mechanism for communicating off of the local hardware. We will discuss how this can be achieved later on.
 
 As the hub is created a pre-shared key (psk) file is generated, these can also be changed using the configuration service. each valid service must have a copy of its psk, to successfully authenticate with the hub. The hub will have the corresponding psk in its psk file. This key is used as a secret key as part of a [JSON Web Token (JWT)](https://support.iaconnects.co.uk/hc/en-gb/articles/360020873392).
-
-&#x20;_Example of a hub pre-shared key file:_
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360048072051/mobiusflow-json-example-hub-pre-shared-key.png)
 
 ### Service Authentication <a href="#service_authentication" id="service_authentication"></a>
 
@@ -44,20 +34,11 @@ After successful authentication the service will have a copy of the psk of all s
 
 Once passing traffic the MQTT message will consist of:
 
-![Screenshot\_2020-01-23\_19.37.36.png](https://support.iaconnects.co.uk/hc/article\_attachments/360048074331/Screenshot\_2020-01-23\_19.37.36.png)
-
 the JSON Web Token will also carry the topic, the message payload itself, and a timestamp this will all be hashed along with the service own key creating a [HMAC ](https://en.wikipedia.org/wiki/Hash-based\_message\_authentication\_code)to allow integrity checking:
-
-![Screenshot\_2020-01-23\_19.37.43.png](https://support.iaconnects.co.uk/hc/article\_attachments/360047959192/Screenshot\_2020-01-23\_19.37.43.png)
 
 The time stamp will allow for the message to have a validity life span that can be configured for all services connected to the hub. Internally all messages will be signed in this way and therefore provide a high degree of integrity to the internal communication.
 
 Services may be intentionally created to connect to external interfaces such as a service the connects to remote I/O via TCP/IP or an Azure IoT hub Client, if it is desired to configure a node in this scenario, it is recommended to utilise two interconnected nodes one that handles the external communications and one that handles the more trusted internal communication, the nodes could exist on the same hardware. doing so would allow the creation of multiple trust boundaries
-
-\
-
-
-<figure><img src="https://support.iaconnects.co.uk/hc/article_attachments/360048071251/Mobius-security-overview-03a.png" alt=""><figcaption></figcaption></figure>
 
 ### Node External Communication <a href="#node_external_communication" id="node_external_communication"></a>
 
@@ -69,22 +50,13 @@ The internal side of the router acts in exactly the same way as a service, but w
 
 The external side of the router will have the ability to sign its messages in the same fashion as the services do for internal communication, it will have two pre shared keys and internal or service psk and an external psk.
 
-\
-\
-
-
-<figure><img src="https://support.iaconnects.co.uk/hc/article_attachments/360048071271/Mobius-security-overview-04a.png" alt="" width="563"><figcaption></figcaption></figure>
-
 ### Node Peering <a href="#node_peering" id="node_peering"></a>
 
 &#x20;To allow router to validate the authenticity and integrity of messages form other routers, the external psks will be required to be manually shared between all the routers that want to take part in this communication. the result is that the external psk file will contain the keys of all authorised routers and therefore nodes.
 
 This communication is done over the WebSocket protocol as it reduces the need to configure firewalls to allow MQTT communication. node peering is best used in an enclosed environment where there is a high degree of confidence in the integrity of the network with which the communication is taking place. This is like to require the input of network and cyber security professionals.
 
-Node Peering will require the provision of a MQTT broker capable of using [MQTT over WebSockets](http://www.hivemq.com/blog/mqtt-over-websockets-with-hivemq). this will be a function that will be optionally provided by the mobius router.\
-&#x20;&#x20;
-
-<figure><img src="https://support.iaconnects.co.uk/hc/article_attachments/360048071291/Mobius-security-overview-05a.png" alt=""><figcaption></figcaption></figure>
+Node Peering will require the provision of a MQTT broker capable of using [MQTT over WebSockets](http://www.hivemq.com/blog/mqtt-over-websockets-with-hivemq). this will be a function that will be optionally provided by the mobius router.
 
 ### Larger Node Deployments <a href="#larger_node_deployments" id="larger_node_deployments"></a>
 
@@ -92,8 +64,6 @@ Node Peering will require the provision of a MQTT broker capable of using [MQTT 
 
 to achieve this the nodes should utilise WebSockets over [Transport Layer Security ](https://en.wikipedia.org/wiki/Transport\_Layer\_Security)(TLS), this is in fact simply a [HTTP ](https://en.wikipedia.org/wiki/Hypertext\_Transfer\_Protocol)upgrade in the same way WebSockets are used, on a [HTTPS ](https://en.wikipedia.org/wiki/HTTPS)connection
 
-In this case it will almost always be easier to provide the node with access to the public internet where things like server name resolution and certificate control are well practised and understood. a reference architecture is shown here.
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360048071311/Mobius-security-overview-06a.png)
+In this case it will almost always be easier to provide the node with access to the public internet where things like server name resolution and certificate control are well practised and understood.
 
 &#x20;Due to the large complexity in provisioning the system in this scenario, It is envisaged at this stage that IAconnects will provide the service that provides the functions of the architecture shown above.

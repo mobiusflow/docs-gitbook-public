@@ -1,31 +1,17 @@
 # Administration
 
-The administration pages cover user administration, backup and restore, network settings, security and setting the Hub ID. Select the required administration function from the menu on the left of the page.
+The Administration page covers user management, backup and restore, licence settings, security as well as setting the node's Hub ID. The page is divided into corresponding tabs accordingly.
 
 ## User administration <a href="#nodeadministration-useradministration" id="nodeadministration-useradministration"></a>
 
-Users can be added, modified and deleted from within the User Administration pages.
+Users can be added, modified and deleted from within the User Management Tab on the Administration page.
 
-Select **Add New User** or **Edit/Delete User** to administer users.
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360023994752/add\_user.png)
-
-## Network Settings <a href="#nodeadministration-networksettings" id="nodeadministration-networksettings"></a>
-
-This is not currently enabled and all network settings should be done using the USB stick method described [here](https://support.iaconnects.co.uk/hc/en-gb/articles/360020899932-Changing-Mobius-Device-Network-Settings).
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Backup/Restore <a href="#nodeadministration-backup-restore" id="nodeadministration-backup-restore"></a>
 
-A Mobius node can be backed up or restored by downloading or uploading a configuration zip file. All settings including user details, Node-RED flows and Mobius node configurations are included in a back up.
-
-![](https://support.iaconnects.co.uk/hc/article\_attachments/360024018891/backup\_and\_restore.png)
-
-To perform a backup, set a name (the default is mobius-backup with the date and time automatically added) and click the **Backup** button. This will download a zip file containing your backup.
-
-To perform a restore, click the **Upload Zip** button and select a Mobius backup file. Once the file has uploaded click the **Restore** button. If the node does not restart after a minute, manually reboot the node by removing power.
-
-A full article covering backup and restore can be found [here](../mobiusflow/backup-and-restore.md).
+Backup and restore functionality is accessed via the settings tab on the Administration page. A full article covering backup and restore can be found [here](../mobiusflow/backup-and-restore.md).
 
 ## Setting the Hub ID <a href="#nodeadministration-settingthehubid" id="nodeadministration-settingthehubid"></a>
 
-All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../mobiusflow/mobiusflow-uniform-resource-identifiers.md) for more information about Hub IDs.
+All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md) for more information about Hub IDs.
