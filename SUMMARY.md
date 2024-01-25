@@ -58,7 +58,6 @@
   * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
   * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
 * [Licensing (v1.19.1 and later)](technical-docs/licensing-v1.19.1-and-later.md)
-* [MobiusFlow Toolbox User Manual](technical-docs/mobiusflow-toolbox-user-manual.md)
 
 ***
 
