@@ -39,7 +39,7 @@
   * [Factory Resetting a Connector](user-guides/configuring-mobiusflow-connectors/factory-resetting-a-connector.md)
 * [Technical Training 1](user-guides/technical-training-1.md)
 
-## ⚙ Technical Docs
+## ⚙️ Technical Docs
 
 * [Flows](technical-docs/flows/README.md)
   * [Connecting to Flows to MobiusFlow Engine](technical-docs/flows/connecting-to-flows-to-mobiusflow-engine.md)
@@ -58,6 +58,7 @@
   * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
   * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
 * [Licensing (v1.19.1 and later)](technical-docs/licensing-v1.19.1-and-later.md)
+* [LoRaWAN Local Network Server - Service](technical-docs/lorawan-local-network-server-service.md)
 
 ***
 
