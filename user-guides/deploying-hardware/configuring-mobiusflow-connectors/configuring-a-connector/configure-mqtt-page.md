@@ -6,7 +6,7 @@ description: Configure the MQTT connection to MobiusFlow®
 
 MobiusFlow® connectors send and receive data via MQTT. You need to configure the MQTT settings to match the configuration you set in the [Configuring **Mobius**Flow®](../configuring-mobiusflow-r.md) section of this guide.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.17.12.png" alt=""><figcaption><p>MQTT configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.17.12.png" alt=""><figcaption><p>MQTT configuration</p></figcaption></figure>
 
 ## MQTT Broker Settings
 

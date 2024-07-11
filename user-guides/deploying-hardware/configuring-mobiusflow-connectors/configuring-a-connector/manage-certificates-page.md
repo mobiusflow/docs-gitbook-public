@@ -16,4 +16,4 @@ You can set the certificate by pasting the certificate text into the selected ce
 
 If your setup requires the use of Client certificates you can set up to four different certificates and keys. Paset these into the selected certificate and key slots &#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.47.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.47.42.png" alt=""><figcaption></figcaption></figure>

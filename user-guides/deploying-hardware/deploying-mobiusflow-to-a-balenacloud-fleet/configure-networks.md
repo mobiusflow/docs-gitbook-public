@@ -174,7 +174,7 @@ Navigate to the **Device Summary** page of the device you want to configure
 
 Open a terminal in the manage microservice
 
-<figure><img src="../../.gitbook/assets/Balena Manage Terminal.png" alt=""><figcaption><p>balenaCloud device manage terminal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Manage Terminal.png" alt=""><figcaption><p>balenaCloud device manage terminal</p></figcaption></figure>
 
 Change to the **/data/.mobius/manage** directory and edit the **networks.json** file by running the following commands:
 
@@ -185,13 +185,13 @@ vi networks.json
 
 This will open the network configuration file for editing using the **vi editor**
 
-<figure><img src="../../.gitbook/assets/Balena Edit Networks.png" alt=""><figcaption><p>Edit networks.json file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Edit Networks.png" alt=""><figcaption><p>Edit networks.json file</p></figcaption></figure>
 
 Make any required changes and save the file
 
 **Exit** the terminal and **restart the manage microservice** by clicking on the **restart** icon next to the manage service
 
-<figure><img src="../../.gitbook/assets/Balena Microservices.png" alt=""><figcaption><p>Restart the manage microservice</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Microservices.png" alt=""><figcaption><p>Restart the manage microservice</p></figcaption></figure>
 
 {% hint style="danger" %}
 Be careful when changing the network interface you are using to connect the device to the internet as you could prevent the device from connecting to balenaCloud.

@@ -97,4 +97,4 @@ This file can also be downloaded here:
 
 It is important to include the correct licensing information within the environment variables of your docker-compose.yml file.
 
-See the main [article](../../technical-docs/licensing-v1.19.1-and-later.md) on licensing for a full explanation of what is required for online and offline licensing as well updating a given licence.
+See the main [article](../../technical-docs/licencing/licensing-v1.19.1-and-later.md) on licensing for a full explanation of what is required for online and offline licensing as well updating a given licence.

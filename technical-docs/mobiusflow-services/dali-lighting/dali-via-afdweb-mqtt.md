@@ -15,7 +15,7 @@ MobiusFlow can be connected to the same MQTT broker as DALI/MQTT bridge, allowin
 
 The overall architecture is shown in the diagram below.
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt="" width="302"><figcaption><p>High-Level System Architecture Diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt="" width="302"><figcaption><p>High-Level System Architecture Diagram</p></figcaption></figure>
 
 ### Service - adfweb dali mqtt
 
@@ -25,13 +25,13 @@ For some use cases that will be covered later in this article, MobiusFlow direct
 
 As such, a lower-level system architecture diagram looks as follows:
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt="" width="489"><figcaption><p>Lower-level system architecture diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt="" width="489"><figcaption><p>Lower-level system architecture diagram</p></figcaption></figure>
 
 ### MQTT Broker
 
 The MQTT broker can be run anywhere which is accessible over a network to both the HD67941-B2 and MobiusFlow. For ease, in most cases the MQTT broker is run within MobiusFlow itself. As such, the architecture diagram becomes the following:
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt="" width="488"><figcaption><p>Lower-level system architecture diagram with the MQTT broker running within MobiusFlow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt="" width="488"><figcaption><p>Lower-level system architecture diagram with the MQTT broker running within MobiusFlow</p></figcaption></figure>
 
 ## HD67941-B2 Configuration
 
@@ -39,7 +39,7 @@ To configure the HD67941-B2, ADFWeb's documentation on HD67941-B should be follo
 
 Navigate to the the MQTT Set Topic menu:
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt="" width="516"><figcaption><p>The main menu of the SW67941 configurator tool with the MQTT Set Topic button highlighted</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt="" width="516"><figcaption><p>The main menu of the SW67941 configurator tool with the MQTT Set Topic button highlighted</p></figcaption></figure>
 
 ### MQTT Publish
 
@@ -77,7 +77,7 @@ The template should be set to the following JSON string:
 
 All remaining fields should be populated as shown in the screenshot below:
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Correctly populated MQTT Publish tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Correctly populated MQTT Publish tab</p></figcaption></figure>
 
 ### MQTT Subscribe
 
@@ -99,7 +99,7 @@ mobiusDALIwrite/1064E209AD03
 
 The remainder of the row should be populated as shown in the screenshot below:
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Correctly populated MQTT Subscribe tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Correctly populated MQTT Subscribe tab</p></figcaption></figure>
 
 This completes the configuration required for MobiusFlow. Ensure all MQTT changes are saved before flashing the new configuration to the HD67941-B2.
 
@@ -109,7 +109,7 @@ This completes the configuration required for MobiusFlow. Ensure all MQTT change
 
 Within MobiusFlow, a given DALI luminaire or DALI group is represented by an equivalent luminaire and group object. Both object types are designed to reside on the adfweb dali mqtt. This service is shown configured and running in the screenshot below.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>An adweb dali mqtt service and mqtt broker service running within MobiusFlow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>An adweb dali mqtt service and mqtt broker service running within MobiusFlow</p></figcaption></figure>
 
 The two object types are tabulated below.
 
@@ -117,11 +117,11 @@ The two object types are tabulated below.
 
 A single instance of both of these objects is shown live on an _adfweb dali mqtt_ service in the screenshot below. The screenshot also shows the configuration page for the luminaire object. A DALI short address should be entered to match that of a real-world DALI luminaire.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
 
 The configuration window of a group object is shown in the screenshot below. Similarly to a luminaire, a group address should be added to represent the group number of the DALI group this object will represent.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
 
 ### Control
 
@@ -135,7 +135,7 @@ Within a luminaire, a resource exists for each group, allowing you to choose whi
 
 The screenshot below partially shows the resource list for the luminaire object.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Resource list of the DALI luminaire oject</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Resource list of the DALI luminaire oject</p></figcaption></figure>
 
 {% hint style="info" %}
 Note that, the group membership of all luminaires should be set via changing the default value of any group membership resource prior to starting the _adfweb dali mqtt_ service. **Do not make the mistake of changing the live value** of these resources after the service has started. Although this will work, if the service is restarted, this group membership information **will not be saved**.
@@ -143,25 +143,25 @@ Note that, the group membership of all luminaires should be set via changing the
 
 The group object is simpler. As querying the level of a whole group is not possible in DALI, no known level resource exists. As with the luminaire, the lighting level of the DALI group can be changed by setting the setPoint resource.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Resource list for DALI group object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Resource list for DALI group object</p></figcaption></figure>
 
 #### Flows Examples
 
 Below is an example of a simple flow with two inject buttons, one to set the level to 95% and the other to 5%. The inject nodes are linked to a setResource node which setup to set the setPoint resource of a live DALI luminaire (resource 000001/020/027A/41).
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 A very similar flow is shown to change the level of a group between 80% and 10%. In this case the setResource has been set to set the setPoint resource of the DALI group (resource 000001/020/027B/0001/41.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 A more typical use case may be to have the lights automatically controlled. As well as this, it may be required that groups and single luminaires may need to be controlled as one. In the below flow, an EnOcean PIR is linked to a 'local control' zone node, which is then linked both a setResource node linking to a single DALI luminaire, and a DALI group.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 The local control node us used in this case to set time periods of when the lights should be at given levels. The config window for this node is shown below
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Note that is node is included within the _node-red-contrib-mobius-flow-lighting_ package and may not be included within your Flows palette by default. If this is the case, it can be instantly added using the palette manager.
 
@@ -231,23 +231,23 @@ After sending the DCMD, if correct, you should receive a response. This response
 
 Data that is automatically queried from all luminaires can be found in that luminaire's resource list.
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Populated DALI luminaire resource list as a result of auto-querying</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Populated DALI luminaire resource list as a result of auto-querying</p></figcaption></figure>
 
 In the example flow below, a resource COV node has been used to respond to the change of value of the lamp failure status (resource 54). This may be useful if actions need to be taken in such an event, e.g. notifying maintenance. A similar flow could be made to respond to the data from any of the resources.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the case of special queries (queries which are not automatically run), as explained before, DCMDs should be sent. The flow below shows how this could be set up.
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 The function node labelled function 1, is used to set the correct DCMD data for the query. The configuration is shown below:
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Function 1 node configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Function 1 node configuration</p></figcaption></figure>
 
 The DCMD node is setup as follows:
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration</p></figcaption></figure>
 
 Note that the URI property should be set to target the _adfweb dali mqtt_ service. In this case, the service id of the _adfweb dali mqtt_ service is 020 and the hub id the MobiusFlow instance that service is running on is 000001, hence the target URI of 000001/020.
 
@@ -332,15 +332,15 @@ The group property can be set to true if an entire DALI group is being configure
 
 The flow below shows how a DCMD node could be used to send configuration commands, in this case setting the maximum lighting level:
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 The node function node labelled function 4 is used to set the DCMD data. The configuration for this node is as follows:
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Function 4 configuration window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Function 4 configuration window</p></figcaption></figure>
 
 The DCMD node is setup as follows:
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration window</p></figcaption></figure>
 
 Note that the URI property should be set to target the _adfweb dali mqtt_ service. In this case, the service id of the _adfweb dali mqtt_ service is 020 and the hub id the MobiusFlow instance that service is running on is 000001, hence the target URI of 000001/020.
 
@@ -354,11 +354,11 @@ A MobiusFlow object type has been created to represent DALI emergency lights. Th
 
 The screenshot below shows a DALI emergency light object within an _adfweb dali mqtt_.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption><p>DALI emergency light MobiusFlow object on an adfweb dali mqtt service</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption><p>DALI emergency light MobiusFlow object on an adfweb dali mqtt service</p></figcaption></figure>
 
 Like all DALI objects, the DALI emergency object requires a DALI short address to be assigned to it:
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Configuration screen for a DALI emergency MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Configuration screen for a DALI emergency MobiusFlow object</p></figcaption></figure>
 
 ### Control & Querying
 
@@ -522,15 +522,15 @@ In the above table, all data packets were shown for a target DALI emergency ligh
 
 The flows can be used to easily send DCMDs to the _adfweb dali mqtt_ service to complete any desired actions. The flow below has been set to automatically query the potential failure mode on interval.
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 The function node labelled function 8 is used to set the DCMD data prior to the request. The configuration for the node is as follows:
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Functon 8 node configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Functon 8 node configuration</p></figcaption></figure>
 
 The DCMD node is setup as follows:
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DCMD node configuration</p></figcaption></figure>
 
 Note that the URI property should be set to target the _adfweb dali mqtt_ service. In this case, the service id of the _adfweb dali mqtt_ service is 020 and the hub id the MobiusFlow instance that service is running on is 000001, hence the target URI of 000001/020.
 

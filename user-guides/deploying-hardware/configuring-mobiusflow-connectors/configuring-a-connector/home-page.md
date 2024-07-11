@@ -1,6 +1,6 @@
 # Home Page
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 15.42.02.png" alt=""><figcaption><p>Home page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 15.42.02.png" alt=""><figcaption><p>Home page</p></figcaption></figure>
 
 The Home page has the following buttons
 

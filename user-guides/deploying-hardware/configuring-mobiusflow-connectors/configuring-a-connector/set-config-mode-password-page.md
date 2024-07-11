@@ -12,7 +12,7 @@ You can change the password on this page
 If you forget your password you will have to [factory reset](../factory-resetting-a-connector.md) the connector
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.35.09.png" alt=""><figcaption><p>Set the config mode password</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.35.09.png" alt=""><figcaption><p>Set the config mode password</p></figcaption></figure>
 
 ## Save Settings
 

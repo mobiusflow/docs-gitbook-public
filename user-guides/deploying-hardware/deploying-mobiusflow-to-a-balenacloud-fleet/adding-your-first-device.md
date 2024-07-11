@@ -31,13 +31,13 @@ Click on the fleet you want to add a device to
 
 Click on the **Add device** button
 
-<figure><img src="../../.gitbook/assets/Balena Add Device.png" alt=""><figcaption><p>Add a new device</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Add Device.png" alt=""><figcaption><p>Add a new device</p></figcaption></figure>
 
 Leave all of the **default settings**. You can add a WiFi network (client or AP) later.&#x20;
 
 Select the **Download balenaOS** option in the drop down button. The balenaOS will start to download
 
-<figure><img src="../../.gitbook/assets/Balena Add Device Details.png" alt=""><figcaption><p>Add new device details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Add Device Details.png" alt=""><figcaption><p>Add new device details</p></figcaption></figure>
 
 ## Burning the balenaOS onto the SD Card
 
@@ -73,6 +73,6 @@ You device will be **added to the list** at the bottom of the page. It will be g
 If your device does not appear in the list, check that it is powered up and that the network port you have it plugged into has an internet connection.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Balena Confirm Device Connected.png" alt=""><figcaption><p>Viewing the fleet's device list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Confirm Device Connected.png" alt=""><figcaption><p>Viewing the fleet's device list</p></figcaption></figure>
 
 You have successfully added a new device to your balenaCloud fleet. To deploy **Mobius**Flow® to this device go to [Deploy **Mobius**Flow® to Your Fleet](deploy-mobiusflow-to-your-fleet.md)

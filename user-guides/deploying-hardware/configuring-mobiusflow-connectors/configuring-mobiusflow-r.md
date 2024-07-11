@@ -14,13 +14,13 @@ description: Configure a MobiusFlow® instance for connectors
 
 The configuration screenshots in the guide assume you are using an MQTT broker running in the same instance of **Mobius**Flow®. You should adjust the configuration to suit your setup. An example of the broker configuration is shown below
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 13.22.20.png" alt=""><figcaption><p>Example configuration of an MQTT broker</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 13.22.20.png" alt=""><figcaption><p>Example configuration of an MQTT broker</p></figcaption></figure>
 
 Login in to your MobiusFlow® instance and navigate to the **Configuration** tab
 
 Drag a **mobius connectors** service from the palatte on the left into the centre configuration tree
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 13.25.34.png" alt=""><figcaption><p>Add mobius connectors service</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 13.25.34.png" alt=""><figcaption><p>Add mobius connectors service</p></figcaption></figure>
 
 Ensure that **Enabled** and **Run At Start** or ticked and optionally  add a service description
 
@@ -44,11 +44,11 @@ If your MQTT broker requires a username and password for authentication enter th
 
 Click **Save Changes**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 13.26.43.png" alt=""><figcaption><p>Configured service</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 13.26.43.png" alt=""><figcaption><p>Configured service</p></figcaption></figure>
 
 Search for a **mobiusFlowConnector** **object** in the left hand palatte and drag one onto the **mobius connectors service** you have just configured
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 13.28.00.png" alt=""><figcaption><p>Add a mobiusFlowConnector object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 13.28.00.png" alt=""><figcaption><p>Add a mobiusFlowConnector object</p></figcaption></figure>
 
 Optionally change the Name, and add a Description and Location. Leave the default Instance and Parent field values
 
@@ -66,7 +66,7 @@ We recommend a difficult to guess pre-shared key of at least 16 characters
 
 Click **Save Changes**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 14.11.40.png" alt=""><figcaption><p>Configure connector serial number and pre-shared key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 14.11.40.png" alt=""><figcaption><p>Configure connector serial number and pre-shared key</p></figcaption></figure>
 
 ## Starting the mobius connectors Service
 
@@ -78,11 +78,11 @@ The service will start and show that it has connected to the MQTT broker
 
 <div>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 14.13.16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 14.13.16.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-10 at 14.13.25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 14.13.25.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

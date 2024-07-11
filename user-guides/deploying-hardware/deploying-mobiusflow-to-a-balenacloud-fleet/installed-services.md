@@ -6,7 +6,7 @@ description: What are the mobius, manage, and mongodb microservices?
 
 balenaCloud devices can run multiple microservices in separate Docker containers. Deploying **Mobius**Flow® to your device will create three microservices. You can start, stop and view logs for each service on the **balenaCloud device summary** page.
 
-<figure><img src="../../.gitbook/assets/Balena Microservices.png" alt=""><figcaption><p>MobiusFlow® Microservices</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Microservices.png" alt=""><figcaption><p>MobiusFlow® Microservices</p></figcaption></figure>
 
 ## mobius
 

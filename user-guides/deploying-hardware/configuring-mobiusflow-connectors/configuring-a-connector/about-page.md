@@ -8,11 +8,11 @@ The about page shows you information about the connector. You can also update th
 
 <div>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.40.24.png" alt=""><figcaption><p>About page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.40.24.png" alt=""><figcaption><p>About page</p></figcaption></figure>
 
  
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.41.08.png" alt=""><figcaption><p>Update firmware page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.41.08.png" alt=""><figcaption><p>Update firmware page</p></figcaption></figure>
 
 </div>
 

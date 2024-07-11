@@ -23,7 +23,7 @@ Any changes at the fleet level will apply to all devices in the fleet.
 
 The image below shows the Device Variables created when **Mobius**Flow® is deployed to balenaCloud.
 
-<figure><img src="../../.gitbook/assets/Balena Variables.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Variables.png" alt=""><figcaption></figcaption></figure>
 
 Expand the items below for detailed information on each Device Variable
 

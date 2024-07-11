@@ -14,7 +14,7 @@ This section outlines the major technologies reference in this training. Learnin
 
 MQTT (Message Queuing Telemetry Transport) is a lightweight and efficient publish-subscribe messaging protocol, commonly used in IoT (Internet of Things) applications.
 
-<figure><img src="../.gitbook/assets/draw-MQTT.drawio.png" alt=""><figcaption><p>MQTT Diagram</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/draw-MQTT.drawio.png" alt=""><figcaption><p>MQTT Diagram</p></figcaption></figure>
 
 MQTT is widely used for data transport throughout the MobiusFlow software.
 
@@ -30,7 +30,7 @@ A basic knowledge of JSON is required when using the Flows (logic engine) within
 
 EnOcean is a short distance wireless communication protocol used widely within the IoT space. Each EnOcean device has a unique identifier (UID) which is used to identify the sender of all EnOcean wireless telegrams.
 
-<figure><img src="../.gitbook/assets/image (32).png" alt="" width="563"><figcaption><p>Diagram of EnOcean devices and a MobiusFlow connector (EnOcean Transceiver / MQTT Converter)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="563"><figcaption><p>Diagram of EnOcean devices and a MobiusFlow connector (EnOcean Transceiver / MQTT Converter)</p></figcaption></figure>
 
 During this training, EnOcean will be used as an exemplar IoT technology to demonstrate MobiusFlow from the device level.
 
@@ -40,7 +40,7 @@ During this training, EnOcean will be used as an exemplar IoT technology to demo
 
 A MobiusFlow instance runs a central MobiusFlow Hub. Services, each of which have a function within the overall solution, reside on the hub, and use it as a relay to communicate information.
 
-<figure><img src="../.gitbook/assets/draw-URI Breakdown.drawio (1).png" alt=""><figcaption><p>MobiusFlow Hub / Service / Object hierarchy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/draw-URI Breakdown.drawio (1).png" alt=""><figcaption><p>MobiusFlow Hub / Service / Object hierarchy</p></figcaption></figure>
 
 A MobiusFlow object often represents a virtual equivalent of a real-world device, however can represent non-physical entities such as calculated data.
 
@@ -50,11 +50,11 @@ Some services can have MobiusFlow objects reside on them, often when the service
 
 A MobiusFlow object contains many resources, each being its own individual data stream representing something about that object.
 
-<figure><img src="../.gitbook/assets/draw-Points-Resources.drawio.png" alt=""><figcaption><p>MobiusFlow Object / Resource hierarchy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/draw-Points-Resources.drawio.png" alt=""><figcaption><p>MobiusFlow Object / Resource hierarchy</p></figcaption></figure>
 
 Below shows a screenshot from the MobiusFlow software of the list of resources associated to an EnOcean Temperature / Humidity / C02 sensor.
 
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 **A point is a chargeable resource**. Notice in the above screenshot, the points column is only populated for Temperature, Humidity and CO2.
 
@@ -106,11 +106,11 @@ This aims to show how data taken from EnOcean sensors at a hardware level, is br
 
 #### Project Schematic
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 The following shows a colorless project schematic representing lack of implementation. As the project is implemented, this diagram will be colored in so progress can easily shown.
 
-<figure><img src="../.gitbook/assets/it1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it1.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note that the EnOcean devices have been dropped from the diagram for simplicity
@@ -128,7 +128,7 @@ Add and start MQTT Broker service:
 
 {% @supademo/embed demoId="xStHe6UWWvbTYrBqlcUdU" url="https://app.supademo.com/demo/xStHe6UWWvbTYrBqlcUdU" %}
 
-<figure><img src="../.gitbook/assets/it6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it6.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 The MQTT Broker service has been added, configured and started.
@@ -146,7 +146,7 @@ Add a MobiusFlow connector object to the connectors service and configure:
 
 {% @supademo/embed demoId="gOuyB74D391kXXWWTMcxc" url="https://app.supademo.com/demo/gOuyB74D391kXXWWTMcxc" %}
 
-<figure><img src="../.gitbook/assets/it7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it7.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 The Connector service has been added, configured and started.
@@ -158,7 +158,7 @@ Add EnOcean Devices service, add EnOcean device objects to the service, and fina
 
 {% @supademo/embed demoId="WYcHRyM3hcqiaTqaWdM8b" url="https://app.supademo.com/demo/WYcHRyM3hcqiaTqaWdM8b" %}
 
-<figure><img src="../.gitbook/assets/it8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it8.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 The EnOcean devices service has been added, configured and started.
@@ -166,11 +166,11 @@ The EnOcean devices service has been added, configured and started.
 
 ### Connecting Hardware
 
-For full information on how to configure a MobiusFlow connector see [here](configuring-mobiusflow-connectors/configuring-a-connector/).
+For full information on how to configure a MobiusFlow connector see [here](../deploying-hardware/configuring-mobiusflow-connectors/configuring-a-connector/).
 
 {% @supademo/embed demoId="uE5baHAyFlNXcYRKvq0_y" url="https://app.supademo.com/demo/uE5baHAyFlNXcYRKvq0_y" %}
 
-<figure><img src="../.gitbook/assets/it9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it9.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 MobiusFlow connector is connected.
@@ -188,9 +188,9 @@ The data of any live object can viewed by navigating to that object and then cli
 
 ### Flows
 
-Connecting the flows to the MobiusFlow engine, as well as the baseline principles of pulling into the flows is covered [here](../technical-docs/flows/).
+Connecting the flows to the MobiusFlow engine, as well as the baseline principles of pulling into the flows is covered [here](../../technical-docs/flows/).
 
-<figure><img src="../.gitbook/assets/it10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/it10.png" alt=""><figcaption></figcaption></figure>
 
 ### Dashboard
 
@@ -198,6 +198,6 @@ In this example, the live state of the buttons on a 4-Rocker EnOcean switch is s
 
 {% @supademo/embed demoId="CpNsJwVOsJ9VTjfZMQ9hu" url="https://app.supademo.com/demo/CpNsJwVOsJ9VTjfZMQ9hu" %}
 
-<figure><img src="../.gitbook/assets/Keyed (1).png" alt=""><figcaption><p>Completed project schematic</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Keyed (1).png" alt=""><figcaption><p>Completed project schematic</p></figcaption></figure>
 
 Using dashboard in the way illustrated can be as simple or as complex as required. Display widgets include graphs, charts and tables, as well input widgets such as switches, buttons, drop-downs and text inputs. Full documentation of the Flows dashboard can be found [here](https://dashboard.flowfuse.com/getting-started.html).

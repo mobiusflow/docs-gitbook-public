@@ -12,11 +12,11 @@ Select your network type using the Connect Via dropdown. The page layout will ch
 
 <div>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.22 (1).png" alt=""><figcaption><p>Wired connection</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.22 (1).png" alt=""><figcaption><p>Wired connection</p></figcaption></figure>
 
  
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.34.png" alt=""><figcaption><p>Wireless connection</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.34.png" alt=""><figcaption><p>Wireless connection</p></figcaption></figure>
 
 </div>
 
@@ -30,11 +30,11 @@ You can choose to use a DHCP server to allocate the connector an IP Address or s
 
 <div>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.22.png" alt=""><figcaption><p>DHCP address</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.00.22.png" alt=""><figcaption><p>DHCP address</p></figcaption></figure>
 
  
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 16.11.07.png" alt=""><figcaption><p>Static address</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 16.11.07.png" alt=""><figcaption><p>Static address</p></figcaption></figure>
 
 </div>
 

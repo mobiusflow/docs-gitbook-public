@@ -4,7 +4,7 @@ description: License your MobiusFlow® instance
 
 # Adding Your Licence
 
-All **Mobius**Flow® instances require a valid licence to run. Licences define the maximum number of **Mobius**Flow® objects that you can add to an instance. For more information about **Mobius**Flow® licences refer to the [Licensing](../../technical-docs/licensing-v1.19.1-and-later.md) page.
+All **Mobius**Flow® instances require a valid licence to run. Licences define the maximum number of **Mobius**Flow® objects that you can add to an instance. For more information about **Mobius**Flow® licences refer to the [Licensing](../../../technical-docs/licencing/licensing-v1.19.1-and-later.md) page.
 
 ## What You Will Need?
 
@@ -24,7 +24,7 @@ Navigate to the correct **fleet** and **device**
 
 Select the **Device Variables** page. You will see a list of all of the device's variables with override buttons next to each variable
 
-<figure><img src="../../.gitbook/assets/Balena Variables.png" alt=""><figcaption><p>Device Variables for a device</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Variables.png" alt=""><figcaption><p>Device Variables for a device</p></figcaption></figure>
 
 Click the **override** button next to the **MOBIUS\_LICENCE** variable
 
@@ -32,13 +32,13 @@ In the popup delete the text _\<replace with your licence code> and_ **enter you
 
 Leave all other settings as their default values and click the **Add** button
 
-<figure><img src="../../.gitbook/assets/Balena Set Licence.png" alt=""><figcaption><p>Add a licence code</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Set Licence.png" alt=""><figcaption><p>Add a licence code</p></figcaption></figure>
 
 Your licence code will be shown in the Device Variables list (see [Device Variables](device-variables.md) for more information on all of the device variables shown in this list)
 
 **Mobius**Flow® will **restart** to install the licence&#x20;
 
-<figure><img src="../../.gitbook/assets/Balena Licence Entered.png" alt=""><figcaption><p>Licence entered</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Balena Licence Entered.png" alt=""><figcaption><p>Licence entered</p></figcaption></figure>
 
 ## Updating or Replacing a Licence
 
