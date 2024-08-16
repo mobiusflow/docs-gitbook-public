@@ -22,7 +22,7 @@ If a device is integrated, MobiusFlow will atomically handle the decoding of dev
 
 #### List of Integrated Device Types
 
-\<Coming soon>
+The list will be populated soon. Please contact support for enquires about specific devices.
 
 #### Unintegrated Device Types
 
@@ -100,7 +100,7 @@ To enqueue downlink messages to device types that have been integrated with Mobi
 
 <figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-This node will accept into its input an incoming unencoded payload as per how the manufacture's downlink encoder accepts messages.
+This node will accept into its input an incoming unencoded payload as per how the manufacture's downlink encoder accepts the messages.
 
 Inside the node's configuration allows specification of which device the downlink messages will be enqueued on. This is done by specifying the device's MobiusFlow URI which can either be pasted in or searched for.
 
@@ -145,26 +145,19 @@ The lorawan send raw node bypasses helpers and checks provided by MobiusFlow obj
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption><p>Configuration of lorawan send raw node showing example device EUI of AABBCCDDEEFF1122</p></figcaption></figure>
 
-The node does not have an output. This is because it uses a 'fire-and-forget' style mechanism and therefore cannot monitor if the action was successful or not.
+The node does not have an output. This is because it uses a 'fire-and-forget' style mechanism and therefore cannot monitor if the enqueue action was successful or not.
 
-The message payload must be fully encoded inside the function node. The result of this encoding must be a simple javascript string (not base 64 encoded). The LoRaWAN LNS service will automatically convert this into a string of bytes before the enqueue action.
+The message payload must be built inside the function node. The result of this encoding must be an object containing the required LoRaWAN **fPort** as well the **data** property. This data property contains the raw data that will be enqueued (**hex bytes in string**).
 
 The contents of the above example function node are shown below.
 
 ```javascript
-function myEncoderFunction(payload) {
-    // do the encoding
-    let encodedPayload = payload;
-    return encodedPayload;
-}
-
-// start with an unencoded payload
+// ensure payload contains fPort and data (hex bytes in string format)
 msg.payload = {
-    some: 'this_is_not_encoded',
+    fPort: 0,
+    data: '0C1A01230024',
+    confirmed: true
 }
-
-// ensure it is encoded into a string as per datasheet guidlines
-msg.payload = myEncoderFunction(msg.payload) // encoded string
 return msg;
 ```
 
@@ -184,9 +177,9 @@ To the object's configuration is set with the correct device EUI and App Key, da
 
 ### Downlink
 
-Downlink is handled in the same manner as for integrated device types. If using the lorawan\_send\_downlink node, for the lorawan\_generic\_device object type no checks are made regarding the format of the payload. As such, ensure the message is pre-encoded into a raw string. The LoRaWAN LNS will convert this into bytes before enqueuing the message.
+Downlink is handled in the same manner as for integrated device types. If using the lorawan\_send\_downlink node, for the lorawan\_generic\_device object type, no checks are made regarding the format of the payload. As such, ensure the message is pre-encoded into an object containing the fPort and data (hex bytes as string) properties.
 
-The lorawan\_send\_raw node can also be used as before to enqueue downlink message to unintegrated device types.
+The lorawan\_send\_raw node can also be used as before, to enqueue downlink message to unintegrated device types.
 
 ## LNS Backend (Chirpstack)
 
