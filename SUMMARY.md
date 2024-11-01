@@ -59,6 +59,7 @@
   * [LoRaWAN Local Network Server](technical-docs/mobiusflow-services/lorawan-local-network-server.md)
   * [Mobius Connectors](technical-docs/mobiusflow-services/mobius-connectors/README.md)
     * [Receiving and Sending Raw EnOcean Telegrams](technical-docs/mobiusflow-services/mobius-connectors/receiving-and-sending-raw-enocean-telegrams.md)
+  * [INGY Lighting](technical-docs/mobiusflow-services/ingy-lighting.md)
 * [Flows](technical-docs/flows/README.md)
   * [Connecting to Flows to MobiusFlow Engine](technical-docs/flows/connecting-to-flows-to-mobiusflow-engine.md)
   * [Data Transfer between Flows and MobiusFlow Engine](technical-docs/flows/data-transfer-between-flows-and-mobiusflow-engine.md)
