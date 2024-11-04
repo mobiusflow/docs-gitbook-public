@@ -6,7 +6,7 @@ The Administration page covers user management, backup and restore, licence sett
 
 Users can be added, modified and deleted from within the User Management Tab on the Administration page.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Backup/Restore <a href="#nodeadministration-backup-restore" id="nodeadministration-backup-restore"></a>
 

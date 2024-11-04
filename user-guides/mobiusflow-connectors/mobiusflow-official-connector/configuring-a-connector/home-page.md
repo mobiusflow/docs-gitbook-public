@@ -14,7 +14,7 @@ Manage all certificates for TLS connections. The default certificates are for **
 
 ### Configure MQTT
 
-Configure the connection to the MQTT broker you chose when [configuring MobiusFlow® for connectors](../configuring-mobiusflow-r.md)
+Configure the connection to the MQTT broker you chose when [configuring MobiusFlow® for connectors](../../configuring-mobiusflow-for-use-with-connectors.md)
 
 ### Set Config Mode Password
 

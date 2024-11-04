@@ -166,7 +166,7 @@ The EnOcean devices service has been added, configured and started.
 
 ### Connecting Hardware
 
-For full information on how to configure a MobiusFlow connector see [here](../deploying-hardware/configuring-mobiusflow-connectors/configuring-a-connector/).
+For full information on how to configure a MobiusFlow connector see [here](../mobiusflow-connectors/mobiusflow-official-connector/configuring-a-connector/).
 
 {% @supademo/embed demoId="uE5baHAyFlNXcYRKvq0_y" url="https://app.supademo.com/demo/uE5baHAyFlNXcYRKvq0_y" %}
 
