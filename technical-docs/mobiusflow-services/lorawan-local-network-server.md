@@ -36,6 +36,7 @@ Currently supported regions are shown in the following list:
 
 * EU868
 * US915\_0
+* US915\_1
 
 Support for all regions is planned for the near future. To request support for a specific region, please contact MobiusFlow support at info@mobiusflow.com.
 
@@ -69,6 +70,7 @@ The exact port number depends on which region the gateway is operating in. See t
 | -------- | ---- |
 | EU868    | 1700 |
 | US915\_0 | 1701 |
+| US915\_1 | 1702 |
 
 {% hint style="warning" %}
 It is critical the correct port i used. The gateway may still be able to connect if the incorrect port is used, however this will cause the LNS to confuse the region of this gateway causing further problems.
