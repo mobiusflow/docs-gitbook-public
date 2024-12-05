@@ -16,7 +16,7 @@ Node-RED can be used independently of MobiusFlow, however if you want move data 
 
 A set of MobiusFlow specific nodes have been created to facilitate data transmission between the Flows and the MobiusFlow Engine. The nodes are found in the Node-RED package [node-red-contrib-mobius-flow-base](https://flows.nodered.org/node/node-red-contrib-mobius-flow-base). If you're using Node-RED pre-packaged with MobiusFlow, this package will be installed by default however if you're using Node-RED running elsewhere, you will need to add this to your palette using the Node-RED palette manager.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>The correct package shown in the Node-RED palette manager search results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>The correct package shown in the Node-RED palette manager search results</p></figcaption></figure>
 
 ## Setting up MobiusFlow Connection
 
@@ -24,7 +24,7 @@ A MobiusFlow connection is defined within a Node-RED configuration node. Once de
 
 To create a new connection, open the config window of any MobiusFlow node. If no connection has yet been defined, the node will prompt you to add a new one.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption><p>Prompt to add a new connection shown here within a getResource node configuration window</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Prompt to add a new connection shown here within a getResource node configuration window</p></figcaption></figure>
 
 Clicking the pencil icon will open the new connection's configuration window.
 

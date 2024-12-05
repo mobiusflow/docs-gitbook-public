@@ -81,7 +81,7 @@ Each lighting group supports 8 different scenes (numbered 0 - 7). These may have
 Note that: If the INGY App has been used to pre-set up some scenes, MobiusFlow will still allow you to change these settings. As such, it as advised to adhere to a common source of truth, either configuring all scenes within the INGY App or within MobiusFlow.
 {% endhint %}
 
-It may be possible that the real-world scene setting levels or MobiusFlow have become out of synchronous. This could have been caused if they were changed my something that was not MobiusFlow, such the INGY app or API. To ensure the real-world scene level settings do match the settings within MobiusFlow, set the _resendSetLevelCommands_ (RID 83) to true. Note that MobiusFlow will immediately reset this back to false, whilst also resending the command to set the scene level settings of all scenes.
+It may be possible that the real-world scene setting levels or MobiusFlow have become out of synchronous. This could have been caused if they were changed by something that was not MobiusFlow, such the INGY app or INGY API. To ensure the real-world scene level settings do match the settings within MobiusFlow, set the _resendSetLevelCommands_ (RID 83) to _true_. Note that MobiusFlow will immediately reset this back to _false_, whilst also resending the command to set the scene level settings of all scenes.
 
 ### Changing Scene
 
@@ -126,7 +126,7 @@ The known group membership of all devices is automatically queried by MobiusFlow
 
 The group membership of a given device can be changed by setting the _setGroup_ resource. The _knownGroupMembership_ resource should reflect this change after a period of time.
 
-Sometimes it may be required that the command to group a given INGY device needs to be resent. This often can occur if the device is offline with the original setGroup command is sent. In this situation, set the sendRegroup resource to true. Note that, MobiusFlow will immediately set this resource back to false whilst sending the regroup command.
+Sometimes it may be required that the command to group a given INGY device needs to be re-sent. This often can occur if the device is offline when the original setGroup command is sent. In this situation, set the sendRegroup resource to _true_. Note that, MobiusFlow will immediately set this resource back to false whilst sending the regroup command.
 
 ### Data
 
@@ -142,7 +142,7 @@ Note that all INGY flow nodes share the MobiusFlow connection configuration node
 
 ### INGY Spy Node
 
-The INGY Spy node is used to view all the coming from INGY gateway. This includes data sent out over the INGY gateway's datastream as well as directly viewing all API commands and responses.
+The INGY Spy node is used to view all the Datastream and API messages coming from INGY gateway. This includes data sent out over the INGY gateway's datastream as well as directly viewing all API commands and responses.
 
 <figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
@@ -158,7 +158,7 @@ The node must be aimed at a specific MobiusFlow INGY service within the node's c
 
 The node takes input messages who's payload must be formatted to be a valid INGY API command as shown in the INGY API documentation. The response to this command will be outputted from the nodes output.
 
-It is recomendded a function is used to set the command body as shown in the example flow below:
+It is recommended a function is used to set the command body as shown in the example flow below:
 
 <figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 

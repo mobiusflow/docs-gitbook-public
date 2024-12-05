@@ -4,7 +4,7 @@ description: For MobiusFlow 1.x.x only
 
 # Service and Object Configuration
 
-The configuration page is used to create and configure the MobiusFlow configuration for a Mobius node (see [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md)). The page is split into five main sections:
+The configuration page is used to create and configure the MobiusFlow configuration for a Mobius node (see [MobiusFlow Architecture](../../technical-docs/mobiusflow-basics/mobiusflow-architecture.md)). The page is split into five main sections:
 
 1. **The main menu**
 2. **The services palette**

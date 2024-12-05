@@ -23,19 +23,19 @@ The simplest 'Get' nodes come in the form of getResource and getObject nodes, wh
 
 Both the getResource and getObject nodes require a MobiusFlow URI to be specified to control which data they fetch. This is set within the node configuration.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration window of the getResource node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration window of the getResource node</p></figcaption></figure>
 
 In the above example, the URI has been set to the resource 000001/027/0201/0001/40. Upon clicking done, the node label reflects this specification.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Node label of the getResource node reflecting the specified resource URI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Node label of the getResource node reflecting the specified resource URI</p></figcaption></figure>
 
 When the getResource or getObject nodes receive an input message, the 'Get' will be performed and the results will be sent out of the node's outputs. In the above case, clicking the inject button will trigger the flow causing the 'Get' to occur, and the output of this will be detected and displayed by the debug node.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Debug window showing the result of the triggered flow. In this case the current value of specified resource was 0</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Debug window showing the result of the triggered flow. In this case the current value of specified resource was 0</p></figcaption></figure>
 
 The getObject node works in an identical way however an object URI is specified instead of a resource URI.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Result of equivalent flow when using getObject node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Result of equivalent flow when using getObject node</p></figcaption></figure>
 
 Note that the output from a getObject node is more complex due to the data from a whole MobiusFlow object (including all resources) being pulled rather than just a specified resource.
 
@@ -45,18 +45,18 @@ Basic COV nodes include the resourceCov and objectCov nodes. These directly refl
 
 The nodes are configured in the same way, by specifying either a resource URI or object URI.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Example flow of a resourceCov node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Example flow of a resourceCov node</p></figcaption></figure>
 
 In the above example, the resourceCov node has responded the resource of URI 000001/027/0201/0001/40 changing to value of 1. This is reflected in the debug window.
 
 The equivalent flow can also be constructed for the objectCov node. This flow will a respond to a change of any of the resources contained within the specified object.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p>Example flow of the objectCov node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption><p>Example flow of the objectCov node</p></figcaption></figure>
 
 Notice, in the case of the objectCov node, in the debug window only changed resource are shown (in this case the objectLastUpated time and the value). It can be changed in the nodes configuration so all resources are contained in the output message if this is required.
 
 {% hint style="info" %}
-The getResource, getObject, resourceCov and objectCov nodes can also make use or [URI wildcarding](../../user-guides/mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards), allowing for a group of objects or resources to be selected instead of a just one.
+The getResource, getObject, resourceCov and objectCov nodes can also make use or [URI wildcarding](../mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards), allowing for a group of objects or resources to be selected instead of a just one.
 
 
 {% endhint %}
@@ -65,13 +65,13 @@ The getResource, getObject, resourceCov and objectCov nodes can also make use or
 
 You may have noticed that in the case of the some nodes, an extra output is present. This output provides a response with an increased level of information if this is required in your flow.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption><p>Example usage of second output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>Example usage of second output</p></figcaption></figure>
 
 Notice in the above debug window, the resultant response contains both the name of the resource as well as its new value, instead of just the value itself.
 
 Increasing the level of detail of the output response can be further expanded for almost all MobiusFlow nodes by enabling the 'Use detailed outputs' option in the node configuration.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>ResourceCov node with 'Use detailed outputs' enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption><p>ResourceCov node with 'Use detailed outputs' enabled</p></figcaption></figure>
 
 Notice now in the flow below that the node now has four outputs. Each output has an ever increasing level of detail and this is shown in the four responses in the debug window.
 
@@ -81,7 +81,7 @@ Notice now in the flow below that the node now has four outputs. Each output has
 
 There is an array of other node types which allow data fetching from the MobiusFlow Engine in a variety of specific ways. These will not be explained in full but will be summarised here.
 
-<table><thead><tr><th width="166.33333333333331">Node Type</th><th width="96">Type</th><th>Explanation</th></tr></thead><tbody><tr><td>Mobius Flow Inject</td><td>COV</td><td>Allows the definition of a set included or exluded URIs (including <a href="../../user-guides/mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>). The node will act similar to an objectCov node for all of these included (but not excluded) URIs and output their data into your flow in the MobiusFlow Inject standard format. Nodei s very useful when linked with a Cloud Format node to allow data to be send to cloud application.</td></tr><tr><td>Get Multi-Object</td><td>Get</td><td>Get several objects in a single message when triggered based on a pre-specified set of URIs (including <a href="../../user-guides/mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>).</td></tr><tr><td>Filter by Rid Value</td><td>Get</td><td>Allows a set of objects to be specified as well as a single resource. When triggered, the node will test the specified resource of all objects against a user defined filtration function and will output a list of all objects which passed the filter.</td></tr><tr><td>Discover</td><td>Get</td><td>Allows a the discovery of MobiusFlow entities based on a URI specified within the input topic. The discovery will work on any level (service / profile / object / etc. ) based on how specified the input URI is.</td></tr><tr><td>Discover Object List</td><td>Get</td><td>Works the same as the discover node however allows a set of URIs to specified (including <a href="../../user-guides/mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>). Node outputs all discovered MobiusFlow entities as either individual messages or a single array packaged message.</td></tr></tbody></table>
+<table><thead><tr><th width="166.33333333333331">Node Type</th><th width="96">Type</th><th>Explanation</th></tr></thead><tbody><tr><td>Mobius Flow Inject</td><td>COV</td><td>Allows the definition of a set included or exluded URIs (including <a href="../mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>). The node will act similar to an objectCov node for all of these included (but not excluded) URIs and output their data into your flow in the MobiusFlow Inject standard format. Nodei s very useful when linked with a Cloud Format node to allow data to be send to cloud application.</td></tr><tr><td>Get Multi-Object</td><td>Get</td><td>Get several objects in a single message when triggered based on a pre-specified set of URIs (including <a href="../mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>).</td></tr><tr><td>Filter by Rid Value</td><td>Get</td><td>Allows a set of objects to be specified as well as a single resource. When triggered, the node will test the specified resource of all objects against a user defined filtration function and will output a list of all objects which passed the filter.</td></tr><tr><td>Discover</td><td>Get</td><td>Allows a the discovery of MobiusFlow entities based on a URI specified within the input topic. The discovery will work on any level (service / profile / object / etc. ) based on how specified the input URI is.</td></tr><tr><td>Discover Object List</td><td>Get</td><td>Works the same as the discover node however allows a set of URIs to specified (including <a href="../mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md#mobiusflowuniformresourceidentifiers-mobiusuriwildcards">wildcards</a>). Node outputs all discovered MobiusFlow entities as either individual messages or a single array packaged message.</td></tr></tbody></table>
 
 ## Moving data from Flows to MobiusFlow Engine
 

@@ -12,7 +12,7 @@ description: Deploy MobiusFlow® to a balenaCloud fleet
 {% hint style="danger" %}
 You should always backup your MobiusFlow® device before deploying a new version.
 
-See [Backup and Restore](../../mobiusflow/backup-and-restore.md) for more details
+See [Backup and Restore](../../../technical-docs/mobiusflow-basics/backup-and-restore.md) for more details
 {% endhint %}
 
 ## Deploying from balenaHub
@@ -28,6 +28,10 @@ Navigate to [balenaHub](https://hub.balena.io/apps) to select which version of *
 Navigate to the **Apps** page
 
 Search for **MobiusFlow**
+
+{% hint style="info" %}
+If this guide is being followed in the context of deploying MobiusFlow Connector software to as Raspberry Pi, ensure MobiusFlow Connector apps are used instead of the standard MobiusFlow App.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/BalenaHub Search.png" alt=""><figcaption><p>balenaHub search</p></figcaption></figure>
 

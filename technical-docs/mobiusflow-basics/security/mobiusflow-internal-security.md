@@ -10,7 +10,7 @@ If communication is required between Mobius nodes, a Mobius router is added to t
 \
 One of the most important part of MobiusFlow is the “ Mobius protocol” over MQTT. This is a predefined set of MQTT topics based around the Mobius object URIs which allows “two way point to point” messaging via MQTT. This means that Mobius nodes and microservices can discover other nodes, services, objects and resources and microservices can read and write resource values on objects belonging to any other microservice on any node within a Mobius system. In addition to reading a writing, a microservice can subscribe to object or resource level change of value (COV) messages.\
 \
-_The MobiusFlow protocol is similar to the LWM2M protocol but over MQTT._
+&#xNAN;_&#x54;he MobiusFlow protocol is similar to the LWM2M protocol but over MQTT._
 
 The [Mobius architecture](../mobiusflow-architecture.md) is designed to allow efficient communication for IoT Devices whilst providing structure and definable trust boundaries.
 
@@ -34,7 +34,7 @@ After successful authentication the service will have a copy of the psk of all s
 
 Once passing traffic the MQTT message will consist of:
 
-the JSON Web Token will also carry the topic, the message payload itself, and a timestamp this will all be hashed along with the service own key creating a [HMAC ](https://en.wikipedia.org/wiki/Hash-based\_message\_authentication\_code)to allow integrity checking:
+the JSON Web Token will also carry the topic, the message payload itself, and a timestamp this will all be hashed along with the service own key creating a [HMAC ](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)to allow integrity checking:
 
 The time stamp will allow for the message to have a validity life span that can be configured for all services connected to the hub. Internally all messages will be signed in this way and therefore provide a high degree of integrity to the internal communication.
 
@@ -62,7 +62,7 @@ Node Peering will require the provision of a MQTT broker capable of using [MQTT 
 
 &#x20;In larger deployments of nodes peering may not be viable because of the administrative overhead, or there may be low confidence in the network integrity. there may also be a require to not only ensure Authenticity and Integrity of messages, but also confidentiality.
 
-to achieve this the nodes should utilise WebSockets over [Transport Layer Security ](https://en.wikipedia.org/wiki/Transport\_Layer\_Security)(TLS), this is in fact simply a [HTTP ](https://en.wikipedia.org/wiki/Hypertext\_Transfer\_Protocol)upgrade in the same way WebSockets are used, on a [HTTPS ](https://en.wikipedia.org/wiki/HTTPS)connection
+to achieve this the nodes should utilise WebSockets over [Transport Layer Security ](https://en.wikipedia.org/wiki/Transport_Layer_Security)(TLS), this is in fact simply a [HTTP ](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)upgrade in the same way WebSockets are used, on a [HTTPS ](https://en.wikipedia.org/wiki/HTTPS)connection
 
 In this case it will almost always be easier to provide the node with access to the public internet where things like server name resolution and certificate control are well practised and understood.
 

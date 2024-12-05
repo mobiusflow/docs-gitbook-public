@@ -45,6 +45,6 @@ Clicking on the plus sign (3) next to an object expands it to show all of its re
 
 ### Modifying a resource value <a href="#nodediagnosticsandservicecontrol-modifyingaresourcevalue" id="nodediagnosticsandservicecontrol-modifyingaresourcevalue"></a>
 
-It is possible to manually modify a resource's value by writing to, or clearing a value in its priority array (see [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md)). Click on a resource to display its full priority array. Click on a priority to modify its value or clear it.
+It is possible to manually modify a resource's value by writing to, or clearing a value in its priority array (see [MobiusFlow Architecture](../../technical-docs/mobiusflow-basics/mobiusflow-architecture.md)). Click on a resource to display its full priority array. Click on a priority to modify its value or clear it.
 
 Resource value modifications are temporary and could be overwritten by a service or Node-RED flow, and do not persist between service restarts or node reboots.

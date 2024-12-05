@@ -10,8 +10,8 @@ Users can be added, modified and deleted from within the User Management Tab on 
 
 ## Backup/Restore <a href="#nodeadministration-backup-restore" id="nodeadministration-backup-restore"></a>
 
-Backup and restore functionality is accessed via the settings tab on the Administration page. A full article covering backup and restore can be found [here](../mobiusflow/backup-and-restore.md).
+Backup and restore functionality is accessed via the settings tab on the Administration page. A full article covering backup and restore can be found [here](../../technical-docs/mobiusflow-basics/backup-and-restore.md).
 
 ## Setting the Hub ID <a href="#nodeadministration-settingthehubid" id="nodeadministration-settingthehubid"></a>
 
-All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../mobiusflow/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../mobiusflow/mobiusflow-uniform-resource-identifiers-uris.md) for more information about Hub IDs.
+All Mobius nodes are identified by their hub ID. This is a six character hexadecimal number and should be unique within any group of Mobius nodes. See [MobiusFlow Architecture](../../technical-docs/mobiusflow-basics/mobiusflow-architecture.md) and [MobiusFlow Uniform Resource Identifiers](../../technical-docs/mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md) for more information about Hub IDs.
