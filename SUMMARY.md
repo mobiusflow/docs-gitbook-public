@@ -62,6 +62,7 @@
   * [Command](technical-docs/mobiusflow-engine-api/command.md)
   * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
   * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
+  * [Licence](technical-docs/mobiusflow-engine-api/licence.md)
 * [MobiusFlow Services](technical-docs/mobiusflow-services/README.md)
   * [DALI Lighting](technical-docs/mobiusflow-services/dali-lighting/README.md)
     * [DALI via AFDWeb MQTT](technical-docs/mobiusflow-services/dali-lighting/dali-via-afdweb-mqtt.md)
