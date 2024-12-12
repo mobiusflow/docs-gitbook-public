@@ -7,7 +7,13 @@ description: >-
 
 # Data Transfer between Flows and MobiusFlow Engine
 
-All Node-RED nodes that facilitate the data transfer between the MobiusFlow Engine and the Flows are contained in the [node-red-contrib-mobius-flow-base](https://flows.nodered.org/node/node-red-contrib-mobius-flow-base) package. Ensure you add this package to your palette to continue. Also ensure you have setup a connection between the MobiusFlow engine and the Flows by following this [guide](connecting-to-flows-to-mobiusflow-engine.md).
+Understanding the following articles is recommended before reading this article:
+
+* [MobiusFlow Architecture](../mobiusflow-basics/mobiusflow-architecture.md)
+* [MobiusFlow URIs](../mobiusflow-basics/mobiusflow-uniform-resource-identifiers-uris.md)
+* [Connecting Flows to MobiusFlow Engine](connecting-the-flows-to-mobiusflow-engine.md)
+
+All Node-RED nodes that facilitate the data transfer between the MobiusFlow Engine and the Flows are contained in the [node-red-contrib-mobius-flow-base](https://flows.nodered.org/node/node-red-contrib-mobius-flow-base) package. Ensure you add this package to your palette to continue. Also ensure you have setup a connection between the MobiusFlow engine and the Flows by following this [guide](connecting-the-flows-to-mobiusflow-engine.md).
 
 All specific information on how to use each node can also be found within that nodes help pane within Node-RED. As well as this guide, we recommend using the help panes as a close reference when first learning how these nodes are used.
 
@@ -23,19 +29,19 @@ The simplest 'Get' nodes come in the form of getResource and getObject nodes, wh
 
 Both the getResource and getObject nodes require a MobiusFlow URI to be specified to control which data they fetch. This is set within the node configuration.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration window of the getResource node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration window of the getResource node</p></figcaption></figure>
 
 In the above example, the URI has been set to the resource 000001/027/0201/0001/40. Upon clicking done, the node label reflects this specification.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Node label of the getResource node reflecting the specified resource URI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Node label of the getResource node reflecting the specified resource URI</p></figcaption></figure>
 
 When the getResource or getObject nodes receive an input message, the 'Get' will be performed and the results will be sent out of the node's outputs. In the above case, clicking the inject button will trigger the flow causing the 'Get' to occur, and the output of this will be detected and displayed by the debug node.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Debug window showing the result of the triggered flow. In this case the current value of specified resource was 0</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Debug window showing the result of the triggered flow. In this case the current value of specified resource was 0</p></figcaption></figure>
 
 The getObject node works in an identical way however an object URI is specified instead of a resource URI.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Result of equivalent flow when using getObject node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Result of equivalent flow when using getObject node</p></figcaption></figure>
 
 Note that the output from a getObject node is more complex due to the data from a whole MobiusFlow object (including all resources) being pulled rather than just a specified resource.
 
@@ -45,7 +51,7 @@ Basic COV nodes include the resourceCov and objectCov nodes. These directly refl
 
 The nodes are configured in the same way, by specifying either a resource URI or object URI.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Example flow of a resourceCov node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example flow of a resourceCov node</p></figcaption></figure>
 
 In the above example, the resourceCov node has responded the resource of URI 000001/027/0201/0001/40 changing to value of 1. This is reflected in the debug window.
 

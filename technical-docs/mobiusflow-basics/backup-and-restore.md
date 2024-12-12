@@ -8,7 +8,7 @@ In summary, all configuration data of a MobiusFlow instance can be **stored with
 
 All backup and restore functionality is accessed through the '**Backup/Restore' menu** located on the '**Administration' Tab**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Backup/Restore Menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Backup/Restore Menu</p></figcaption></figure>
 
 ## Backup
 
@@ -22,11 +22,11 @@ Giving the backup an appropriate name is recommended. In the above example, the 
 
 Once the backup file has been created, click '**Download Zip**' to download it.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Location of backup file download button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Location of backup file download button</p></figcaption></figure>
 
 Alternatively, the you can click '**Request new backup**' to return to the previous menu and generate an updated backup file.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Downloaded backup file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Downloaded backup file</p></figcaption></figure>
 
 Be sure to save your backup file in a safe location! There is nothing worse than not being able to find a much needed backup file.
 
@@ -36,17 +36,17 @@ The restore feature is particularly useful if you want to copy a MobiusFlow conf
 
 The **'Backup/Restore' menu** is also used for restoring. You can restore by first clicking '**Upload Zip**' and then **browsing to the .zip** backup file you previously saved in a safe place.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Upload Zip button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Upload Zip button</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Browsing to backup file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Browsing to backup file</p></figcaption></figure>
 
 Once uploaded, the menu will **show the backup information** as well as allowing you to click '**Restore**'.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Uploaded backup file information and restore button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Uploaded backup file information and restore button</p></figcaption></figure>
 
 Accept the a confirmation dialog to proceed.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirmation Dialog</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirmation Dialog</p></figcaption></figure>
 
 You will be notified that the restoration process has started and then MobiusFlow will then **reboot**, completing the restore process.
 

@@ -117,11 +117,11 @@ The two object types are tabulated below.
 
 A single instance of both of these objects is shown live on an _adfweb dali mqtt_ service in the screenshot below. The screenshot also shows the configuration page for the luminaire object. A DALI short address should be entered to match that of a real-world DALI luminaire.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuration page for a DALI luminaire MobiusFlow object</p></figcaption></figure>
 
 The configuration window of a group object is shown in the screenshot below. Similarly to a luminaire, a group address should be added to represent the group number of the DALI group this object will represent.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>The configuration of page of a DALI group MobiusFlow object</p></figcaption></figure>
 
 ### Control
 
@@ -135,7 +135,7 @@ Within a luminaire, a resource exists for each group, allowing you to choose whi
 
 The screenshot below partially shows the resource list for the luminaire object.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Resource list of the DALI luminaire oject</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Resource list of the DALI luminaire oject</p></figcaption></figure>
 
 {% hint style="info" %}
 Note that, the group membership of all luminaires should be set via changing the default value of any group membership resource prior to starting the _adfweb dali mqtt_ service. **Do not make the mistake of changing the live value** of these resources after the service has started. Although this will work, if the service is restarted, this group membership information **will not be saved**.
@@ -143,13 +143,13 @@ Note that, the group membership of all luminaires should be set via changing the
 
 The group object is simpler. As querying the level of a whole group is not possible in DALI, no known level resource exists. As with the luminaire, the lighting level of the DALI group can be changed by setting the setPoint resource.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Resource list for DALI group object</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Resource list for DALI group object</p></figcaption></figure>
 
 #### Flows Examples
 
 Below is an example of a simple flow with two inject buttons, one to set the level to 95% and the other to 5%. The inject nodes are linked to a setResource node which setup to set the setPoint resource of a live DALI luminaire (resource 000001/020/027A/41).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A very similar flow is shown to change the level of a group between 80% and 10%. In this case the setResource has been set to set the setPoint resource of the DALI group (resource 000001/020/027B/0001/41.
 
