@@ -70,7 +70,7 @@
   * [MobiusFlow Connectors](technical-docs/mobiusflow-services/mobiusflow-connectors.md)
   * [INGY Lighting](technical-docs/mobiusflow-services/ingy-lighting.md)
   * [Object Store](technical-docs/mobiusflow-services/object-store.md)
-  * [EnOcean Devices](technical-docs/mobiusflow-services/enocean-devices/README.md)
+  * [EnOcean Devices](technical-docs/mobiusflow-services/enocean-devices.md)
     * [EnOcean Equipment Profiles (EEPs)](technical-docs/mobiusflow-services/enocean-devices/enocean-equipment-profiles-eeps.md)
 * [Flows](technical-docs/flows/README.md)
   * [Connecting the Flows to MobiusFlow Engine](technical-docs/flows/connecting-the-flows-to-mobiusflow-engine.md)
