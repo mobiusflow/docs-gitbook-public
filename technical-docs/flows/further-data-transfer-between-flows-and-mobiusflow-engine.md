@@ -57,7 +57,7 @@ The full JSON response is copyable in the code block below:
 
 ## Get Multi-Object
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 The get Multi-Object node gets multiple objects based on a defined set of object URIs.
 
@@ -73,7 +73,7 @@ The use of URI Wildcards is NOT valid here. For this feature, consider using the
 
 More URI rows can be added using the add button at the bottom left of the Objects table. The following screenshot shows an example node's config populated with 3 object URIs:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example populated config window of Get Multi-Object Node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example populated config window of Get Multi-Object Node</p></figcaption></figure>
 
 ### Input
 
@@ -89,13 +89,13 @@ The node outputs an array of MobiusFlow objects. The following code block is a c
 
 ## Get Multi-Resource
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 The get Multi-Resource node returns multiple resources based on a specified set of resource URIs.&#x20;
 
 ### Config
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="523"><figcaption><p>Config window for the Get Multi-Resource node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="523"><figcaption><p>Config window for the Get Multi-Resource node</p></figcaption></figure>
 
 The node requires of one or more resource URIs to be defined in the resources table.
 

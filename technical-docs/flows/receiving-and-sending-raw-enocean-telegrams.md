@@ -8,11 +8,11 @@ This article aims to explain how raw EnOcean telegrams can be sent and received 
 
 EnOcean telegrams can be received and injected into a given flow using the Subscribe to Broadcast Command node, labeled 'sub bcmd'. This node is shown below.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="195"><figcaption><p>Sub bcmd node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="195"><figcaption><p>Sub bcmd node</p></figcaption></figure>
 
 Within the node's configuration, you can specify a Mobius Command ID. This Command ID controls which type of incoming telegrams the node receives.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="467"><figcaption><p>Sub bcmd node configuration pane</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="467"><figcaption><p>Sub bcmd node configuration pane</p></figcaption></figure>
 
 Once an incoming telegram of the specified type is detected by the sub bcmd node, the node will forward this telegram out of its output.
 
@@ -20,7 +20,7 @@ Once an incoming telegram of the specified type is detected by the sub bcmd node
 
 The table below shows which Command ID entries relate to which telegram types. The table also shows screenshots of each Command ID being used within the sub bcmd node configuration.
 
-<table data-header-hidden><thead><tr><th width="158.33333333333331"></th><th width="260"></th><th></th></tr></thead><tbody><tr><td><strong>Type</strong></td><td><strong>Command ID</strong></td><td><strong>Example Screenshot</strong></td></tr><tr><td><p>ERP1</p><p>(EnOcean Radio Protocol 1- Fixed Length)</p></td><td>ENOCEAN_RADIO_ERP1</td><td><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>ERP1 VLD (EnOcean Radio Protocol 1 - Variable Length</td><td>ENOCEAN_RADIO_ERP1_VLD</td><td><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>MSC (Manufactuere Specific Commands)</td><td>ENOCEAN_RADIO_MSC</td><td><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>RMC (Remote Management Command)</td><td>ENOCEAN_RADIO_RMC</td><td><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" data-size="original"></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="158.33333333333331"></th><th width="260"></th><th></th></tr></thead><tbody><tr><td><strong>Type</strong></td><td><strong>Command ID</strong></td><td><strong>Example Screenshot</strong></td></tr><tr><td><p>ERP1</p><p>(EnOcean Radio Protocol 1- Fixed Length)</p></td><td>ENOCEAN_RADIO_ERP1</td><td><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>ERP1 VLD (EnOcean Radio Protocol 1 - Variable Length</td><td>ENOCEAN_RADIO_ERP1_VLD</td><td><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>MSC (Manufactuere Specific Commands)</td><td>ENOCEAN_RADIO_MSC</td><td><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="" data-size="original"></td></tr><tr><td>RMC (Remote Management Command)</td><td>ENOCEAN_RADIO_RMC</td><td><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" data-size="original"></td></tr></tbody></table>
 
 ### Example <a href="#example" id="example"></a>
 
@@ -30,7 +30,7 @@ In this example, a Sub BCMD node is used to subscribe to incoming EnOcean RMC te
 
 The configuration of the sub bcmd node is shown below.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="467"><figcaption><p>Sub bcmd node configured to respond to ENOCEAN_RADIO_RMC telegrams</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="467"><figcaption><p>Sub bcmd node configured to respond to ENOCEAN_RADIO_RMC telegrams</p></figcaption></figure>
 
 ## Sending <a href="#sending" id="sending"></a>
 

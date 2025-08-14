@@ -48,7 +48,7 @@ When on the the home page,  the current status of the connector is shown. This i
 
 <table><thead><tr><th width="211">Property</th><th>Notes</th></tr></thead><tbody><tr><td>Serial Number</td><td>Required in the MobiusFlow connectors service. Note that this is copyable using the copy button displayed next to the number is itself</td></tr><tr><td>Ethernet Connection Status</td><td>The IP address will be displayed if connected</td></tr><tr><td>WiFI Connection Status</td><td>The IP address will be displayed if connected</td></tr><tr><td>On-Board WiFi Hotspot (Labelled WiFi AP)</td><td>Will show a green tick if the On-Board WiFi Access point is enabled</td></tr><tr><td>MQTT Connected</td><td>Will show a green tick to indicate the connector is has connected to MobiusFlow</td></tr><tr><td>Module 1 / Module 2</td><td>Will show which types of transceivers are physically connected to the Raspberry Pi</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Connector configuration home page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration home page</p></figcaption></figure>
 
 The main menu also allows navigation to the connectors configuration pages. These includes those for Network Configuration, MQTT Configuration, Certification Configuration, and the Change Password page (allows the connector configuration password to be changed).
 
@@ -64,7 +64,7 @@ The connection type allows choosing between a Wired or WiFi connection.&#x20;
 
 If using a Wired connection, ensure the Raspberry Pi is plugged in via Ethernet.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, in wired network mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, in wired network mode</p></figcaption></figure>
 
 If using WiFi mode, the WiFi SSID and corresponding password must be populated.
 
@@ -72,7 +72,7 @@ If using WiFi mode, the WiFi SSID and corresponding password must be populated.
 Note that: In WiFi mode, the Wired network interface will remain enabled in the background. This acts as a secondary fall back interface, useful for accessing the connector the WiFi has failed to connect.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, in WiFi network mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, in WiFi network mode</p></figcaption></figure>
 
 {% hint style="info" %}
 Note that: If using in WiFi mode, using the Connector as WiFi access point is no longer possible. This is because the Raspberry Pi only contains a single WiFi adapter and therefore it can only be used to either connect to WiFi or as an access point.
@@ -82,13 +82,13 @@ Note that: If using in WiFi mode, using the Connector as WiFi access point is no
 
 The TCP/IP settings allow switching between DHCP and Static IP allocation. Unless there are specific reasons to set the connector on a static IP address, using DHCP is recommended.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, using DHCP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, using DHCP</p></figcaption></figure>
 
 If using the connector in Static mode, the Subnet Mask, Default Gateway and DNS 1 can be set. If it is not clear what to use here, use the default settings as shown below.
 
 Note that, the default gateway is not required however if the connector required access to the internet, the local IP address of the internet providing gateway (Network router / modem) must be populated here. This is often in the form XXX.XXX.XXX.1 or XXX.XXX.XXX.0 .
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, using static IP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration networks page, using static IP</p></figcaption></figure>
 
 ### WiFi Access Point
 
@@ -144,6 +144,6 @@ Note that, when changes are saved here, they're only being saved to the local ch
 
 Once the changes have been made locally, to implement the changes within the connector, click the Reconfigure and Reboot button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Connector configuration Home page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Connector configuration Home page</p></figcaption></figure>
 
 This will cause the connector to reboot. As such, the configuration window's connection to the connector will be lost. This may automatically be restored once the connector reboots, but this may not be the case if the connector's configuration has changed such that it is no longer accessible over the network.

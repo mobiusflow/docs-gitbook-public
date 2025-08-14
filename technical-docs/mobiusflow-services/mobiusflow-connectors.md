@@ -29,7 +29,7 @@ Once these fields have been populated, save and start the service:
 
 The MQTT connection status can then be observed within the service status:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Running connected Connectors service</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Running connected Connectors service</p></figcaption></figure>
 
 The above screenshot shows a running example of a Connectors service connected to a local MQTT broker.
 
@@ -39,11 +39,11 @@ Each real-world connector must be represented in MobiusFlow using a connector ob
 
 To add a connector object to the Connectors service, first navigate the to the service's object configuration page.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once navigated to service's object configuration page,  a _MobiusFlowConnector_ object for each real-world connector should be added.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>An unconfigured Connector object within the Connectors service</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>An unconfigured Connector object within the Connectors service</p></figcaption></figure>
 
 Each connector object requires the following configuration settings to be specified:
 
@@ -57,7 +57,7 @@ Ensure the service is restarted or hot-reloaded to realise changes made to objec
 
 Once the connector object is live, the status of it can be checked by navigating to the resources of that object:
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Live status information from a Connector shown within the Connector object's resources</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Live status information from a Connector shown within the Connector object's resources</p></figcaption></figure>
 
 The above screenshots shows the useful status information a connected connector makes available. Checking if the connector is connected is possible by observing the _objectLastUpdate_ resource.
 
