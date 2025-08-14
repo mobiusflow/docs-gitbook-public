@@ -25,23 +25,33 @@ To interface with an INGY system, an INGY gateway must be present on the project
 
 ### MQTT
 
-The INGY gateway host's and MQTT broker, and as such, MobiusFlow uses an MQTT connection to this broker to allow two-way communication between MobiusFlow and INGY.
+MobiusFlow uses an MQTT connection to allow two-way communication between MobiusFlow and INGY.
 
-INGY gateways create 3 MQTT users, each with different sets of permissions. MobiusFlow requires usage of the _datastream_ and _MQTT JSON server_  (API) users. These user credentials can be found in the _Gateway MQTT server_ section of the INGY gateway configuration page.
+INGY creates 3 MQTT user types, each with different sets of permissions. MobiusFlow requires usage of the _datastream_ and _MQTT JSON server_  (API) users.
 
-### Network Requirements
+### Connecting to Local INGY Gateway
 
-Ensure the INGY gateway is accessible by MobiusFlow over an on-site (or otherwise) network. As it is likely the local IP address of the INGY gateway will be directly referenced within MobiusFlow, it is recommended that this should be set up on the network with a static local IP address. This means the connection will not break due to DHCP reassignment.
+Ensure the INGY gateway is accessible by MobiusFlow over an on-site (or otherwise) network. As it is likely the local IP address of the INGY gateway will be directly referenced within MobiusFlow, it is recommended that the INGY gateway's IP address should reserved so it does not get reassigned.
+
+When configuring the service settings, ensure the 'Connect via INGY cloud' option is **unchecked**.
+
+These MQTT user credentials can be found in the _Gateway MQTT server_ section of the INGY gateway configuration page.
+
+### Connecting via INGY Cloud
+
+In some situations, it may be suitable to connect to the INGY gateway over the internet. This is not recommended for any situation requiring control. In this case, contact INGY support to arrange them to set up both Datastream and API forwarding via their cloud. They will send you back the connection information.
+
+When configuring the service settings, ensure the 'Connect via INGY cloud' option is **checked**.
 
 ### INGY Service Settings / Requirements
 
 Once the INGY service has been added, the following configuration window is shown:
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 The following fields must be populated to allow MobiusFlow the connect the INGY gateway.
 
-<table><thead><tr><th width="170">Setting</th><th>Explanation</th></tr></thead><tbody><tr><td>MQTT Broker</td><td>The IP location of the MQTT broker (IP address, DNS name, or otherwise). For MQTT over TLS include <em>mqtts://</em> prefix, otherwise, inclusion of protocol is not required.</td></tr><tr><td>MQTT Port</td><td>Run by INGY on 1883 by default.</td></tr><tr><td>MQTT Username (Datastream)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Password (Datastream)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Username (JSON API)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Password (JSON API)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>INGY Firmware Version</td><td>85, 94, etc. To use mixed firmware versions, use multiple INGY services each with different firmware versions.</td></tr></tbody></table>
+<table><thead><tr><th width="170">Setting</th><th>Explanation</th></tr></thead><tbody><tr><td>Connect via INGY Cloud</td><td>Checkbox to determine if MobiusFlow should connect to the gateway via INGY's cloud.</td></tr><tr><td>MQTT Broker</td><td>The IP location of the MQTT broker (IP address, DNS name, or otherwise). For MQTT over TLS include <em>mqtts://</em> prefix, otherwise, inclusion of protocol is not required. <strong>This is set if the 'Connect via INGY cloud' is checked</strong>.</td></tr><tr><td>MQTT Base Topic</td><td><strong>Only required if the Connect via INGY Cloud option is checked</strong>. In the form of &#x3C;CUSTOMER_NAME>/&#x3C;SITE_NAME>. This information can be aquired from INGY if unknown.</td></tr><tr><td>MQTT Port</td><td>Run by INGY on 1883 by default. <strong>This is automatically set if the 'Connect via INGY cloud' is checked</strong>.</td></tr><tr><td>MQTT Username (Datastream)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Password (Datastream)</td><td>Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Username (JSON API)</td><td>.Found on INGY gateway configuration page.</td></tr><tr><td>MQTT Password (JSON API)</td><td>Found on INGY gateway configuration page</td></tr><tr><td>INGY Firmware Version</td><td>85, 94, etc. To use mixed firmware versions, use multiple INGY services each with different firmware versions.</td></tr></tbody></table>
 
 ### Checking connection
 
@@ -75,24 +85,21 @@ The scene number matches the display order shown in the INGY App. As such, the f
 
 ### Scene Settings
 
-Each lighting group supports 8 different scenes (numbered 0 - 7). These may have been previously set up using the INGY app. MobiusFlow will automatically query the level set point of each scene and will display this in the corresponding _knownLevel_ resource. MobiusFlow can also be used to change each scene's level set point (0% - 100%) by setting that scene's corresponding setLevel resource.
+Each lighting group supports 8 different scenes (numbered 0 - 7). These may have been previously set up using the INGY app. MobiusFlow will automatically query the level set point of each scene and will display this in the corresponding _knownLevel_ resource. MobiusFlow can also be used to change each scene's level set point (0 - 100) by setting that scene's corresponding setLevel resource. The resource will indicate the message is being sent. To resend the message, simply set the resource again.
 
 {% hint style="warning" %}
 Note that: If the INGY App has been used to pre-set up some scenes, MobiusFlow will still allow you to change these settings. As such, it as advised to adhere to a common source of truth, either configuring all scenes within the INGY App or within MobiusFlow.
 {% endhint %}
 
-It may be possible that the real-world scene setting levels or MobiusFlow have become out of synchronous. This could have been caused if they were changed by something that was not MobiusFlow, such the INGY app or INGY API. To ensure the real-world scene level settings do match the settings within MobiusFlow, set the _resendSetLevelCommands_ (RID 83) to _true_. Note that MobiusFlow will immediately reset this back to _false_, whilst also resending the command to set the scene level settings of all scenes.
+It may be possible that the real-world scene setting levels or MobiusFlow have become out of synchronous. This could have been caused if they were changed by something that was not MobiusFlow, such the INGY app or INGY API. To avoid this, consider periodically setting the setLevel resources to ensure the INGY groups are kept in sync.
 
 ### Changing Scene
 
 MobiusFlow automatically queries which scene is currently being exhibited by the group, and shows this information in the _knownScene_ resource.
 
-Changing the currently exhibited scene on a given group is done in two steps:
+Changing the currently exhibited scene on a given group is done by setting the _sceneSetting_ resource to scene number of the desired scene. The resource will indicate the scene change message is being sent to the INGY group.
 
-1. Set the _sceneSetting_ resource to scene number of the desired scene (if the resource currently shows the desired scene, this step can be skipped)
-2. Set the send trigger to true (the service will automatically set this back to false immediately afterwards). This will cause MobiusFlow to command the INGY group to change to the desired scene.
-
-Alternatively, these steps can be handled in one by using the INGY Set Scene flows node.
+Alternatively, changing the current scene can be handled by using the INGY Set Scene flows node.
 
 <figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
@@ -124,9 +131,9 @@ The known group membership of all devices is automatically queried by MobiusFlow
 
 <figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-The group membership of a given device can be changed by setting the _setGroup_ resource. The _knownGroupMembership_ resource should reflect this change after a period of time.
+The group membership of a given device can be changed by setting the _setGroup_ resource. Once changed, the resource will show the set group message is being sent. The _knownGroupMembership_ resource should reflect this change after a period of time.
 
-Sometimes it may be required that the command to group a given INGY device needs to be re-sent. This often can occur if the device is offline when the original setGroup command is sent. In this situation, set the sendRegroup resource to _true_. Note that, MobiusFlow will immediately set this resource back to false whilst sending the regroup command.
+Sometimes it may be required that the command to group a given INGY device needs to be re-sent. This often can occur if the device is offline when the original setGroup command is sent. In this situation, simply set the _setGroup_ resource again. This will cause MobiusFlow to resend the set group command.
 
 ### Data
 
