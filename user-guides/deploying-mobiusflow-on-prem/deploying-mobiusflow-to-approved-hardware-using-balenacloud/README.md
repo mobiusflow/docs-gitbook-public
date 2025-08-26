@@ -34,7 +34,7 @@ We reccomend at least 1Gb of RAM and 8Gb of storage for all devices
 {% endhint %}
 
 {% hint style="info" %}
-If you have a requirement for a different device type on balenaCloud contact us at [www.mobiusflow.com](https://www.mobiusflow.com/) or submit a support ticket by clicking on the support link above
+If you have a requirement for a different device type on balenaCloud contact us at via the [MobiusFlow website](https://mobiusflow.com/) or submit a support ticket by clicking on the support link above
 {% endhint %}
 
 If you are ready to get started, jump into the [Creating a Fleet](creating-a-fleet.md) section to begin creating your first fully managed **Mobius**Flow® device on balenaCloud.
