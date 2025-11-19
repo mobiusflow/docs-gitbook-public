@@ -24,7 +24,7 @@ Powerful tagging features have been added to both objects and resources. Tags ca
 
 You can use simple tags or add values to tags. Tags are included as metadata when reading values or receiving change-of-value events via the new API.
 
-<figure><img src="../.gitbook/assets/Tags - whats new.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tags - whats new (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For version 3 we have chosen to use epoch versioning so don't be surprised that our new software versions start from 3000
