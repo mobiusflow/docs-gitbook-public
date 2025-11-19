@@ -34,7 +34,7 @@ If persistence is not required consider switching it off as it will consume some
 
 Disabling persistence will also delete any persisted values. If you need to reset the persisted values you can disable and the re-enable persistence.
 
-## Setting Persistence Interval
+## Setting the Persistence Interval
 
 In order to lower CPU load values are only persisted at regular intervals and not on every value change. You can set this interval (in minutes) in the service's settings. Try to find a reasonable balance between saving the current values and load on the system. The more objects a service has, the greater the CPU load required to persist the values.
 
