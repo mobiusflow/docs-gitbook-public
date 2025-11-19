@@ -18,6 +18,18 @@
     * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
     * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
+* [MobiusFlow Engine API V3](mobiusflow-v3/mobiusflow-engine-api-v3/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: false
+      downloadLink: false
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: mobiusflow-api
+    ```
 
 ## 📖 User Guides
 
