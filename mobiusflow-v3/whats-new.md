@@ -20,7 +20,7 @@ Object profiles define the shape and properties of MobiusFlow objects. Before ve
 
 Version 3 has redefined how object profiles work. Object profiles can now be freely created by users in a simple editor. In fact each new instance of MobiusFlow has no object profiles defined. Instead we have taken all of the object profiles from version 2 (and a bunch of new ones) and created object profile templates.
 
-Object profiles can be created from scratch, from templates, or from any profile that you have already created. This gives users full flexibility without adding complexity as new objects can also be added directly from templates and MobiusFlow will automatically create the profile for you.
+Object profiles can be created from scratch, from templates, or from any profile that you have already created and then customised to your application. This gives users full flexibility without adding complexity as new objects can also be added directly from templates and MobiusFlow will automatically create the profile for you.
 
 <figure><img src="../.gitbook/assets/Create new profile - stage 3.png" alt="" width="563"><figcaption></figcaption></figure>
 
