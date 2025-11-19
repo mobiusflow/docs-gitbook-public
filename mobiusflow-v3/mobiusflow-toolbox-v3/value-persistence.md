@@ -32,7 +32,7 @@ You can enable or disable persistence by clicking on the **Enable Persistence** 
 If persistence is not required consider switching it off as it will add some CPU load.
 {% endhint %}
 
-Disabling persistence will also delete any persisted values. If you need to reset the persisted values you can disable and the re-enable persistence.
+Disabling persistence will also delete any persisted values. If you need to reset the persisted values you can disable and then re-enable persistence.
 
 ## Setting the Persistence Interval
 
