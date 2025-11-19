@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with Toolbox
 
 ## Supported browsers
 
@@ -26,3 +26,5 @@ The first time you login you must use the initial administrator credentials supp
 {% hint style="danger" %}
 Make sure to change your default admin user password or create a new account and delete the default admin account as soon as possible!
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/Toolbox Login.png" alt=""><figcaption></figcaption></figure>
