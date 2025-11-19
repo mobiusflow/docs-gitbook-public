@@ -5,7 +5,7 @@ MobiusFlow Services are the starting point for any configuration. They are typic
 The main services page shows an overview and status of each service that has been added to the configuration. You can interact with services in a number of ways, including configuring a service, starting and stopping a service, or adding and configuring objects belonging to a service.
 
 {% hint style="info" %}
-MobiusFlow includes a number of pre-configured [system services](services/system-services.md) that you may or may not be able to interact with in the normal way. These include the Engine API and Historian services
+MobiusFlow includes a number of pre-configured [system services](system-services.md) that you may or may not be able to interact with in the normal way. These include the Engine API and Historian services
 {% endhint %}
 
 ## Adding Services

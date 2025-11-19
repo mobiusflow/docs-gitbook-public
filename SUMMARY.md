@@ -3,14 +3,17 @@
 * [Welcome](README.md)
 * [What is MobiusFlow®?](what-is-mobiusflow-r.md)
 
+## MobiusFlow V3
+
+* [MobiusFlow Toolbox](mobiusflow-v3/mobiusflow-toolbox/README.md)
+  * [Getting Started with Toolbox](mobiusflow-v3/mobiusflow-toolbox/getting-started-with-toolbox.md)
+  * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
+  * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
+    * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
+
 ## 📖 User Guides
 
 * [MobiusFlow Manager](user-guides/mobiusflow-manager.md)
-* [MobiusFlow Toolbox](user-guides/mobiusflow-toolbox/README.md)
-  * [Getting Started with Toolbox](user-guides/mobiusflow-toolbox/getting-started.md)
-  * [Basic Navigation](user-guides/mobiusflow-toolbox/basic-navigation.md)
-  * [Services](user-guides/mobiusflow-toolbox/services.md)
-    * [System Services](user-guides/mobiusflow-toolbox/services/system-services.md)
 * [Getting Started](user-guides/getting-started/README.md)
   * [Administration](user-guides/getting-started/administration.md)
   * [Service and Object Configuration](user-guides/getting-started/service-and-object-configuration.md)
