@@ -6,7 +6,7 @@
 ## 3️⃣ MobiusFlow V3
 
 * [What's New?](mobiusflow-v3/whats-new.md)
-* [MobiusFlow Toolbox V3](mobiusflow-v3/mobiusflow-toolbox/README.md)
+* [MobiusFlow Toolbox v3](mobiusflow-v3/mobiusflow-toolbox/README.md)
   * [Getting Started with Toolbox](mobiusflow-v3/mobiusflow-toolbox/getting-started-with-toolbox.md)
   * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
   * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
@@ -18,7 +18,7 @@
     * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
     * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
-* [MobiusFlow Engine API V3](mobiusflow-v3/mobiusflow-engine-api-v3/README.md)
+* [MobiusFlow Engine API v3](mobiusflow-v3/mobiusflow-engine-api-v3/README.md)
   * ```yaml
     type: builtin:openapi
     props:
@@ -29,6 +29,18 @@
         ref:
           kind: openapi
           spec: mobiusflow-api
+    ```
+* [MobiusFlow Historian Data API v3](mobiusflow-v3/mobiusflow-historian-data-api-v3/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: false
+      downloadLink: false
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: historian-data-api
     ```
 
 ## 📖 User Guides
