@@ -1,5 +1,5 @@
 ---
-description: Welcome to MobiusFlow re-imagined
+description: Welcome to MobiusFlow re-imagined...
 ---
 
 # What's New?
