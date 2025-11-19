@@ -29,7 +29,7 @@ If you wish to have persistence enabled only for some objects consider adding an
 You can enable or disable persistence by clicking on the **Enable Persistence** switch in the service's settings.&#x20;
 
 {% hint style="success" %}
-If persistence is not required consider switching it off as it will consume some CPU time.
+If persistence is not required consider switching it off as it will add some CPU load.
 {% endhint %}
 
 Disabling persistence will also delete any persisted values. If you need to reset the persisted values you can disable and the re-enable persistence.
