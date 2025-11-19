@@ -11,6 +11,7 @@
   * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
   * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
     * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
+    * [Service Settings](mobiusflow-v3/mobiusflow-toolbox-v3/services/service-settings.md)
   * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)
   * [Value Persistence](mobiusflow-v3/mobiusflow-toolbox-v3/value-persistence.md)
   * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
