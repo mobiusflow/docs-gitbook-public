@@ -52,7 +52,7 @@ Capturing default values such as sensor IDs when configuring objects is simplifi
 
 The data stored in MobiusFlow objects can now be persisted between restarts of a service. No longer will temperate values drop to zero, people counts be lost, and energy readings disappear when services are restarted! Persistence can be configured on a service by service basis and values are included in backups
 
-## Tagging
+## [Tags](mobiusflow-toolbox-v3/tags.md)
 
 Powerful tagging features have been added to both objects and resources. Tags can be defined on object profiles so that they are automatically added to each instance of an object, and added to individual object instances.&#x20;
 

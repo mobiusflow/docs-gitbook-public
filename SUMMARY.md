@@ -11,6 +11,7 @@
   * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
   * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
     * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
+  * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)
 
 ## 📖 User Guides
 
