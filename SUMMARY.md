@@ -12,6 +12,11 @@
   * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
     * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
   * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)
+  * [Value Persistence](mobiusflow-v3/mobiusflow-toolbox-v3/value-persistence.md)
+  * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
+    * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
+    * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
+    * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
 
 ## 📖 User Guides
 

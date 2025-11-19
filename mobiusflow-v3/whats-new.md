@@ -8,13 +8,13 @@ MobiusFlow V3 has been built from the ground up. We have listened to your feedba
 
 Tagging, we added it, custom object profiles, there too, and to make you even more productive we have added the ability for you to write your own data pre-processors and codecs. We are excite about these new features and are sure you will be too!
 
-## Engine and Toolbox
+## Engine and [Toolbox](mobiusflow-toolbox/getting-started-with-toolbox.md)
 
 Both the MobiusFlow Engine (the heart of MobiusFlow) and MobiusFlow Toolbox have been completely rewritten to be more efficient and easier to use.&#x20;
 
 <figure><img src="../.gitbook/assets/Toolbox (1).png" alt=""><figcaption></figcaption></figure>
 
-## Custom Object Profiles
+## [Custom Object Profiles](mobiusflow-toolbox-v3/object-profiles/)
 
 Object profiles define the shape and properties of MobiusFlow objects. Before version 3 object profiles were built into each release and could not be easily created or modified by users.
 
@@ -32,7 +32,7 @@ Object profiles (along with their preprocessors, codecs and UI layouts) can be e
 
 <figure><img src="../.gitbook/assets/Codec.png" alt="" width="458"><figcaption></figcaption></figure>
 
-### Preprocessors
+### [Preprocessors](mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
 
 Have you ever needed to modify data before it is written to a resource? Have you wanted to change from °C to °F on the fly as new data arrives? Was totalising energy readings from meters difficult?
 
@@ -40,15 +40,15 @@ Not any more as preprocessor functions will do that for you!
 
 Each object profile can have a preprocessor function written in Typescript or Javascript which allow you to do just that, you can even write it directly in a built in IDE in MobiusFlow Toolbox.
 
-### Codecs
+### [Codecs](mobiusflow-toolbox-v3/object-profiles/codecs.md)
 
 Codecs make adding new decoders for raw sensor data a breeze. Instead of waiting for us to add new decoders for sensors like EnOcean, LoRaWAN, or Ingy, you can create an object profile and define the codec to decode the raw sensor telegram. As with preprocessors, these codecs can be written in Typescript or Javascript using the built in IDE.
 
-### UI Layouts
+### [UI Layouts](mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
 
 Capturing default values such as sensor IDs when configuring objects is simplified by adding your own configuration UI in a simple JSON format.
 
-## Value Persistence
+## [Value Persistence](mobiusflow-toolbox-v3/value-persistence.md)
 
 The data stored in MobiusFlow objects can now be persisted between restarts of a service. No longer will temperate values drop to zero, people counts be lost, and energy readings disappear when services are restarted! Persistence can be configured on a service by service basis and values are included in backups
 
