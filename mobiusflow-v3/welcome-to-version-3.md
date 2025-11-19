@@ -11,5 +11,5 @@ Tagging, we have added it, custom object profiles, there too, and to make you ev
 <figure><img src="../.gitbook/assets/Toolbox (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For version 3 we have chosen to use epoch versioning so don't be surprised that our new software versions start with 3000!
+For version 3 we have chosen to use epoch versioning so don't be surprised that our new software versions start from 3000
 {% endhint %}
