@@ -48,4 +48,4 @@ Services have persistence enabled with an interval of 5 minutes by default.
 
 ## Interactive Demo
 
-{% embed url="https://demo.mobiusflow.com/demo/cmi69g6bv3u42b7b4oq79ymra?utm_source=link" %}
+{% embed url="https://demo.mobiusflow.com/demo/cmi69g6bv3u42b7b4oq79ymra?utm_source=link" fullWidth="true" %}
