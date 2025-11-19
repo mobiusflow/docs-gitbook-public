@@ -6,7 +6,7 @@ description: Configuring value persistence
 
 Value persistence ensures that objects keep their values between restarts.&#x20;
 
-In MobiusFlow versions before version 3 any restart would cause all resources to be reset to their default values. This would often cause anomalies or loss in the data such as all temperature values dropping to zero, meter readings being lost or people counts resetting.&#x20;
+In MobiusFlow versions before v3 any restart would cause all resources to be reset to their default values. This would often cause anomalies or loss in the data such as all temperature values dropping to zero, meter readings being lost or people counts resetting.&#x20;
 
 MobiusFlow 3 has solved this problem by adding optional value persistence. This can be configured on a service by service basis in the service settings. To access a service's settings follow the instructions [here](services/service-settings.md).
 
