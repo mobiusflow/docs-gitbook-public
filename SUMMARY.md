@@ -6,7 +6,8 @@
 ## 📖 User Guides
 
 * [MobiusFlow Manager](user-guides/mobiusflow-manager.md)
-* [MobiusFlow Toolbox](user-guides/mobiusflow-toolbox.md)
+* [MobiusFlow Toolbox](user-guides/mobiusflow-toolbox/README.md)
+  * [Getting Started](user-guides/mobiusflow-toolbox/getting-started.md)
 * [Getting Started](user-guides/getting-started/README.md)
   * [Administration](user-guides/getting-started/administration.md)
   * [Service and Object Configuration](user-guides/getting-started/service-and-object-configuration.md)
