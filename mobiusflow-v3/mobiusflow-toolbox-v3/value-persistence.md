@@ -14,10 +14,6 @@ MobiusFlow 3 has solved this problem by adding optional value persistence. This 
 
 When a service starts it first creates all objects with their default values and then applies any persisted values before running.&#x20;
 
-## Default Settings
-
-Services have persistence enabled with an interval of 5 minutes by default.
-
 ## Enabling / Disabling Persistence
 
 You can enable or disable persistence on each service. Changing the persistence enabled state will affect all objects belonging to that service.&#x20;
@@ -41,4 +37,8 @@ In order to lower CPU load values are only persisted at regular intervals and no
 {% hint style="info" %}
 In addition to persisting values at a regular interval, values are also persisted when you manually stop a service.
 {% endhint %}
+
+## Default Settings
+
+Services have persistence enabled with an interval of 5 minutes by default.
 
