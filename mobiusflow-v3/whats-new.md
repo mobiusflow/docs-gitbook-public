@@ -2,7 +2,7 @@
 description: Welcome to MobiusFlow re-imagined
 ---
 
-# 🎉 Welcome to Version 3
+# What's New?
 
 MobiusFlow V3 has been built from the ground up. We have listened to your feedback and added a host of new features to make MobiusFlow even more powerful and easier to use.
 

@@ -5,7 +5,7 @@
 
 ## 3️⃣ MobiusFlow V3
 
-* [🎉 Welcome to Version 3](mobiusflow-v3/welcome-to-version-3.md)
+* [What's New?](mobiusflow-v3/whats-new.md)
 * [MobiusFlow Toolbox V3](mobiusflow-v3/mobiusflow-toolbox/README.md)
   * [Getting Started with Toolbox](mobiusflow-v3/mobiusflow-toolbox/getting-started-with-toolbox.md)
   * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
