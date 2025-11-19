@@ -1,5 +1,5 @@
 ---
-description: Setting up value persistence
+description: Configuring value persistence
 ---
 
 # Value Persistence
