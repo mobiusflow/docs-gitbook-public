@@ -23,7 +23,7 @@ Open your web browser and navigate to your MobiusFlow Toolbox instance. This is 
 
 The first time you login you must use the initial administrator credentials supplied to you. You can change the default admin password and create new users once you are logged in.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Make sure to change your default admin user password or create a new account and delete the default admin account as soon as possible!
 {% endhint %}
 
