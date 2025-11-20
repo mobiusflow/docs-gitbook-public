@@ -14,6 +14,10 @@ We have rebuilt MobiusFlow from the ground up. MobiusFlow V3 has a bunch of new 
 
 This section is dedicated to guides and technical knowhow related to version 3.
 
+{% hint style="info" %}
+To help you become a MobiusFlow Ninja, look out for our 💥 **Interactive Demos** in the MobiusFlow 3 articles.
+{% endhint %}
+
 #### 📖 User Guides
 
 The user guides are instructional walkthroughs. Follow these guides from start to finish or jump to a section to learn how to perform specific tasks.
