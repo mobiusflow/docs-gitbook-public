@@ -11,6 +11,7 @@
   * [Basic Navigation](mobiusflow-v3/mobiusflow-toolbox/basic-navigation.md)
   * [Services](mobiusflow-v3/mobiusflow-toolbox/services/README.md)
     * [Adding Services](mobiusflow-v3/mobiusflow-toolbox-v3/services/adding-services.md)
+    * [Deleting Services](mobiusflow-v3/mobiusflow-toolbox-v3/services/deleting-services.md)
     * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
     * [Service Settings](mobiusflow-v3/mobiusflow-toolbox-v3/services/service-settings.md)
   * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
