@@ -18,11 +18,17 @@ The main Services page shows an overview of all services that have been added to
 
 As new services are added cards will appear on this this page. The service list is also visible in the main menu below the Services menu item.
 
+## Service Library
+
+The service library is a list of all possible services that can be added to MobiusFlow. You can show and hide the library by clicking on the button in the top left of the page.
+
+For more information on adding services please read the [Adding Services](../../mobiusflow-toolbox-v3/services/adding-services.md) article.
+
 ## Service Cards
 
 <figure><img src="../../../.gitbook/assets/Service card (1).png" alt=""><figcaption></figcaption></figure>
 
-Service cards shown a lot of information about a service and allow you to interact with a service.
+Service cards show a lot of information about a service and allow you to interact with a service.
 
 ### Service ID (SID)
 
