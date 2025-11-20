@@ -17,6 +17,7 @@
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
     * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
     * [Editing Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/editing-profiles.md)
+  * [Objects](mobiusflow-v3/mobiusflow-toolbox-v3/objects.md)
   * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)
   * [Value Persistence](mobiusflow-v3/mobiusflow-toolbox-v3/value-persistence.md)
 * [MobiusFlow Engine API v3](mobiusflow-v3/mobiusflow-engine-api-v3/README.md)
