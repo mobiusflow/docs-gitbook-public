@@ -56,6 +56,6 @@ To convert a value tag into a simple tag re-enter the tag name with no value&#x2
 
 To delete a tag click on the **X** to the right of the tag in the tags list
 
-## ✅ Interactive Demo
+## 💥 Interactive Demo
 
 {% embed url="https://demo.mobiusflow.com/demo/cmi7biyva4x4ub7b4uv3vh8xm?utm_source=link" %}
