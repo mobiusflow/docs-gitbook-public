@@ -68,3 +68,11 @@ With the exception of system services, each service card has a toolbar in the to
 
 <table><thead><tr><th width="163.046875">Button</th><th>Action</th></tr></thead><tbody><tr><td><a href="../../mobiusflow-toolbox-v3/services/starting-stopping-and-reloading-a-service.md"><strong>Start service</strong></a></td><td>Start a service that is enabled but stopped</td></tr><tr><td><a href="../../mobiusflow-toolbox-v3/services/starting-stopping-and-reloading-a-service.md"><strong>Stop service</strong></a></td><td>Stop a service that is running</td></tr><tr><td><a href="../../mobiusflow-toolbox-v3/services/starting-stopping-and-reloading-a-service.md"><strong>Hot reload service</strong></a></td><td>Update a service's objects after a change without stopping the service</td></tr><tr><td><a href="../../mobiusflow-toolbox-v3/services/service-settings.md"><strong>Service settings</strong></a></td><td>Access the service settings dialog</td></tr><tr><td><a href="../../mobiusflow-toolbox-v3/services/cloning-services.md"><strong>Clone service</strong></a></td><td>Make a copy of a service including all of its objects and settings</td></tr><tr><td><a href="../../mobiusflow-toolbox-v3/services/deleting-services.md"><strong>Delete service</strong></a></td><td>Delete a service and all of its objects</td></tr></tbody></table>
 
+### Accessing Service Objects
+
+Accessing the [objects](../../mobiusflow-toolbox-v3/objects.md) belonging to a service can be done in two ways. You can click on the main body of a service card or click on the service in the main menu.
+
+{% hint style="info" %}
+You cannot access the objects page for [System Services](system-services.md).
+{% endhint %}
+
