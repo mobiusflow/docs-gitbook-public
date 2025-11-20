@@ -17,6 +17,7 @@
     * [Deleting Services](mobiusflow-v3/mobiusflow-toolbox-v3/services/deleting-services.md)
     * [Service Settings](mobiusflow-v3/mobiusflow-toolbox-v3/services/service-settings.md)
     * [Starting, Stopping, and Reloading a Service](mobiusflow-v3/mobiusflow-toolbox-v3/services/starting-stopping-and-reloading-a-service.md)
+    * [Cloning Services](mobiusflow-v3/mobiusflow-toolbox-v3/services/cloning-services.md)
     * [System Services](mobiusflow-v3/mobiusflow-toolbox/services/system-services.md)
   * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
     * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
