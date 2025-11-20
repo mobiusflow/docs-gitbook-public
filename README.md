@@ -8,7 +8,7 @@ description: Welcome to the MobiusFlow® documentation
 
 Whether you are looking for a full walkthrough or just dipping in to get more information about a single topic, our documentation site is the perfect companion to the training courses on our main site.
 
-#### 3️⃣ MobiusFlow Version 3
+#### 3️⃣ [MobiusFlow Version 3](mobiusflow-v3/whats-new.md)
 
 We have rebuilt MobiusFlow from the ground up. MobiusFlow V3 has a bunch of new features and enhancements improving both performance and adding improvements to data handling, searching and customisation.&#x20;
 
