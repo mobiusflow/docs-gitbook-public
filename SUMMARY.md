@@ -20,6 +20,7 @@
   * [Objects](mobiusflow-v3/mobiusflow-toolbox-v3/objects.md)
   * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)
   * [Value Persistence](mobiusflow-v3/mobiusflow-toolbox-v3/value-persistence.md)
+  * [User Management](mobiusflow-v3/mobiusflow-toolbox-v3/user-management.md)
 * [MobiusFlow Engine API v3](mobiusflow-v3/mobiusflow-engine-api-v3/README.md)
   * ```yaml
     type: builtin:openapi
