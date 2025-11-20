@@ -46,7 +46,7 @@ The service status is shown in two places on the card.&#x20;
 
 The coloured circle in the top left corner gives a quick indication of the health of a service. The indicator colours are as follows:
 
-<table><thead><tr><th width="149.2578125">Colour</th><th>Meaning</th></tr></thead><tbody><tr><td><mark style="color:$info;"><strong>Grey</strong></mark></td><td>Service is disabled and cannot be started</td></tr><tr><td><mark style="color:red;"><strong>Red</strong></mark></td><td>Service is enabled but not started</td></tr><tr><td><mark style="color:orange;">Amber</mark></td><td>Service is running but has an error</td></tr><tr><td><mark style="color:green;"><strong>Green</strong></mark></td><td>Service is running an OK</td></tr><tr><td><mark style="color:blue;"><strong>Blue</strong></mark></td><td>Service is starting</td></tr></tbody></table>
+<table><thead><tr><th width="149.2578125">Colour</th><th>Meaning</th></tr></thead><tbody><tr><td><mark style="color:$info;"><strong>Grey</strong></mark></td><td>Service is disabled and cannot be started</td></tr><tr><td><mark style="color:red;"><strong>Red</strong></mark></td><td>Service is enabled but not started</td></tr><tr><td><mark style="color:orange;"><strong>Amber</strong></mark></td><td>Service is running but has an error</td></tr><tr><td><mark style="color:green;"><strong>Green</strong></mark></td><td>Service is running an OK</td></tr><tr><td><mark style="color:blue;"><strong>Blue</strong></mark></td><td>Service is starting</td></tr></tbody></table>
 
 #### Detailed Status Information
 
