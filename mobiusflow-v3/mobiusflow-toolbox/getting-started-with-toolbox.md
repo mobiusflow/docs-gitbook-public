@@ -1,6 +1,6 @@
 # Getting Started with Toolbox
 
-## Supported browsers
+## Supported Browsers
 
 MobiusFlow Toolbox supports the latest versions of most modern web browsers. We recommend the following:
 
@@ -13,7 +13,7 @@ MobiusFlow Toolbox supports the latest versions of most modern web browsers. We 
 MobiusFlow Toolbox requires Javascript to be enabled on your browser
 {% endhint %}
 
-## Logging in
+## Logging In
 
 Open your web browser and navigate to your MobiusFlow Toolbox instance. This is typically a fully qualified domain name followed by `/toolbox`
 
