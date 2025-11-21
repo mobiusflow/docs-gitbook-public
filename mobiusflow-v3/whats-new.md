@@ -48,7 +48,7 @@ Codecs make adding new decoders for raw sensor data a breeze. Instead of waiting
 
 Capturing default values such as sensor IDs when configuring objects is simplified by adding your own configuration UI in a simple JSON format.
 
-## [Value Persistence](mobiusflow-toolbox-v3/value-persistence.md)
+## [Value Persistence](mobiusflow-toolbox-v3/services/value-persistence.md)
 
 The data stored in MobiusFlow objects can now be persisted between restarts of a service. No longer will temperate values drop to zero, people counts be lost, and energy readings disappear when services are restarted! Persistence can be configured on a service by service basis and values are included in backups
 

@@ -30,15 +30,13 @@ description: >-
 
 * A5-09-04 & A5-09-02: Profiles for daylight harvesting and light level monitoring.
 * A5-10-03, A5-10-06, A5-10-12, A5-10-19: Advanced occupancy and motion detection sensors.
-* A5-11-01 & A5-11-02: Multi-functional sensors for light, motion, and temperature.\
-
+* A5-11-01 & A5-11-02: Multi-functional sensors for light, motion, and temperature.<br>
 
 **Energy and Utility Monitoring**
 
 * A5-12-01 to A5-12-03: Profiles tailored for energy consumption and utility monitoring.
 * A5-14-58 & A5-14-05: Energy efficiency sensors for load and power monitoring.
-* A5-20-01: Compact profile for energy harvesting applications.\
-
+* A5-20-01: Compact profile for energy harvesting applications.<br>
 
 **People Counting and Building Analytics**
 
@@ -59,8 +57,7 @@ description: >-
 
 * D2-05-00: General-purpose profile for binary data transmission.
 * D2-01-0A to D2-01-12: Profiles for advanced control systems.
-* D2-15-00: Versatile profile for industrial applications.\
-
+* D2-15-00: Versatile profile for industrial applications.<br>
 
 **Specialised Devices**
 
@@ -76,4 +73,4 @@ MobiusFlow provides a powerful and flexible platform for integrating EnOcean dev
 * Industrial Automation: Enhance operational efficiency with precision monitoring and control.
 * Energy Efficiency: Monitor and reduce energy consumption with advanced sensors.
 
-By leveraging MobiusFlow’s extensive EEP library, businesses can create scalable, efficient, and energy-saving IoT solutions tailored to their needs. Whether you’re looking to optimise a single building or manage a global network of properties, MobiusFlow and its EnOcean integration make it possible. \
+By leveraging MobiusFlow’s extensive EEP library, businesses can create scalable, efficient, and energy-saving IoT solutions tailored to their needs. Whether you’re looking to optimise a single building or manage a global network of properties, MobiusFlow and its EnOcean integration make it possible. <br>

@@ -38,7 +38,7 @@ If a service is enabled and it is set to Run at Start the service will be automa
 
 ## Value Persistence
 
-Value persistence ensures that objects keep their values between restarts. Please see the [Value Persistence](../value-persistence.md) article for more information.
+Value persistence ensures that objects keep their values between restarts. Please see the [Value Persistence](value-persistence.md) article for more information.
 
 ## Logging Levels
 
