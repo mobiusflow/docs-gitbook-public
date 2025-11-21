@@ -14,7 +14,7 @@ MobiusFlow includes a number of pre-configured [System Services](system-services
 
 <figure><img src="../../../.gitbook/assets/Service page overview.png" alt=""><figcaption></figcaption></figure>
 
-The main Services page shows an overview of all services that have been added to an instance. Each service is represented by a card which provides status information and allows you to interact with the service.
+The main services page shows an overview of all services that have been added to an instance. Each service is represented by a card which provides status information and allows you to interact with the service.
 
 As new services are added cards will appear on this this page. The service list is also visible in the main menu below the Services menu item.
 
