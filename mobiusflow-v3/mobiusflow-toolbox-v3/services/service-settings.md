@@ -4,7 +4,7 @@ description: Configuring services
 
 # Service Settings
 
-To update a service's settings, first navigate to the [Services](../../mobiusflow-toolbox/services/) page and then find the correct service card.
+To update a service's settings, first click on Services in the main menu and then find the correct service card.
 
 On the service card toolbar click on the **Settings** button to open the service settings dialog.
 
