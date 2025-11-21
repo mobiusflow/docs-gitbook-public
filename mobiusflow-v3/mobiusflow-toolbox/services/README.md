@@ -9,7 +9,7 @@ MobiusFlow Services are the starting point for any configuration. They are typic
 The main services page shows an overview and status of each service that has been added to the configuration. You can interact with services in a number of ways, including configuring a service, starting and stopping a service, or adding and configuring objects belonging to a service.
 
 {% hint style="info" %}
-MobiusFlow includes a number of pre-configured [system services](system-services.md) that you may or may not be able to interact with in the normal way. These include the Engine API and Historian services
+MobiusFlow includes a number of pre-configured [System Services](system-services.md) that you may or may not be able to interact with in the normal way. These include the Engine API and Historian services
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Service page overview.png" alt=""><figcaption></figcaption></figure>
@@ -70,7 +70,7 @@ With the exception of system services, each service card has a toolbar in the to
 
 ### Accessing Service Objects
 
-Accessing the [objects](../../mobiusflow-toolbox-v3/objects.md) belonging to a service can be done in two ways. You can click on the main body of a service card or click on the service in the main menu.
+Accessing the [Objects](../../mobiusflow-toolbox-v3/objects.md) belonging to a service can be done in two ways. You can click on the main body of a service card or click on the service in the main menu.
 
 {% hint style="info" %}
 You cannot access the objects page for [System Services](system-services.md).
