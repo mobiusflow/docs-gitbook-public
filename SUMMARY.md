@@ -24,6 +24,7 @@
   * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
     * [Object Profiles Page](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/object-profiles-page.md)
     * [Creating Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/creating-profiles.md)
+    * [Editing Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/editing-profiles.md)
     * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
     * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
