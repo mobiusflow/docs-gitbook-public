@@ -54,6 +54,7 @@
           kind: openapi
           spec: historian-data-api
     ```
+* [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
 
 ## 📖 User Guides
 
