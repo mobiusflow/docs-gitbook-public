@@ -22,6 +22,7 @@
     * [Accessing a Service's Objects](mobiusflow-v3/mobiusflow-toolbox-v3/services/accessing-a-services-objects.md)
     * [Value Persistence](mobiusflow-v3/mobiusflow-toolbox-v3/services/value-persistence.md)
   * [Object Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/README.md)
+    * [Object Profiles Page](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/object-profiles-page.md)
     * [Creating and Editing Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/creating-and-editing-profiles.md)
     * [Codecs](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/codecs.md)
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
