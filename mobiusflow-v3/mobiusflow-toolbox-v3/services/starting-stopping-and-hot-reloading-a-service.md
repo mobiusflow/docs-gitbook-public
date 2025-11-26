@@ -26,7 +26,7 @@ The controls used to start, stop, and hot reload services are located on the ser
 
 ## Starting a Service
 
-Services are started by clicking on the start button.&#x20;
+Services are started by clicking on the **Start** button.&#x20;
 
 When a service starts it first creates all of its objects, loads in any [persisted data](value-persistence.md) (if enabled) and then runs any logic such as raw sensor data decoding. You can only access objects on running services.
 
@@ -36,7 +36,7 @@ Disabled services cannot be started.
 
 ## Stopping a Service
 
-Services are stopped by clicking on the stop button.
+Services are stopped by clicking on the **Stop** button.
 
 If a service has persistence enabled the current resource values will be persisted before the service stops.
 
@@ -47,6 +47,8 @@ When a service is stopped all of its objects will be destroyed and will no longe
 Adding objects or configuration changes to objects on running services will only take affect if a service is restarted or if the service is hot reloaded.&#x20;
 
 Hot reloading a service does not stop it. Instead all objects that have configuration changes are refreshed and new objects are created without affecting any other objects.
+
+Click on the **Hot Reload** button to hot reload its objects.
 
 ## 💥 Interactive Demo
 

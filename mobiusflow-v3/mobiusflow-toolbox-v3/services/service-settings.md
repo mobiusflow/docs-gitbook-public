@@ -44,7 +44,7 @@ Value persistence ensures that objects keep their values between restarts. Pleas
 
 A service and its underlying connection to the rest of the instance (the spoke) each have their own logging levels. Currently these logs are only visible in the terminal on the computer running the MobiusFlow instance and are not visible in Toolbox. We aim to make this available in a future version for developers.&#x20;
 
-The default logging levels are set to Info. Please do NOT change these unless instructed by a MobiusFlow engineer during a support incident as excessive logging could cause significant additional CPU load.
+The default logging levels are set to **Info**. Please do NOT change these unless instructed by a MobiusFlow engineer during a support incident as excessive logging could cause significant additional CPU load.
 
 ## Service Specific Settings
 
