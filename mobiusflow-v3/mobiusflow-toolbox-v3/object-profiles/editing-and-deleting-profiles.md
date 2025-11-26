@@ -24,10 +24,14 @@ The four sidebar modes are shown in the table below. Click on the links for more
 
 ## Deleting Profiles
 
-Click on the profile you wish to delete. When the sidebar is open click on the **Delete** button, enter the confirmation text and click **Confirm**.
-
 {% hint style="info" %}
 You can only delete profiles that have not been used. Unused profiles have a greyed out PID and icon in the profile list.
+{% endhint %}
+
+Click on the profile you wish to delete. When the sidebar is open click on the **Delete** button, enter the confirmation text and click **Confirm**.
+
+{% hint style="danger" %}
+This action is permanent and cannot be undone!
 {% endhint %}
 
 ## 💥 Interactive Demo
