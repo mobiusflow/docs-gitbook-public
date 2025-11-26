@@ -26,8 +26,8 @@ All object profiles must have a unique profile ID or PID. This is a four digit h
 
 See [MobiusFlow Uniform Resource Identifiers](../../mobiusflow-overview/mobiusflow-uniform-resource-identifiers-uris.md) for more information.
 
-{% hint style="info" %}
-Once an object profile is in use (an object of that type has been added to a service) its PID cannot be changed.
+{% hint style="warning" %}
+Once an object profile has been created its PID cannot be changed.
 {% endhint %}
 
 ## Resources
