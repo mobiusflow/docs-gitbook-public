@@ -8,7 +8,7 @@ Tags are a powerful way to organise your objects and resources making it easier 
 
 Tags can be a simple key word or phrase (much like a hashtag in social media apps) or a keyword or phrase with an associated value.
 
-Tags can be added to [object profiles](object-profiles/) and individual [object](objects.md) instances. Any tags added to an object profile will be automatically added to all objects created from that profile.
+Tags can be added to [object profiles](object-profiles/) and individual [object](objects/) instances. Any tags added to an object profile will be automatically added to all objects created from that profile.
 
 The process of managing tags on object profiles, objects, and their resources is the same. To view the tag editor select an object profile, object, or resource and the relevant sidebar will open showing the tag editor. Once the sidebar is open follow the steps below.&#x20;
 
@@ -56,6 +56,6 @@ To convert a value tag into a simple tag re-enter the tag name with no value&#x2
 
 To delete a tag click on the **X** to the right of the tag in the tags list
 
-## 💥 <mark style="color:$primary;">Interactive Demo</mark>
+## 💥 Interactive Demo
 
 {% embed url="https://demo.mobiusflow.com/demo/cmi7biyva4x4ub7b4uv3vh8xm?utm_source=link" %}
