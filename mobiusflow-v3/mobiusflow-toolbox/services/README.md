@@ -70,7 +70,7 @@ With the exception of system services, each service card has a toolbar in the to
 
 ### Accessing Service Objects
 
-Accessing the [Objects](../../mobiusflow-toolbox-v3/objects/) belonging to a service can be done in two ways. You can click on the main body of a service card or click on the service in the main menu.
+Accessing the [Objects](../../mobiusflow-toolbox-v3/objects.md) belonging to a service can be done in two ways. You can click on the main body of a service card or click on the service in the main menu.
 
 {% hint style="info" %}
 You cannot access the objects page for [System Services](system-services.md).

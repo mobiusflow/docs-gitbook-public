@@ -26,7 +26,7 @@
     * [Preprocessors](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/preprocessors.md)
     * [UI Layouts](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/ui-layouts.md)
     * [Editing Profiles](mobiusflow-v3/mobiusflow-toolbox-v3/object-profiles/editing-profiles.md)
-  * [Objects](mobiusflow-v3/mobiusflow-toolbox-v3/objects/README.md)
+  * [Objects](mobiusflow-v3/mobiusflow-toolbox-v3/objects.md)
     * [Adding Objects to a Service](mobiusflow-v3/mobiusflow-toolbox-v3/objects/adding-objects-to-a-service.md)
   * [Flows](mobiusflow-v3/mobiusflow-toolbox-v3/flows.md)
   * [Tags](mobiusflow-v3/mobiusflow-toolbox-v3/tags.md)

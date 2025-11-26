@@ -8,7 +8,7 @@ Tags are a powerful way to organise your objects and resources making it easier 
 
 Tags can be a simple key word or phrase (much like a hashtag in social media apps) or a keyword or phrase with an associated value.
 
-Tags can be added to [object profiles](object-profiles/) and individual [object](objects/) instances. Any tags added to an object profile will be automatically added to all objects created from that profile.
+Tags can be added to [object profiles](object-profiles/) and individual [object](objects.md) instances. Any tags added to an object profile will be automatically added to all objects created from that profile.
 
 The process of managing tags on object profiles, objects, and their resources is the same. To view the tag editor select an object profile, object, or resource and the relevant sidebar will open showing the tag editor. Once the sidebar is open follow the steps below.&#x20;
 

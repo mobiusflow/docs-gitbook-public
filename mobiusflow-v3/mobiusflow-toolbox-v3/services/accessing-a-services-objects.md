@@ -12,7 +12,7 @@ All MobiusFlow [Objects](accessing-a-services-objects.md) must belong to a servi
 You cannot access the objects page for [System Services](../../mobiusflow-toolbox/services/system-services.md).
 {% endhint %}
 
-For more information on managing objects please refer to the [Objects](../objects/) page.
+For more information on managing objects please refer to the [Objects](../objects.md) page.
 
 ## 💥 Interactive Demo
 
