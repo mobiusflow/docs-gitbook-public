@@ -12,3 +12,6 @@ More details about this API can be found [here](../../mobiusflow-engine-api-v3/)
 
 ## MobiusFlow Historian
 
+MobiusFlow Historian is a time-series database for storing data generated and collected by MobiusFlow. This time-series data can then be used my MobiusFlow View to create dashboards or by external applications for data analytics and artificial intelligence.
+
+The MobiusFlow Historian service pushes data whenever it changes to a MobiusFlow Historian database. More information can be found [here](../../mobiusflow-historian.md).
