@@ -19,7 +19,7 @@ When a service starts it first creates all objects with their default values and
 You can enable or disable persistence on each service. Changing the persistence enabled state will affect all objects belonging to that service.&#x20;
 
 {% hint style="info" %}
-If you wish to have persistence enabled only for some objects consider adding another service and putting splitting your objects between services
+If you wish to have persistence enabled only for some objects consider adding another service and splitting your objects between services, one with persistence and one without
 {% endhint %}
 
 You can enable or disable persistence by clicking on the **Enable Persistence** switch in the service's settings.&#x20;
