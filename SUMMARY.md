@@ -58,6 +58,7 @@
           kind: openapi
           spec: historian-data-api
     ```
+  * [MCP Server](mobiusflow-v3/mobiusflow-historian-data-api-v3/mcp-server.md)
 * [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
 
 ## 📖 User Guides
