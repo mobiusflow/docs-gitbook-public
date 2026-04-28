@@ -60,6 +60,8 @@
     ```
   * [MCP Server](mobiusflow-v3/mobiusflow-historian-data-api-v3/mcp-server.md)
 * [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
+* [MobiusFlow Data Agent](mobiusflow-v3/mobiusflow-data-agent.md)
+* [MobiusFlow Engine Agent](mobiusflow-v3/mobiusflow-engine-agent.md)
 
 ## 📖 User Guides
 
