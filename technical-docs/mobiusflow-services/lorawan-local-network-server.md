@@ -185,7 +185,7 @@ The lorawan\_send\_raw node can also be used as before, to enqueue downlink mess
 
 ## LNS Backend (Chirpstack)
 
-The MobiusFlow LNS Service uses Chirpstack V4 as an LNS backend. As such, for debugging purposes it is possible to log into this backend if required. Chirpstack runs on port 8081, to browse to this port to access chirpstack.
+The MobiusFlow LNS Service uses Chirpstack V4 as an LNS backend. As such, for debugging purposes it is possible to log into this backend if required. Chirpstack runs on port 8183, to browse to this port to access chirpstack.
 
 Every MobiusFlow LNS Service contains a statistics object. This includes some information about the health of the LNS as well as the chirpstack login credentials.
 
