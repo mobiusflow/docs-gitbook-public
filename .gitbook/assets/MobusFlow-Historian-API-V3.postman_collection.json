@@ -1,0 +1,371 @@
+{
+  "info": {
+    "_postman_id": "41644156-5ba9-4ef4-9aa1-aeedea23dc0b",
+    "name": "Historian V3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14184358",
+    "_collection_link": "https://go.postman.co/collection/14184358-41644156-5ba9-4ef4-9aa1-aeedea23dc0b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Profiles",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/profile",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Profile PIDs",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/profile/000001/pidlist",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "profile",
+            "000001",
+            "pidlist"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Objects",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/object",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "object"
+          ],
+          "query": [
+            {
+              "key": "uri",
+              "value": "000001/020/1313/0001",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Numeric Timeseries",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uriList\": [],\n    \"interval\" : 600,\n    \"includeMin\": true,\n    \"includeMax\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/timeseries/numeric",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "timeseries",
+            "numeric"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Mixed Timeseries",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uriList\": [\"000001/022/101F/0001/40\"],\n    \"interval\" : 600,\n    \"includeMin\": true,\n    \"includeMax\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/timeseries/mixed",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "timeseries",
+            "mixed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Boolean Timeseries",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uriList\": [\"000001/020/0200/0001/40\", \"000001/020/0200/0002/40\"],\n    \"interval\" : 600\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/timeseries/boolean",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "timeseries",
+            "boolean"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Numeric Timeseries Summary",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uriList\": [\"000001/020/0209/0001/40\", \"000001/020/0209/0001/41\", \"000001/020/0209/0001/42\"]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/timeseries/numeric/summary",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "timeseries",
+            "numeric",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Boolean Timeseries Summary",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uriList\": [\"000001/020/0200/0001/40\", \"000001/020/0200/0002/40\"]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/timeseries/boolean/summary",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "timeseries",
+            "boolean",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Object with Profile and Telemetry",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/object/000001/020/0201/0001",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "object",
+            "000001",
+            "020",
+            "0201",
+            "0001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Raw Telemetry Events",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/telemetry/000001/020/0200/0001?start=2026-04-17T10:30:23.464Z&end=2026-04-17T10:31:53.464Z",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "telemetry",
+            "000001",
+            "020",
+            "0200",
+            "0001"
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "2026-04-17T10:30:23.464Z"
+            },
+            {
+              "key": "end",
+              "value": "2026-04-17T10:31:53.464Z"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "value",
+        "value": "4fbcdb3c.933d2859a682451783b66c425dca0744",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "x-api-key",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": ""
+    }
+  ]
+}

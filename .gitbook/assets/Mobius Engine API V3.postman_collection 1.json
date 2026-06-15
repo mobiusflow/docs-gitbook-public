@@ -1,0 +1,1190 @@
+{
+  "info": {
+    "_postman_id": "227803fc-5450-4db0-8603-e915937aea58",
+    "name": "Mobius Engine API V3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14184358",
+    "_collection_link": "https://go.postman.co/collection/14184358-227803fc-5450-4db0-8603-e915937aea58?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const response = pm.response.json()",
+                  "",
+                  "pm.environment.set(\"jwt_token\", response.sessionToken);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\": \"\",\n    \"password\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/auth/login",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/auth/logout",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "auth",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Validate Session Token",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"sessionToken\": \"c4591dad744c43ee7d795a7811839b8559d79814b9839608986aa2201d2778da0d6eb782764d740e3b18fc9fee3e11c36e5e0a378ec1b8591965cffd74a62b64\" \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/auth/validate-session",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "auth",
+                "validate-session"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profiles",
+      "item": [
+        {
+          "name": "Get Service Profiles",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/service/000001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "service",
+                "000001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Service Profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/service/000001?spid=0002",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "service",
+                "000001"
+              ],
+              "query": [
+                {
+                  "key": "spid",
+                  "value": "0002"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Object Profiles",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/object/000001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "object",
+                "000001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Object Profile Templates",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/object/template/000001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "object",
+                "template",
+                "000001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Object Profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/object/000001?pid=000B",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "object",
+                "000001"
+              ],
+              "query": [
+                {
+                  "key": "pid",
+                  "value": "000B"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Object Profile Template",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/profile/object/template/000001?pid=000A",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "profile",
+                "object",
+                "template",
+                "000001"
+              ],
+              "query": [
+                {
+                  "key": "pid",
+                  "value": "000A"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Service Control",
+      "item": [
+        {
+          "name": "Start Service",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/start/000001/020",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "start",
+                "000001",
+                "020"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Stop Service",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/stop/000001/020",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "stop",
+                "000001",
+                "020"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Hot Reload Service",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/reload/000001/020",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "reload",
+                "000001",
+                "020"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Discover",
+      "item": [
+        {
+          "name": "Discover Services",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/node/fullhealthcheck/000001?deadTime=3600",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "node",
+                "fullhealthcheck",
+                "000001"
+              ],
+              "query": [
+                {
+                  "key": "deadTime",
+                  "value": "3600"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Discover Profiles",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/discover/000001/020",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "discover",
+                "000001",
+                "020"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Discover Instances",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/discover/000001/020/0001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "discover",
+                "000001",
+                "020",
+                "0001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Discover Objects",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/discover/000001/+/+/%23",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "discover",
+                "000001",
+                "+",
+                "+",
+                "%23"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Discover Resource",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/discover/000001/020/002B/0001/40",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "discover",
+                "000001",
+                "020",
+                "002B",
+                "0001",
+                "40"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Read / Write",
+      "item": [
+        {
+          "name": "Read Object",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/object/000001/020/0201/0001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "object",
+                "000001",
+                "020",
+                "0201",
+                "0001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read Resource",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/object/resource/000001/020/0201/0001/40",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "object",
+                "resource",
+                "000001",
+                "020",
+                "0201",
+                "0001",
+                "40"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Write Resource",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"value\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/object/resource/000001/020/0028/0001/40",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "object",
+                "resource",
+                "000001",
+                "020",
+                "0028",
+                "0001",
+                "40"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Write Multiple Resources",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"updates\": [\n        { \"r\": \"40\", \"p\": 7, \"v\": 30},\n        { \"r\": \"42\", \"p\": 7, \"v\": 9}\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/object/resource/000001/020/0028/0001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "object",
+                "resource",
+                "000001",
+                "020",
+                "0028",
+                "0001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Clear Resource",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"priority\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/object/resource/clear/000001/002/002B/0001/44",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "object",
+                "resource",
+                "clear",
+                "000001",
+                "002",
+                "002B",
+                "0001",
+                "44"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Service Config",
+      "item": [
+        {
+          "name": "Get Service Config",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/config/000001/023",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "config",
+                "000001",
+                "023"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Service Config",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"enabled\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/config/000001/023",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "config",
+                "000001",
+                "023"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Service SID",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"sid\": \"022\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/config/sid/000001/023",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "config",
+                "sid",
+                "000001",
+                "023"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Service Objects",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"objects\": [\n    {\n      \"ins\": \"0001\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Office 1 AQM\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Building 1 - Floor 3\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"11111111\"\n          }\n        },\n        {\n          \"rid\": \"40\",\n          \"settings\": {\n            \"pv\": 20,\n            \"fallback\": 0,\n            \"min\": 0,\n            \"max\": 51,\n            \"precision\": 1,\n            \"units\": \"C\"\n          }\n        }\n      ],\n      \"pid\": \"0028\"\n    },\n    {\n      \"ins\": \"0002\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Office 2 AQM\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Building 1 - Ground Floor\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"22222222\"\n          }\n        }\n      ],\n      \"pid\": \"0028\"\n    },\n    {\n      \"ins\": \"0003\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Office 7 AQM\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Building 1 - Floor 3\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"44444444\"\n          }\n        }\n      ],\n      \"pid\": \"0028\"\n    },\n    {\n      \"ins\": \"0004\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Office 3 AQM\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Building 1 - Ground Floor\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"33333333\"\n          }\n        }\n      ],\n      \"pid\": \"0028\"\n    },\n    {\n      \"ins\": \"0005\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"House 1- Kitchen AQM\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"D0000011\"\n          }\n        }\n      ],\n      \"pid\": \"0028\"\n    },\n    {\n      \"ins\": \"0001\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Water Leak 1\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Building 1 - Basement\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"55555555\"\n          }\n        }\n      ],\n      \"pid\": \"000E\"\n    },\n    {\n      \"ins\": \"0002\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Water Leak 2\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Pump Station South\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"66666666\"\n          }\n        }\n      ],\n      \"pid\": \"000E\"\n    },\n    {\n      \"ins\": \"0003\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Water Leak 3\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"Pump Station North\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"77777777\"\n          }\n        }\n      ],\n      \"pid\": \"000E\"\n    },\n    {\n      \"ins\": \"0001\",\n      \"rids\": [\n        {\n          \"rid\": \"01\",\n          \"settings\": {\n            \"pv\": \"Fridge Energy\"\n          }\n        },\n        {\n          \"rid\": \"04\",\n          \"settings\": {\n            \"pv\": \"First Floor\"\n          }\n        },\n        {\n          \"rid\": \"0B\",\n          \"settings\": {\n            \"pv\": \"000000A0\"\n          }\n        },\n        {\n          \"rid\": \"44\",\n          \"settings\": {\n            \"pv\": 23,\n            \"fallback\": 9,\n            \"min\": 0,\n            \"max\": 4095,\n            \"precision\": 1,\n            \"units\": \"A\"\n          },\n          \"tags\": {\n            \"type:\": \"energy\",\n            \"animal\": \"some fish\"\n          }\n        }\n      ],\n      \"pid\": \"002B\",\n      \"tags\": {\n        \"name\": \"bucket of fishes\",\n        \"type\": \"energy\",\n        \"emptyTag\": \"\"\n      }\n    },\n    {\n      \"ins\": \"0001\",\n      \"pid\": \"000B\",\n      \"rids\": []\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/service/config/replaceAllObjects000001/022",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "service",
+                "config",
+                "replaceAllObjects000001",
+                "022"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Update User Password",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"password\": \"funkypig\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/user/password/b3403672-f863-41b5-83a5-cca1678c7249",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "user",
+                "password",
+                "b3403672-f863-41b5-83a5-cca1678c7249"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "item": [
+        {
+          "name": "Get Hub Broker Stats",
+          "protocolProfileBehavior": {
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/node/brokerstats/000001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "node",
+                "brokerstats",
+                "000001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Backup - Full",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\": \"ChrisMoorhouse\",\n    \"password\": \"Bigsplash24\"\n}"
+            },
+            "url": {
+              "raw": "{{host}}/node/backupfull/000001",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "node",
+                "backupfull",
+                "000001"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Add Service to Node",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sid\": \"020\",\n  \"spid\": \"0021\",\n  \"enabled\": true,\n  \"runAtStart\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/service/000001",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "service",
+            "000001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Full Health Check",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sid\": \"020\",\n  \"spid\": \"0021\",\n  \"enabled\": true,\n  \"runAtStart\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/node/fullhealthcheck/000001",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "node",
+            "fullhealthcheck",
+            "000001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Service from Node",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/service/000001/023",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "service",
+            "000001",
+            "023"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clone Node Service",
+      "protocolProfileBehavior": {
+        "followOriginalHttpMethod": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"copies\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/service/clone/000001/022",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "service",
+            "clone",
+            "000001",
+            "022"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{jwt_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "jwt_token",
+      "value": ""
+    },
+    {
+      "key": "host",
+      "value": ""
+    }
+  ]
+}

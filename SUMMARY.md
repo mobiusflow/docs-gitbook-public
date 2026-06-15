@@ -46,6 +46,7 @@
           kind: openapi
           spec: mobiusflow-api
     ```
+  * [Postman Collection](mobiusflow-v3/mobiusflow-engine-api-v3/postman-collection.md)
 * [MobiusFlow Historian Data API v3](mobiusflow-v3/mobiusflow-historian-data-api-v3/README.md)
   * ```yaml
     type: builtin:openapi
@@ -58,10 +59,23 @@
           kind: openapi
           spec: historian-data-api
     ```
+  * [Postman Collection](mobiusflow-v3/mobiusflow-historian-data-api-v3/postman-collection.md)
   * [MCP Server](mobiusflow-v3/mobiusflow-historian-data-api-v3/mcp-server.md)
 * [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
 * [MobiusFlow Data Agent](mobiusflow-v3/mobiusflow-data-agent.md)
 * [MobiusFlow Engine Agent](mobiusflow-v3/mobiusflow-engine-agent.md)
+
+## 🖥️ Demos
+
+* [MobiusFlow Toolbox](demos/mobiusflow-toolbox.md)
+* [MobiusFlow View](demos/mobiusflow-view.md)
+* [Ingesting raw Data into MobiusFlow via MQTT](demos/ingesting-raw-data-into-mobiusflow-via-mqtt.md)
+* [Getting Data out from MobiusFlow](demos/getting-data-out-from-mobiusflow/README.md)
+  * [Via MQTT](demos/getting-data-out-from-mobiusflow/via-mqtt.md)
+  * [Via Historian API (REST)](demos/getting-data-out-from-mobiusflow/via-historian-api-rest.md)
+  * [Via Historian WebSocket](demos/getting-data-out-from-mobiusflow/via-historian-websocket.md)
+  * [Via Engine API (REST)](demos/getting-data-out-from-mobiusflow/via-engine-api-rest.md)
+  * [Via Engine WebSocket](demos/getting-data-out-from-mobiusflow/via-engine-websocket.md)
 
 ## 📖 User Guides
 

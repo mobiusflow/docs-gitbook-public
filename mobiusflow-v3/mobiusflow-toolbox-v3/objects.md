@@ -14,6 +14,6 @@ E.g. an air quality sensor object may have separate resources for temperature, h
 
 For more information on objects and resources read the [MobiusFlow Architecture](../mobiusflow-overview/mobiusflow-architecture.md) article.
 
-Objects must belong to a [service](/broken/pages/fc5828fd69cf8222a5b30c1ce49550ad90180cd3). To add new objects or configure existing objects on a service open the Service's Objects page by clicking on the service in the main menu or clicking on the main body of a service's card on the Services page.
+Objects must belong to a [service](https://app.gitbook.com/s/QoV8xVJhcESUhdKQWDcm/mobiusflow-v3/mobiusflow-engine-api-v3/services). To add new objects or configure existing objects on a service open the Service's Objects page by clicking on the service in the main menu or clicking on the main body of a service's card on the Services page.
 
 <figure><img src="../../.gitbook/assets/Objects page.png" alt=""><figcaption></figcaption></figure>
