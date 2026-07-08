@@ -13,13 +13,14 @@ The Data Agent introduces an agentic / chat style interface to interact with you
 * Making data comparisons between multiple data sets
 * Drawing conclusions about the nature of data
 * Making suggestions about changes which could be made to improve real-world systems
+* Generation of graphs supplement data reports
 
 In the near future it will also allow:
 
 * Generation of alerts
-* Generation of graphs / cards to supplement data reports
+* Populating dashboards with formatted cards
 
-The Data Agent can accessed via MobiusFlow View. The agent invokes the tools provided by the [Historian MCP Sever](mobiusflow-historian-data-api-v3/mcp-server.md), whilst being powered by an OpenAI LLM.
+The Data Agent can accessed via MobiusFlow View. The agent invokes the tools provided by the [Historian MCP Sever](mobiusflow-historian-data-api-v3/mcp-server.md), whilst being powered by a OpenAI / Anthropic / Google Gemini LLM.
 
 ## Limitations
 
@@ -34,14 +35,24 @@ Most of the above tasks can achieved via using the [MobiusFlow Engine Agent](mob
 
 ## Requirements for Usage
 
-The agent uses an OpenAI LLM backend. MobiusFlow does not currently manage token usage of this LLM and as such, it is left to customers to manage this themselves.
+The agent uses an a commercial LLM backend provided by one of the following provider:
 
-This means an account on the [OpenAI Platform](https://platform.openai.com/login) is required. Once created, ensure some credit is added to the account so tokens can be consumed by the agent.
+* Open AI
+* Anthropic
+* Google Gemini
 
-The MobiusFlow Data Agent is linked to your OpenAI Platform account via and OpenAI API token. This token can be created on the OpenAI Platform website [here](https://platform.openai.com/settings/organization/api-keys). Once created, this key must be copied and pasted into the Data Agent when prompted:
+MobiusFlow does not currently manage token usage of these LLMs and as such, this is left to customers to manage this themselves. This means an account with one of the 3 providers is required. Once created, ensure some credit is added to the account so tokens can be consumed by the agent.
 
-<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+The MobiusFlow Data Agent is linked to your LLM provider via an API token. This token can be created on your chosen provider's respective platform. Once created, this API key must be copied and pasted into the Data Agent's settings page:
 
-If a key is already set but needs to be updated, the key button next to the chat bar should be used:
+<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+On the settings page you'll be asked to pick a provider / LLM model and set the API Key:
+
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
+Ensure a valid API key is set for the chosen provider otherwise the agent will not function.
+
+{% hint style="info" %}
+Note: Updating the chat settings will cause the page to reload. Your ongoing chat will not be lost.
+{% endhint %}
