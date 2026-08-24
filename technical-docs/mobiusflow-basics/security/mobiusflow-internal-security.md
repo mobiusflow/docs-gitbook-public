@@ -10,7 +10,7 @@ If communication is required between Mobius nodes, a Mobius router is added to t
 \
 One of the most important part of MobiusFlow is the “ Mobius protocol” over MQTT. This is a predefined set of MQTT topics based around the Mobius object URIs which allows “two way point to point” messaging via MQTT. This means that Mobius nodes and microservices can discover other nodes, services, objects and resources and microservices can read and write resource values on objects belonging to any other microservice on any node within a Mobius system. In addition to reading a writing, a microservice can subscribe to object or resource level change of value (COV) messages.\
 \
-&#xNAN;_&#x54;he MobiusFlow protocol is similar to the LWM2M protocol but over MQTT._
+_&#x54;he MobiusFlow protocol is similar to the LWM2M protocol but over MQTT._
 
 The [Mobius architecture](../mobiusflow-architecture.md) is designed to allow efficient communication for IoT Devices whilst providing structure and definable trust boundaries.
 

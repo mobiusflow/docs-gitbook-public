@@ -40,6 +40,7 @@
     props:
       models: false
       downloadLink: false
+      grouping: by-tag
     dependencies:
       spec:
         ref:
@@ -47,6 +48,8 @@
           spec: mobiusflow-api
     ```
   * [Postman Collection](mobiusflow-v3/mobiusflow-engine-api-v3/postman-collection.md)
+* [MobiusFlow Engine Websocket](mobiusflow-v3/mobiusflow-engine-websocket.md)
+* [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
 * [MobiusFlow Historian Data API v3](mobiusflow-v3/mobiusflow-historian-data-api-v3/README.md)
   * ```yaml
     type: builtin:openapi
@@ -61,7 +64,7 @@
     ```
   * [Postman Collection](mobiusflow-v3/mobiusflow-historian-data-api-v3/postman-collection.md)
   * [MCP Server](mobiusflow-v3/mobiusflow-historian-data-api-v3/mcp-server.md)
-* [MobiusFlow Historian](mobiusflow-v3/mobiusflow-historian.md)
+* [MobiusFlow Historian Websocket](mobiusflow-v3/mobiusflow-historian-websocket.md)
 * [MobiusFlow Data Agent](mobiusflow-v3/mobiusflow-data-agent.md)
 * [MobiusFlow Engine Agent](mobiusflow-v3/mobiusflow-engine-agent.md)
 
@@ -126,16 +129,18 @@
   * [Backup and Restore](technical-docs/mobiusflow-basics/backup-and-restore.md)
   * [Ports and Endpoints](technical-docs/mobiusflow-basics/ports-and-endpoints.md)
 * [MobiusFlow Engine API](technical-docs/mobiusflow-engine-api/README.md)
-  * [Authorization](technical-docs/mobiusflow-engine-api/authorization.md)
-  * [Discover](technical-docs/mobiusflow-engine-api/discover.md)
-  * [Node](technical-docs/mobiusflow-engine-api/node.md)
-  * [Service](technical-docs/mobiusflow-engine-api/service.md)
-  * [Object](technical-docs/mobiusflow-engine-api/object.md)
-  * [Profiles](technical-docs/mobiusflow-engine-api/profiles.md)
-  * [Command](technical-docs/mobiusflow-engine-api/command.md)
-  * [Flows](technical-docs/mobiusflow-engine-api/flows.md)
-  * [Subscription](technical-docs/mobiusflow-engine-api/subscription.md)
-  * [Licence](technical-docs/mobiusflow-engine-api/licence.md)
+  * [Engine API V3](technical-docs/mobiusflow-engine-api/engine-api-v3.md)
+  * [Engine API (V1 / V2)](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/README.md)
+    * [Authorization](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/authorization.md)
+    * [Discover](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/discover.md)
+    * [Node](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/node.md)
+    * [Service](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/service.md)
+    * [Object](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/object.md)
+    * [Profiles](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/profiles.md)
+    * [Command](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/command.md)
+    * [Flows](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/flows.md)
+    * [Subscription](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/subscription.md)
+    * [Licence](technical-docs/mobiusflow-engine-api/engine-api-v1-v2/licence.md)
 * [MobiusFlow Services](technical-docs/mobiusflow-services/README.md)
   * [DALI Lighting](technical-docs/mobiusflow-services/dali-lighting/README.md)
     * [DALI via AFDWeb MQTT](technical-docs/mobiusflow-services/dali-lighting/dali-via-afdweb-mqtt.md)
