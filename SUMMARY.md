@@ -151,6 +151,8 @@
   * [EnOcean Devices](technical-docs/mobiusflow-services/enocean-devices.md)
     * [EnOcean Equipment Profiles (EEPs)](technical-docs/mobiusflow-services/enocean-devices/enocean-equipment-profiles-eeps.md)
   * [Silvair](technical-docs/mobiusflow-services/silvair.md)
+  * [Juniper Mist](technical-docs/mobiusflow-services/juniper-mist.md)
+  * [BLE Devices](technical-docs/mobiusflow-services/ble-devices.md)
 * [Flows](technical-docs/flows/README.md)
   * [Connecting the Flows to MobiusFlow Engine](technical-docs/flows/connecting-the-flows-to-mobiusflow-engine.md)
   * [Data Transfer between Flows and MobiusFlow Engine](technical-docs/flows/data-transfer-between-flows-and-mobiusflow-engine.md)
